@@ -20,4 +20,9 @@ print(location.info())
 
 
 # display maximum total_votes out of states
-print(votes.max()) 
+print(votes["total_votes"].max())
+print(votes["republicans_2016"].max())
+
+
+# display quick overview of numerical data
+print(location.describe())
