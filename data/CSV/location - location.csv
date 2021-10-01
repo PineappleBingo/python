@@ -1,0 +1,1772 @@
+location_id,state,county,lon,lat
+3000,Utah,"Wasatch County, Utah",-111.1615683,40.3348838
+3001,Washington,"Franklin County, Washington",-118.9069436,46.5345799
+3002,Nebraska,"Madison County, Nebraska",-97.6068564,41.9099293
+3003,Florida,"Gulf County, Florida",-85.2565366,29.9072571
+3004,Wisconsin,"Oconto County, Wisconsin",-88.2065162,44.9965754
+3005,Alabama,"Franklin County, Alabama",-87.8428147,34.4419884
+3006,Washington,"Cowlitz County, Washington",-122.6586822,46.1859234
+3007,West Virginia,"Mercer County, West Virginia",-81.106456,37.4034477
+3008,Alabama,"Shelby County, Alabama",-86.6781042,33.2629366
+3009,California,"Yuba County, California",-121.3442802,39.2700256
+3010,Illinois,"Morgan County, Illinois",-90.2022771,39.716806
+3011,Oregon,"Coos County, Oregon",-124.0925574,43.1841928
+3012,Kentucky,"Hopkins County, Kentucky",-87.5421956,37.3110702
+3013,Maryland,"Calvert County, Maryland",-76.5258639,38.5213575
+3014,Colorado,"Mesa County, Colorado",-108.4618366,39.0194924
+3015,Texas,"Nueces County, Texas",-97.5216428,27.7394061
+3016,New Mexico,"Curry County, New Mexico",-103.3460546,34.5729841
+3017,Minnesota,"Nicollet County, Minnesota",-94.245685,44.3588195
+3018,Virginia,"Roanoke County, Virginia",-80.1901101,37.3310768
+3019,Oregon,"Jefferson County, Oregon",-121.1830211,44.64379
+3020,Washington,"Skagit County, Washington",-121.8162777,48.4930662
+3021,Utah,"Salt Lake County, Utah",-111.9242439,40.667882
+3022,Tennessee,"Cumberland County, Tennessee",-84.9947614,35.9523984
+3023,West Virginia,"Summers County, West Virginia",-80.8563149,37.6560029
+3024,California,"Calaveras County, California",-120.5551154,38.1878437
+3025,Florida,"Columbia County, Florida",-82.6231271,30.2213046
+3026,New York,"Westchester County, New York",-73.745912,41.1527698
+3027,Tennessee,"Decatur County, Tennessee",-88.1073838,35.6034221
+3028,Florida,"Santa Rosa County, Florida",-87.0142549,30.7036328
+3029,Kentucky,"Bracken County, Kentucky",-84.1003549,38.678523
+3030,Texas,"Leon County, Texas",-95.9956219,31.3004925
+3031,Louisiana,"Lincoln Parish, Louisiana",-92.6620823,32.6011478
+3032,Louisiana,"St. Landry Parish, Louisiana",-91.9892745,30.5834409
+3033,Illinois,"Randolph County, Illinois",-89.8212096,38.0565149
+3034,Arkansas,"Garland County, Arkansas",-93.1469148,34.5788613
+3035,Ohio,"Clinton County, Ohio",-83.8145417,39.4140409
+3036,West Virginia,"Randolph County, West Virginia",-79.8677827,38.7810865
+3037,Minnesota,"Scott County, Minnesota",-93.534553,44.6519322
+3038,New Jersey,"Somerset County, New Jersey",-74.61993,40.5655218
+3039,New York,"Greene County, New York",-74.1494949,42.2869511
+3040,South Carolina,"Florence County, South Carolina",-79.7102329,34.0285346
+3041,South Carolina,"Laurens County, South Carolina",-82.005657,34.483477
+3042,Maryland,"Garrett County, Maryland",-79.2694163,39.529871
+3043,Missouri,"Buchanan County, Missouri",-94.8081728,39.6603695
+3044,Texas,"Kendall County, Texas",-98.7110939,29.9445241
+3045,Wisconsin,"Bayfield County, Wisconsin",-91.1772815,46.6341992
+3046,Kansas,"Riley County, Kansas",-96.7274889,39.2912114
+3047,Colorado,"Garfield County, Colorado",-107.9097801,39.5993517
+3048,Florida,"Flagler County, Florida",-81.2863619,29.4748942
+3049,Mississippi,"Itawamba County, Mississippi",-88.3631269,34.2810747
+3050,Missouri,"St. Louis County, Missouri",-90.4459541,38.6407022
+3051,New Mexico,"Sandoval County, New Mexico",-106.8826177,35.6850734
+3052,West Virginia,"Raleigh County, West Virginia",-81.2646711,37.7624696
+3053,Wyoming,"Teton County, Wyoming",-110.5881023,44.0493205
+3054,Illinois,"Champaign County, Illinois",-88.1972014,40.1391496
+3055,Kentucky,"Carroll County, Kentucky",-85.1240829,38.6682836
+3056,Michigan,"Lenawee County, Michigan",-84.0668533,41.8959147
+3057,New York,"Albany County, New York",-73.9740136,42.5882713
+3058,Ohio,"Clermont County, Ohio",-84.149614,39.0520838
+3059,New Hampshire,"Belknap County, New Hampshire",-71.4253661,43.5191091
+3060,Colorado,"Fremont County, Colorado",-105.4214383,38.4556576
+3061,New York,"Orleans County, New York",-78.2297258,43.5022867
+3062,Louisiana,"West Baton Rouge Parish, Louisiana",-91.309808,30.4640516
+3063,Minnesota,"Blue Earth County, Minnesota",-94.0640707,44.0382246
+3064,Texas,"Hidalgo County, Texas",-98.18099,26.3963839
+3065,Missouri,"Warren County, Missouri",-91.1593065,38.761902
+3066,Illinois,"Kankakee County, Illinois",-87.8611252,41.1394937
+3067,Louisiana,"East Feliciana Parish, Louisiana",-91.0434338,30.8397837
+3068,Wisconsin,"Sheboygan County, Wisconsin",-87.7305455,43.7460015
+3069,Kansas,"Sumner County, Kansas",-97.4933494,37.236663
+3070,Florida,"Madison County, Florida",-83.4704367,30.4472282
+3071,Ohio,"Belmont County, Ohio",-80.9677268,40.0176819
+3072,Wisconsin,"Waupaca County, Wisconsin",-88.9670056,44.478004
+3073,Mississippi,"Franklin County, Mississippi",-90.8958836,31.4777975
+3074,Florida,"Pasco County, Florida",-82.4557068,28.3020241
+3075,Wisconsin,"Barron County, Wisconsin",-91.8528921,45.4371917
+3076,Arkansas,"Pope County, Arkansas",-93.0315353,35.4552965
+3077,District of Columbia,"District of Columbia, District of Columbia",-77.0170942,38.9041485
+3078,New York,"Niagara County, New York",-78.7921425,43.4567309
+3079,Pennsylvania,"Union County, Pennsylvania",-77.0554751,40.962179
+3080,Vermont,"Chittenden County, Vermont",-73.0705246,44.4606755
+3081,Nebraska,"Scotts Bluff County, Nebraska",-103.7058602,41.8515889
+3082,Washington,"Island County, Washington",-122.6705032,48.1584361
+3083,Iowa,"Washington County, Iowa",-91.7250523,41.3294011
+3084,Vermont,"Addison County, Vermont",-73.1415807,44.0312479
+3085,Illinois,"Iroquois County, Illinois",-87.833601,40.7488665
+3086,New Jersey,"Essex County, New Jersey",-74.2461362,40.7872165
+3087,Wyoming,"Carbon County, Wyoming",-106.9331526,41.7035904
+3088,Colorado,"Routt County, Colorado",-106.9852885,40.4831597
+3089,Virginia,"Suffolk city, Virginia",-76.6347808,36.6971573
+3090,Kentucky,"Boyd County, Kentucky",-82.6814063,38.3600037
+3091,Kentucky,"Perry County, Kentucky",-83.2177723,37.2412822
+3092,South Carolina,"McCormick County, South Carolina",-82.316192,33.8976052
+3093,Texas,"Austin County, Texas",-96.2701697,29.8919013
+3094,Tennessee,"Meigs County, Tennessee",-84.8238876,35.5033973
+3095,Tennessee,"Morgan County, Tennessee",-84.6392616,36.138697
+3096,West Virginia,"Monongalia County, West Virginia",-80.0590736,39.6336448
+3097,South Carolina,"Chesterfield County, South Carolina",-80.1592269,34.6370178
+3098,West Virginia,"Boone County, West Virginia",-81.7133139,38.0228383
+3099,Arkansas,"Jefferson County, Arkansas",-91.9307012,34.2776955
+3100,Florida,"Volusia County, Florida",-81.1618129,29.0576172
+3101,Alabama,"Washington County, Alabama",-88.2020776,31.4069737
+3102,Ohio,"Ashland County, Ohio",-82.2701212,40.8432741
+3103,Montana,"Missoula County, Montana",-113.8926807,47.0272626
+3104,New Jersey,"Cumberland County, New Jersey",-75.1216435,39.3283874
+3105,Ohio,"Darke County, Ohio",-84.6204381,40.1321763
+3106,Tennessee,"Crockett County, Tennessee",-89.1353494,35.8113116
+3107,Arkansas,"Ashley County, Arkansas",-91.7722672,33.1908354
+3108,California,"Placer County, California",-120.7227181,39.0620324
+3109,Washington,"Spokane County, Washington",-117.4043916,47.6203793
+3110,Louisiana,"Evangeline Parish, Louisiana",-92.4040858,30.7206932
+3111,Maine,"Washington County, Maine",-67.6093542,44.9670088
+3112,Pennsylvania,"Forest County, Pennsylvania",-79.249705,41.513304
+3113,Arkansas,"Drew County, Arkansas",-91.7227781,33.5872418
+3114,Arizona,"La Paz County, Arizona",-114.0387933,33.7276249
+3115,Florida,"Jefferson County, Florida",-83.8908594,30.4245579
+3116,Louisiana,"Concordia Parish, Louisiana",-91.626314,31.4698055
+3117,Minnesota,"McLeod County, Minnesota",-94.2723203,44.8216437
+3118,Ohio,"Ashtabula County, Ohio",-80.7456406,41.9066441
+3119,Ohio,"Jackson County, Ohio",-82.614142,39.0134773
+3120,Wisconsin,"Waushara County, Wisconsin",-89.239752,44.1128248
+3121,Alabama,"Escambia County, Alabama",-87.168429,31.1217475
+3122,Kentucky,"McCreary County, Kentucky",-84.4910515,36.7311363
+3123,Maine,"York County, Maine",-70.6704023,43.4272386
+3124,New Jersey,"Union County, New Jersey",-74.3086957,40.6598707
+3125,Texas,"Limestone County, Texas",-96.593623,31.5475427
+3126,Utah,"Tooele County, Utah",-113.1240153,40.4676916
+3127,Florida,"Polk County, Florida",-81.6927831,27.9531147
+3128,Mississippi,"Pike County, Mississippi",-90.3977249,31.1775167
+3129,Maryland,"Allegany County, Maryland",-78.7031084,39.6123087
+3130,Illinois,"McLean County, Illinois",-88.8445391,40.4945594
+3131,Virginia,"Prince William County, Virginia",-77.4788873,38.7023317
+3132,Virginia,"Newport News city, Virginia",-76.5217187,37.0759784
+3133,Tennessee,"Giles County, Tennessee",-87.035319,35.2027228
+3134,Arizona,"Santa Cruz County, Arizona",-110.8451898,31.5259036
+3135,Minnesota,"Wright County, Minnesota",-93.9663965,45.1750914
+3136,Arkansas,"Saline County, Arkansas",-92.674463,34.6485246
+3137,Connecticut,"New Haven County, Connecticut",-72.9002037,41.3497173
+3138,Alabama,"Talladega County, Alabama",-86.1758045,33.3692774
+3139,Illinois,"Macon County, Illinois",-88.9615288,39.8602372
+3140,Wisconsin,"Outagamie County, Wisconsin",-88.4649883,44.4182258
+3141,Ohio,"Trumbull County, Ohio",-80.7676557,41.3089364
+3142,Arizona,"Coconino County, Arizona",-111.7737277,35.8296919
+3143,Florida,"Dixie County, Florida",-83.1956656,29.5808994
+3144,Pennsylvania,"Northumberland County, Pennsylvania",-76.709877,40.8515244
+3145,Tennessee,"Marion County, Tennessee",-85.618399,35.1334215
+3146,Washington,"Kitsap County, Washington",-122.6496358,47.6396874
+3147,Pennsylvania,"Lawrence County, Pennsylvania",-80.3344455,40.9927352
+3148,Arkansas,"Crawford County, Arkansas",-94.2362241,35.5830407
+3149,Louisiana,"Ouachita Parish, Louisiana",-92.1547984,32.4774949
+3150,Louisiana,"St. Helena Parish, Louisiana",-90.7093504,30.8214232
+3151,Ohio,"Crawford County, Ohio",-82.9247712,40.848508
+3152,Virginia,"Petersburg city, Virginia",-77.3923681,37.2047302
+3153,Louisiana,"Vernon Parish, Louisiana",-93.1815202,31.1105625
+3154,Minnesota,"Itasca County, Minnesota",-93.6131284,47.4908429
+3155,Missouri,"Franklin County, Missouri",-91.0734098,38.4083125
+3156,Minnesota,"Anoka County, Minnesota",-93.2427232,45.2741098
+3157,Florida,"Marion County, Florida",-82.0431004,29.2028047
+3158,Illinois,"St. Clair County, Illinois",-89.9285459,38.4701976
+3159,Ohio,"Medina County, Ohio",-81.8995658,41.1160512
+3160,Kentucky,"Marion County, Kentucky",-85.269242,37.5522465
+3161,Michigan,"Ionia County, Michigan",-85.073766,42.9446503
+3162,Illinois,"Massac County, Illinois",-88.7056578,37.216119
+3163,Arkansas,"White County, Arkansas",-91.7531583,35.2547221
+3164,Texas,"Hays County, Texas",-98.0292673,30.0612247
+3165,Illinois,"Bond County, Illinois",-89.4365916,38.885924
+3166,Tennessee,"Jefferson County, Tennessee",-83.4409664,36.0484787
+3167,Louisiana,"East Carroll Parish, Louisiana",-91.2341409,32.7301699
+3168,Missouri,"Clinton County, Missouri",-94.3958028,39.6087233
+3169,Texas,"Bandera County, Texas",-99.2606816,29.7557484
+3170,Texas,"El Paso County, Texas",-106.2413905,31.7664034
+3171,Tennessee,"Bedford County, Tennessee",-86.4582939,35.5136604
+3172,Tennessee,"Claiborne County, Tennessee",-83.6607235,36.5015565
+3173,Florida,"Calhoun County, Florida",-85.1979155,30.3888013
+3174,Missouri,"Shannon County, Missouri",-91.3983635,37.1519796
+3175,Wisconsin,"Kenosha County, Wisconsin",-87.4248983,42.5797028
+3176,Tennessee,"Macon County, Tennessee",-86.0012306,36.5378383
+3177,Mississippi,"Forrest County, Mississippi",-89.2594467,31.1885802
+3178,Virginia,"Rockbridge County, Virginia",-79.4477537,37.8145174
+3179,Minnesota,"Carlton County, Minnesota",-92.6710435,46.6038184
+3180,New York,"Monroe County, New York",-77.6646556,43.4644751
+3181,Virginia,"Mecklenburg County, Virginia",-78.3689592,36.6872563
+3182,Maine,"Oxford County, Maine",-70.7346875,44.494585
+3183,Pennsylvania,"Cumberland County, Pennsylvania",-77.2634399,40.1647822
+3184,South Carolina,"Berkeley County, South Carolina",-79.9536554,33.2077
+3185,Wisconsin,"Brown County, Wisconsin",-87.9959258,44.4739612
+3186,Mississippi,"Simpson County, Mississippi",-89.9177072,31.9025034
+3187,Arkansas,"Washington County, Arkansas",-94.2184168,35.9712088
+3188,California,"Merced County, California",-120.7228019,37.1948063
+3189,Texas,"Shelby County, Texas",-94.1425654,31.7901368
+3190,Virginia,"Virginia Beach city, Virginia",-76.0240202,36.7793219
+3191,Washington,"Douglas County, Washington",-119.6958798,47.7358661
+3192,Missouri,"Mississippi County, Missouri",-89.2959286,36.826264
+3193,Texas,"Galveston County, Texas",-94.8948647,29.2287059
+3194,Virginia,"Lynchburg city, Virginia",-79.1954582,37.3990161
+3195,New Mexico,"Taos County, New Mexico",-105.6379865,36.5765287
+3196,New York,"Orange County, New York",-74.3062522,41.4024096
+3197,Minnesota,"Winona County, Minnesota",-91.7767076,43.9822682
+3198,California,"Alameda County, California",-121.9133039,37.6480811
+3199,Colorado,"Yuma County, Colorado",-102.422649,40.0006314
+3200,Alabama,"Blount County, Alabama",-86.5672464,33.9774479
+3201,Louisiana,"Caddo Parish, Louisiana",-93.8824228,32.5771951
+3202,Minnesota,"Pope County, Minnesota",-95.4467052,45.5896228
+3203,Louisiana,"Terrebonne Parish, Louisiana",-90.8441905,29.3332656
+3204,Illinois,"Grundy County, Illinois",-88.4010545,41.2924096
+3205,Tennessee,"Lincoln County, Tennessee",-86.5933882,35.1425322
+3206,Missouri,"Iron County, Missouri",-90.699627,37.6259598
+3207,New York,"Broome County, New York",-75.830291,42.1619773
+3208,Virginia,"Prince George County, Virginia",-77.2209931,37.1873255
+3209,West Virginia,"Marion County, West Virginia",-80.2434018,39.5058387
+3210,California,"Stanislaus County, California",-121.0026557,37.5623842
+3211,Iowa,"Buena Vista County, Iowa",-95.1414325,42.741522
+3212,Louisiana,"St. Martin Parish, Louisiana",-91.6114814,30.1214329
+3213,Missouri,"Saline County, Missouri",-93.2041639,39.1358403
+3214,Texas,"Victoria County, Texas",-96.9711977,28.7963699
+3215,Mississippi,"Tallahatchie County, Mississippi",-90.1728334,33.9558908
+3216,Florida,"Bradford County, Florida",-82.1667955,29.9469338
+3217,Virginia,"Nelson County, Virginia",-78.8793935,37.790016
+3218,Maryland,"Kent County, Maryland",-76.1242003,39.2391765
+3219,Missouri,"Cape Girardeau County, Missouri",-89.6849079,37.3838819
+3220,Missouri,"Pettis County, Missouri",-93.2852073,38.7273667
+3221,Ohio,"Fayette County, Ohio",-83.4593267,39.5538453
+3222,Arkansas,"Cross County, Arkansas",-90.7738942,35.2912586
+3223,Ohio,"Portage County, Ohio",-81.1969318,41.1686399
+3224,Pennsylvania,"Sullivan County, Pennsylvania",-76.5115249,41.4397901
+3225,Iowa,"Marshall County, Iowa",-92.9814523,42.041691
+3226,New Jersey,"Warren County, New Jersey",-75.0095421,40.8535238
+3227,Ohio,"Stark County, Ohio",-81.3656673,40.8141314
+3228,Tennessee,"Sequatchie County, Tennessee",-85.4103438,35.3723348
+3229,Ohio,"Van Wert County, Ohio",-84.5857751,40.8555203
+3230,Tennessee,"Tipton County, Tennessee",-89.7637081,35.5002966
+3231,Mississippi,"Stone County, Mississippi",-89.112297,30.790184
+3232,New York,"Montgomery County, New York",-74.4353575,42.9008912
+3233,Pennsylvania,"Clarion County, Pennsylvania",-79.4204044,41.1982385
+3234,South Carolina,"Clarendon County, South Carolina",-80.2178886,33.6646821
+3235,Texas,"Rusk County, Texas",-94.7563823,32.1094232
+3236,Alabama,"Walker County, Alabama",-87.3010918,33.7915714
+3237,Illinois,"Saline County, Illinois",-88.545031,37.7516531
+3238,Michigan,"Shiawassee County, Michigan",-84.1463518,42.9515446
+3239,Pennsylvania,"Washington County, Pennsylvania",-80.2521319,40.2000054
+3240,New Hampshire,"Strafford County, New Hampshire",-71.0359266,43.2931773
+3241,Washington,"Grant County, Washington",-119.467788,47.2136328
+3242,Washington,"Walla Walla County, Washington",-118.4803741,46.2546061
+3243,South Carolina,"Anderson County, South Carolina",-82.6380859,34.5195488
+3244,Pennsylvania,"Elk County, Pennsylvania",-78.6539383,41.4273339
+3245,Arkansas,"Benton County, Arkansas",-94.2561871,36.3378246
+3246,Minnesota,"St. Louis County, Minnesota",-92.4636448,47.5838524
+3247,Ohio,"Union County, Ohio",-83.3670416,40.2959008
+3248,Connecticut,"Litchfield County, Connecticut",-73.2354279,41.7918967
+3249,Iowa,"Webster County, Iowa",-94.1791565,42.434397
+3250,Alabama,"Chambers County, Alabama",-85.3918121,32.9179433
+3251,Florida,"St. Johns County, Florida",-81.3839139,29.8905926
+3252,Illinois,"Lake County, Illinois",-87.4361178,42.3264435
+3253,Illinois,"Peoria County, Illinois",-89.7673577,40.7859987
+3254,Tennessee,"Hardeman County, Tennessee",-88.9890374,35.2181307
+3255,Texas,"Atascosa County, Texas",-98.5281872,28.8942963
+3256,Massachusetts,"Bristol County, Massachusetts",-71.0870622,41.7485756
+3257,California,"Kings County, California",-119.8155301,36.072478
+3258,Montana,"Big Horn County, Montana",-107.5181625,45.407869
+3259,Florida,"Collier County, Florida",-81.4008838,26.1187125
+3260,Idaho,"Ada County, Idaho",-116.244456,43.4478606
+3261,New York,"Lewis County, New York",-75.4426165,43.7863965
+3262,Colorado,"Logan County, Colorado",-103.0904639,40.7280911
+3263,South Carolina,"Marlboro County, South Carolina",-79.6779418,34.6018053
+3264,New Mexico,"Lea County, New Mexico",-103.4132707,32.7956865
+3265,Arkansas,"Miller County, Arkansas",-93.9015091,33.3055048
+3266,Virginia,"Appomattox County, Virginia",-78.8109404,37.3707253
+3267,Mississippi,"Clay County, Mississippi",-88.7833258,33.6617336
+3268,Kansas,"Sedgwick County, Kansas",-97.4594505,37.683807
+3269,California,"Marin County, California",-122.7459738,38.0518169
+3270,Ohio,"Harrison County, Ohio",-81.0915651,40.2923175
+3271,Louisiana,"Caldwell Parish, Louisiana",-92.1141796,32.1012436
+3272,Arkansas,"Monroe County, Arkansas",-91.203314,34.6795127
+3273,Minnesota,"Clay County, Minnesota",-96.4949007,46.8983772
+3274,Ohio,"Gallia County, Ohio",-82.3017463,38.8170456
+3275,South Carolina,"Chester County, South Carolina",-81.161249,34.689345
+3276,Pennsylvania,"Crawford County, Pennsylvania",-80.1078113,41.6868399
+3277,Iowa,"Clarke County, Iowa",-93.7840961,41.0291908
+3278,Texas,"Hockley County, Texas",-102.3433978,33.605932
+3279,Florida,"Walton County, Florida",-86.1766139,30.6312106
+3280,Iowa,"Story County, Iowa",-93.4660934,42.0375379
+3281,Florida,"Lee County, Florida",-81.8922499,26.5521343
+3282,Michigan,"Missaukee County, Michigan",-85.0854708,44.325424
+3283,Ohio,"Washington County, Ohio",-81.4906531,39.4506837
+3284,Illinois,"Clinton County, Illinois",-89.4231363,38.6064228
+3285,Nebraska,"Douglas County, Nebraska",-96.1540664,41.2970908
+3286,Montana,"Jefferson County, Montana",-112.0567713,46.1265574
+3287,New Jersey,"Hudson County, New Jersey",-74.0786266,40.7313837
+3288,Virginia,"Wise County, Virginia",-82.6215601,36.9745607
+3289,Tennessee,"McMinn County, Tennessee",-84.6199625,35.4244708
+3290,Texas,"Fannin County, Texas",-96.1049882,33.5911611
+3291,Michigan,"Saginaw County, Michigan",-84.05541,43.3282667
+3292,Florida,"Palm Beach County, Florida",-80.4486728,26.6457628
+3293,Wisconsin,"Douglas County, Wisconsin",-91.8925795,46.4633156
+3294,Kentucky,"McCracken County, Kentucky",-88.7123775,37.0536877
+3295,Kentucky,"Madison County, Kentucky",-84.277008,37.7235278
+3296,California,"Sacramento County, California",-121.3404409,38.4500114
+3297,Wisconsin,"Pierce County, Wisconsin",-92.4262793,44.7253365
+3298,New York,"Kings County, New York",-73.9507774,40.6351332
+3299,Texas,"Marion County, Texas",-94.3576733,32.7977571
+3300,Minnesota,"Fillmore County, Minnesota",-92.0936807,43.6772699
+3301,Maine,"Sagadahoc County, Maine",-69.8439936,43.9166939
+3302,Wisconsin,"Winnebago County, Wisconsin",-88.6681488,44.0857068
+3303,Michigan,"Ottawa County, Michigan",-86.6553423,42.9423461
+3304,Kentucky,"Clay County, Kentucky",-83.7107629,37.1644658
+3305,New Jersey,"Cape May County, New Jersey",-74.8477158,39.0861425
+3306,West Virginia,"Hampshire County, West Virginia",-78.6119886,39.3121395
+3307,Alabama,"Lawrence County, Alabama",-87.3218651,34.5297759
+3308,Tennessee,"Weakley County, Tennessee",-88.7207846,36.3035229
+3309,Illinois,"White County, Illinois",-88.1785848,38.087372
+3310,Missouri,"Linn County, Missouri",-93.108019,39.8644404
+3311,New York,"Cayuga County, New York",-76.5745866,43.0085456
+3312,South Carolina,"Bamberg County, South Carolina",-81.0531608,33.203021
+3313,Tennessee,"Dickson County, Tennessee",-87.3641546,36.1455325
+3314,Illinois,"Menard County, Illinois",-89.7941326,40.0225693
+3315,Missouri,"Morgan County, Missouri",-92.8748352,38.4208069
+3316,Pennsylvania,"Montour County, Pennsylvania",-76.6652592,41.029261
+3317,Tennessee,"Henderson County, Tennessee",-88.3876741,35.6539945
+3318,Tennessee,"Sullivan County, Tennessee",-82.2993965,36.5102123
+3319,Ohio,"Hancock County, Ohio",-83.6660335,41.0004711
+3320,Kentucky,"Nicholas County, Kentucky",-84.0255542,38.3371317
+3321,Arkansas,"Bradley County, Arkansas",-92.1681641,33.4638194
+3322,Maryland,"Frederick County, Maryland",-77.3976265,39.4704273
+3323,Kansas,"Johnson County, Kansas",-94.8223295,38.8839065
+3324,Wisconsin,"Langlade County, Wisconsin",-89.0681897,45.2592039
+3325,Arkansas,"Randolph County, Arkansas",-91.0284409,36.3412985
+3326,Alabama,"Baldwin County, Alabama",-87.7460666,30.6592183
+3327,California,"Del Norte County, California",-123.9809983,41.7499033
+3328,Florida,"Duval County, Florida",-81.6481132,30.3352449
+3329,Kansas,"Ellsworth County, Kansas",-98.2053552,38.7008451
+3330,Missouri,"Webster County, Missouri",-92.8760795,37.2808043
+3331,Virginia,"Floyd County, Virginia",-80.3503087,36.9314381
+3332,Oregon,"Douglas County, Oregon",-123.1543801,43.2859035
+3333,Minnesota,"Chisago County, Minnesota",-92.9038486,45.5054439
+3334,Kansas,"Ford County, Kansas",-99.884734,37.6883653
+3335,Minnesota,"Crow Wing County, Minnesota",-94.0712125,46.4911138
+3336,Nebraska,"Lincoln County, Nebraska",-100.7444808,41.0503221
+3337,Colorado,"Park County, Colorado",-105.7176479,39.1189141
+3338,Ohio,"Ottawa County, Ohio",-83.0092527,41.5444667
+3339,Pennsylvania,"Delaware County, Pennsylvania",-75.3987862,39.9166704
+3340,Pennsylvania,"Wayne County, Pennsylvania",-75.2924847,41.6465894
+3341,South Carolina,"Charleston County, South Carolina",-79.94248,32.8004582
+3342,California,"San Joaquin County, California",-121.2722369,37.9350336
+3343,Utah,"Washington County, Utah",-113.4878003,37.2625308
+3344,Kentucky,"Spencer County, Kentucky",-85.321525,38.0269758
+3345,Missouri,"Phelps County, Missouri",-91.7903492,37.8663263
+3346,Pennsylvania,"Bradford County, Pennsylvania",-76.5021237,41.7914949
+3347,Nebraska,"York County, Nebraska",-97.5967418,40.8730557
+3348,Iowa,"Fayette County, Iowa",-91.8393728,42.8644496
+3349,Texas,"Orange County, Texas",-93.8933577,30.120918
+3350,Maryland,"Anne Arundel County, Maryland",-76.5605111,38.9933743
+3351,Tennessee,"Johnson County, Tennessee",-81.8612367,36.4532035
+3352,Nebraska,"Dodge County, Nebraska",-96.6458526,41.5770082
+3353,California,"Sutter County, California",-121.7027576,39.0352571
+3354,New Jersey,"Hunterdon County, New Jersey",-74.9119695,40.5652832
+3355,South Carolina,"Pickens County, South Carolina",-82.7253677,34.8873615
+3356,Tennessee,"Rutherford County, Tennessee",-86.4172127,35.8433688
+3357,Kentucky,"Graves County, Kentucky",-88.6498974,36.7233435
+3358,Kansas,"Wyandotte County, Kansas",-94.7630866,39.1153842
+3359,Wisconsin,"Iowa County, Wisconsin",-90.1336915,43.0010208
+3360,New York,"Putnam County, New York",-73.7438816,41.4279035
+3361,Iowa,"Madison County, Iowa",-94.0151842,41.3306216
+3362,Illinois,"Tazewell County, Illinois",-89.5162597,40.5080739
+3363,Arkansas,"Polk County, Arkansas",-94.2308841,34.4909149
+3364,California,"Kern County, California",-118.7295064,35.3466288
+3365,Alabama,"Bullock County, Alabama",-85.7172613,32.1017589
+3366,California,"Shasta County, California",-122.0435495,40.7605215
+3367,Minnesota,"Meeker County, Minnesota",-94.527346,45.1231555
+3368,Florida,"St. Lucie County, Florida",-80.4433638,27.3807748
+3369,Oregon,"Lane County, Oregon",-122.8976779,43.9282763
+3370,Illinois,"Livingston County, Illinois",-88.5528518,40.8943761
+3371,Massachusetts,"Dukes County, Massachusetts",-70.7015362,41.3809392
+3372,Washington,"Okanogan County, Washington",-119.6910346,48.5509709
+3373,Kansas,"Cherokee County, Kansas",-94.8456975,37.1693922
+3374,Wyoming,"Laramie County, Wyoming",-104.660395,41.2928302
+3375,New Mexico,"San Miguel County, New Mexico",-104.8035146,35.4768758
+3376,Louisiana,"Franklin Parish, Louisiana",-91.672101,32.1382785
+3377,Pennsylvania,"Lackawanna County, Pennsylvania",-75.6095869,41.4402497
+3378,Mississippi,"Walthall County, Mississippi",-90.1034306,31.164492
+3379,Mississippi,"Panola County, Mississippi",-89.9630654,34.3652052
+3380,New York,"Franklin County, New York",-74.3106698,44.5943743
+3381,Oregon,"Wasco County, Oregon",-121.1650693,45.1645359
+3382,Pennsylvania,"Cambria County, Pennsylvania",-78.7152843,40.4941269
+3383,South Carolina,"Abbeville County, South Carolina",-82.4604603,34.2138089
+3384,Florida,"Orange County, Florida",-81.323295,28.514435
+3385,Rhode Island,"Newport County, Rhode Island",-71.284063,41.5027319
+3386,Michigan,"Calhoun County, Michigan",-85.0123853,42.2429896
+3387,Minnesota,"Rice County, Minnesota",-93.2985032,44.3509428
+3388,Missouri,"Pulaski County, Missouri",-92.2070224,37.8248346
+3389,Maryland,"Washington County, Maryland",-77.8146709,39.6036207
+3390,Idaho,"Bonneville County, Idaho",-111.6218783,43.3951708
+3391,West Virginia,"Upshur County, West Virginia",-80.2313352,38.9025365
+3392,Michigan,"Branch County, Michigan",-85.0665229,41.9185851
+3393,Washington,"Stevens County, Washington",-117.8548968,48.3906475
+3394,Virginia,"Cumberland County, Virginia",-78.2528364,37.5201891
+3395,New Hampshire,"Hillsborough County, New Hampshire",-71.7231012,42.9116429
+3396,Maryland,"Caroline County, Maryland",-75.8316311,38.8715312
+3397,Missouri,"Madison County, Missouri",-90.3454526,37.4732347
+3398,New Mexico,"Colfax County, New Mexico",-104.6401256,36.6129625
+3399,New York,"Columbia County, New York",-73.6268046,42.2477286
+3400,Tennessee,"Fayette County, Tennessee",-89.4138027,35.1969933
+3401,Texas,"Kaufman County, Texas",-96.2883777,32.598944
+3402,Ohio,"Adams County, Ohio",-83.4741732,38.8416807
+3403,Michigan,"Marquette County, Michigan",-87.5840278,46.6565965
+3404,Delaware,"New Castle County, Delaware",-75.6441324,39.5759152
+3405,Illinois,"Whiteside County, Illinois",-89.9109567,41.7505708
+3406,Colorado,"Pueblo County, Colorado",-104.4898925,38.1706581
+3407,Kentucky,"Rowan County, Kentucky",-83.425969,38.2058938
+3408,Michigan,"Eaton County, Michigan",-84.8465237,42.5896144
+3409,Virginia,"Wythe County, Virginia",-81.084209,36.9014709
+3410,Wisconsin,"Wood County, Wisconsin",-90.0388252,44.4614126
+3411,Alabama,"Cleburne County, Alabama",-85.516109,33.671981
+3412,Mississippi,"Prentiss County, Mississippi",-88.5222401,34.6208655
+3413,Virginia,"New Kent County, Virginia",-76.9933392,37.4989741
+3414,West Virginia,"Mineral County, West Virginia",-78.9565812,39.4056259
+3415,Kentucky,"Montgomery County, Kentucky",-83.9123375,38.0381379
+3416,Idaho,"Payette County, Idaho",-116.7486549,44.0027397
+3417,Alabama,"Lowndes County, Alabama",-86.6505859,32.147888
+3418,Wisconsin,"Menominee County, Wisconsin",-88.6692512,44.9913041
+3419,Kentucky,"Muhlenberg County, Kentucky",-87.1340919,37.2138159
+3420,Alabama,"Macon County, Alabama",-85.692887,32.3870267
+3421,Florida,"Clay County, Florida",-81.8581472,29.9871155
+3422,Mississippi,"Newton County, Mississippi",-89.1184115,32.4019702
+3423,Oregon,"Marion County, Oregon",-122.5762602,44.9008984
+3424,Iowa,"Jefferson County, Iowa",-91.9671367,41.0068799
+3425,Ohio,"Marion County, Ohio",-83.1729272,40.5882082
+3426,Mississippi,"Marion County, Mississippi",-89.8217357,31.2301257
+3427,Washington,"Benton County, Washington",-119.5168636,46.228072
+3428,Tennessee,"Warren County, Tennessee",-85.7773633,35.6782817
+3429,New York,"Schoharie County, New York",-74.4381718,42.591294
+3430,Alabama,"Lee County, Alabama",-85.3530477,32.6040644
+3431,Alabama,"Barbour County, Alabama",-85.4054562,31.8706701
+3432,California,"Napa County, California",-122.3259947,38.5073511
+3433,Virginia,"Henrico County, Virginia",-77.300333,37.4375205
+3434,South Carolina,"Newberry County, South Carolina",-81.6000526,34.2897302
+3435,Georgia,"Stephens County, Georgia",-83.2902156,34.5529139
+3436,Texas,"Bastrop County, Texas",-97.3118587,30.1031276
+3437,Alabama,"Perry County, Alabama",-87.2938269,32.6390053
+3438,Alabama,"Henry County, Alabama",-85.2399712,31.5169779
+3439,Ohio,"Richland County, Ohio",-82.5427146,40.7741674
+3440,Maine,"Hancock County, Maine",-68.3707034,44.5649063
+3441,Missouri,"Barry County, Missouri",-93.8343258,36.6993775
+3442,Tennessee,"Monroe County, Tennessee",-84.2497859,35.4476659
+3443,Alabama,"Marion County, Alabama",-87.881551,34.1382194
+3444,Vermont,"Windsor County, Vermont",-72.5915145,43.5881434
+3445,Texas,"Navarro County, Texas",-96.4769075,32.0484498
+3446,Vermont,"Franklin County, Vermont",-72.9094023,44.8589643
+3447,Iowa,"Black Hawk County, Iowa",-92.306059,42.4728884
+3448,New York,"Herkimer County, New York",-74.8946938,43.4616351
+3449,Alabama,"Geneva County, Alabama",-85.8243464,31.0908664
+3450,Arkansas,"Clay County, Arkansas",-90.4187041,36.3673021
+3451,Texas,"Polk County, Texas",-94.8373376,30.7845525
+3452,Colorado,"Las Animas County, Colorado",-104.0441103,37.3188308
+3453,Missouri,"Randolph County, Missouri",-92.4927245,39.4416013
+3454,Kentucky,"Clinton County, Kentucky",-85.1534986,36.7291241
+3455,New York,"Livingston County, New York",-77.7697795,42.7274845
+3456,South Carolina,"Kershaw County, South Carolina",-80.5908847,34.3383561
+3457,Iowa,"Clinton County, Iowa",-90.5342431,41.8980732
+3458,Kentucky,"Shelby County, Kentucky",-85.2283599,38.239426
+3459,Florida,"Nassau County, Florida",-81.7649287,30.6059257
+3460,Illinois,"Coles County, Illinois",-88.220782,39.5136797
+3461,Texas,"Comal County, Texas",-98.2552006,29.8030193
+3462,Virginia,"Middlesex County, Virginia",-76.5279582,37.6068281
+3463,Michigan,"Tuscola County, Michigan",-83.4366179,43.4879024
+3464,Rhode Island,"Bristol County, Rhode Island",-71.285053,41.7052705
+3465,Connecticut,"Fairfield County, Connecticut",-73.3667574,41.2281028
+3466,Kentucky,"Grayson County, Kentucky",-86.3440113,37.4585771
+3467,Missouri,"Taney County, Missouri",-93.0428188,36.6498267
+3468,Kentucky,"Grant County, Kentucky",-84.6259458,38.6492099
+3469,New York,"St. Lawrence County, New York",-75.074311,44.4881125
+3470,Virginia,"Montgomery County, Virginia",-80.387314,37.1748845
+3471,Florida,"Leon County, Florida",-84.2778004,30.4593104
+3472,Kentucky,"Daviess County, Kentucky",-87.087139,37.731671
+3473,Iowa,"Linn County, Iowa",-91.5976735,42.0779506
+3474,Idaho,"Kootenai County, Idaho",-116.6949184,47.6771129
+3475,Virginia,"Hopewell city, Virginia",-77.2989443,37.2910098
+3476,Michigan,"St. Joseph County, Michigan",-85.5228703,41.9114878
+3477,Missouri,"Dunklin County, Missouri",-90.0622538,36.1530246
+3478,Washington,"Pacific County, Washington",-123.7824193,46.5565866
+3479,Michigan,"Genesee County, Michigan",-83.7063718,43.0210768
+3480,California,"Humboldt County, California",-123.9258181,40.7066731
+3481,Pennsylvania,"Monroe County, Pennsylvania",-75.3290369,41.0562332
+3482,South Carolina,"Aiken County, South Carolina",-81.6338704,33.5493166
+3483,Virginia,"Norfolk city, Virginia",-76.2446413,36.9230149
+3484,Louisiana,"Natchitoches Parish, Louisiana",-93.0861057,31.7349824
+3485,Wisconsin,"Lincoln County, Wisconsin",-89.7420823,45.3383191
+3486,Arkansas,"Craighead County, Arkansas",-90.6304114,35.8282682
+3487,Maine,"Androscoggin County, Maine",-70.2074347,44.1676811
+3488,Virginia,"Brunswick County, Virginia",-77.8609162,36.7645309
+3489,Oregon,"Deschutes County, Oregon",-121.2255751,43.9151181
+3490,Pennsylvania,"Dauphin County, Pennsylvania",-76.7926343,40.4125646
+3491,Louisiana,"Plaquemines Parish, Louisiana",-89.2984889,29.402337
+3492,Tennessee,"Washington County, Tennessee",-82.4950374,36.2956649
+3493,Virginia,"Pittsylvania County, Virginia",-79.3985019,36.8217206
+3494,West Virginia,"Logan County, West Virginia",-81.940853,37.8305905
+3495,Kentucky,"Green County, Kentucky",-85.5614029,37.2696366
+3496,Michigan,"Barry County, Michigan",-85.3145503,42.5828109
+3497,West Virginia,"Monroe County, West Virginia",-80.5478911,37.5503532
+3498,Arizona,"Yuma County, Arizona",-113.910905,32.7739424
+3499,Minnesota,"Mille Lacs County, Minnesota",-93.6329964,45.9290434
+3500,West Virginia,"Webster County, West Virginia",-80.4302617,38.4929846
+3501,Arizona,"Graham County, Arizona",-109.8783103,32.9318277
+3502,Oregon,"Linn County, Oregon",-122.5437555,44.4948239
+3503,Illinois,"Bureau County, Illinois",-89.5283772,41.4013043
+3504,West Virginia,"Barbour County, West Virginia",-79.9969144,39.1397543
+3505,Pennsylvania,"Centre County, Pennsylvania",-77.8478296,40.9091603
+3506,South Carolina,"Barnwell County, South Carolina",-81.4337529,33.2606803
+3507,Tennessee,"Montgomery County, Tennessee",-87.3808865,36.5003535
+3508,Texas,"Matagorda County, Texas",-95.9977554,28.7833407
+3509,New Hampshire,"Sullivan County, New Hampshire",-72.2220839,43.3611883
+3510,Louisiana,"Sabine Parish, Louisiana",-93.5592284,31.560209
+3511,Louisiana,"Vermilion Parish, Louisiana",-92.2900902,29.7868716
+3512,Texas,"Wichita County, Texas",-98.7168508,33.9911025
+3513,Michigan,"Kalkaska County, Michigan",-85.0889915,44.6788808
+3514,New York,"Chautauqua County, New York",-79.4075949,42.3042159
+3515,Florida,"Lafayette County, Florida",-83.1785097,29.9900661
+3516,Kentucky,"Franklin County, Kentucky",-84.8687863,38.234919
+3517,California,"Plumas County, California",-120.8295155,39.9951699
+3518,Kansas,"Montgomery County, Kansas",-95.7424028,37.1895369
+3519,South Carolina,"Williamsburg County, South Carolina",-79.7164752,33.6264629
+3520,Minnesota,"Chippewa County, Minnesota",-95.5641082,45.0286254
+3521,Florida,"Liberty County, Florida",-84.8685805,30.2598494
+3522,Texas,"Burnet County, Texas",-98.2011948,30.7896156
+3523,California,"Amador County, California",-120.6538563,38.4435501
+3524,South Carolina,"Sumter County, South Carolina",-80.3824721,33.9160459
+3525,Missouri,"Caldwell County, Missouri",-93.9791785,39.6589977
+3526,West Virginia,"Wayne County, West Virginia",-82.4196977,38.1455311
+3527,Texas,"Gray County, Texas",-100.8123736,35.4025424
+3528,Virginia,"Augusta County, Virginia",-79.1466816,38.1678073
+3529,Arkansas,"Nevada County, Arkansas",-93.3050716,33.6666991
+3530,Mississippi,"Noxubee County, Mississippi",-88.5657874,33.1062703
+3531,Wisconsin,"Ozaukee County, Wisconsin",-87.4965534,43.360715
+3532,Idaho,"Idaho County, Idaho",-115.4673755,45.8492367
+3533,Kentucky,"Oldham County, Kentucky",-85.4560593,38.4000461
+3534,Missouri,"Johnson County, Missouri",-93.8059991,38.7458799
+3535,Virginia,"King William County, Virginia",-77.0910539,37.7082604
+3536,Wisconsin,"Dodge County, Wisconsin",-88.7043791,43.4227057
+3537,California,"Mariposa County, California",-119.9128599,37.5700335
+3538,Wisconsin,"Milwaukee County, Wisconsin",-87.4815749,43.0176546
+3539,Mississippi,"Union County, Mississippi",-89.0022997,34.4891011
+3540,Colorado,"Montezuma County, Colorado",-108.5957863,37.3380246
+3541,Florida,"Holmes County, Florida",-85.8129589,30.866222
+3542,Oregon,"Clatsop County, Oregon",-123.705014,46.0245092
+3543,Florida,"Brevard County, Florida",-80.7003842,28.2982755
+3544,Florida,"Seminole County, Florida",-81.1319797,28.6900793
+3545,Oregon,"Tillamook County, Oregon",-123.7593269,45.4557425
+3546,Minnesota,"Becker County, Minnesota",-95.7417568,46.9376289
+3547,Missouri,"Laclede County, Missouri",-92.5948322,37.6596901
+3548,Ohio,"Wayne County, Ohio",-81.8871942,40.8296612
+3549,California,"Glenn County, California",-122.4016998,39.6025462
+3550,Connecticut,"Middlesex County, Connecticut",-72.5242267,41.4345251
+3551,Tennessee,"Grundy County, Tennessee",-85.7221882,35.387273
+3552,Kentucky,"Pendleton County, Kentucky",-84.3540405,38.6907649
+3553,Michigan,"Clare County, Michigan",-84.8383253,43.9911368
+3554,Illinois,"Crawford County, Illinois",-87.7571722,39.0037296
+3555,Arkansas,"Crittenden County, Arkansas",-90.3153314,35.2118784
+3556,Pennsylvania,"Greene County, Pennsylvania",-80.2256936,39.8489829
+3557,Kentucky,"Kenton County, Kentucky",-84.533492,38.9304771
+3558,Michigan,"Menominee County, Michigan",-87.5098923,45.544174
+3559,Kentucky,"Jefferson County, Kentucky",-85.6576239,38.1895327
+3560,Mississippi,"Smith County, Mississippi",-89.4949726,32.0190335
+3561,Texas,"Midland County, Texas",-102.0243264,31.8708957
+3562,Pennsylvania,"Clearfield County, Pennsylvania",-78.473749,41.0002489
+3563,Tennessee,"Henry County, Tennessee",-88.3003844,36.3253983
+3564,New York,"Cortland County, New York",-76.0762647,42.5938237
+3565,Ohio,"Hamilton County, Ohio",-84.5441868,39.1969272
+3566,Mississippi,"Jones County, Mississippi",-89.167262,31.6210444
+3567,Mississippi,"Yalobusha County, Mississippi",-89.703793,34.0306685
+3568,Kentucky,"Lincoln County, Kentucky",-84.6580738,37.4572565
+3569,Illinois,"Madison County, Illinois",-89.9001954,38.8270818
+3570,Florida,"Gadsden County, Florida",-84.6127832,30.5791695
+3571,Oregon,"Multnomah County, Oregon",-122.4171728,45.5476932
+3572,Wisconsin,"Columbia County, Wisconsin",-89.3304721,43.4718818
+3573,Alabama,"Fayette County, Alabama",-87.7520486,33.7322485
+3574,Kansas,"Miami County, Kansas",-94.8329626,38.5667718
+3575,Nebraska,"Dakota County, Nebraska",-96.5625485,42.3904564
+3576,Wyoming,"Lincoln County, Wyoming",-110.6798417,42.2287879
+3577,Missouri,"Jackson County, Missouri",-94.3425074,39.0072333
+3578,Arkansas,"Madison County, Arkansas",-93.7240531,36.0125452
+3579,Oregon,"Jackson County, Oregon",-122.6757974,42.411782
+3580,Maine,"Somerset County, Maine",-69.9760395,45.5074824
+3581,Mississippi,"Amite County, Mississippi",-90.7955421,31.2039333
+3582,Arizona,"Pinal County, Arizona",-111.3672569,32.91891
+3583,Virginia,"Isle of Wight County, Virginia",-76.7075688,36.9014184
+3584,Vermont,"Windham County, Vermont",-72.7163348,42.9991426
+3585,Missouri,"Gasconade County, Missouri",-91.5057795,38.4411826
+3586,Kentucky,"Bourbon County, Kentucky",-84.2098602,38.2025623
+3587,Louisiana,"Red River Parish, Louisiana",-93.3490504,32.1012125
+3588,Maryland,"Harford County, Maryland",-76.2997894,39.5374292
+3589,Montana,"Powell County, Montana",-112.9310998,46.8442254
+3590,Florida,"Monroe County, Florida",-81.2067767,25.6010428
+3591,Kentucky,"Letcher County, Kentucky",-82.8611749,37.1185034
+3592,Minnesota,"Morrison County, Minnesota",-94.2666194,46.0204839
+3593,Arkansas,"Clark County, Arkansas",-93.1762051,34.0533118
+3594,California,"Santa Barbara County, California",-120.038485,34.5373784
+3595,Illinois,"Winnebago County, Illinois",-89.1612053,42.3373957
+3596,New York,"Sullivan County, New York",-74.7646796,41.7201763
+3597,Ohio,"Brown County, Ohio",-83.8667723,38.9313769
+3598,Tennessee,"Haywood County, Tennessee",-89.2825359,35.5866898
+3599,Arizona,"Pima County, Arizona",-111.7830177,32.1282374
+3600,California,"Lake County, California",-122.7467569,39.0948019
+3601,New York,"Otsego County, New York",-75.028841,42.6297762
+3602,Minnesota,"Dakota County, Minnesota",-93.0624813,44.6708928
+3603,Arkansas,"Hot Spring County, Arkansas",-92.9441474,34.3151767
+3604,Florida,"Taylor County, Florida",-83.6164167,30.0169434
+3605,Missouri,"Platte County, Missouri",-94.7614717,39.3786957
+3606,Texas,"Wise County, Texas",-97.6539968,33.2190947
+3607,Florida,"Hernando County, Florida",-82.4648352,28.5679113
+3608,Texas,"Bell County, Texas",-97.4819209,31.0421099
+3609,Illinois,"DuPage County, Illinois",-88.0860383,41.8520581
+3610,Pennsylvania,"Lebanon County, Pennsylvania",-76.4580089,40.3673441
+3611,Utah,"Summit County, Utah",-110.9684862,40.8720603
+3612,Alabama,"Conecuh County, Alabama",-86.9920291,31.4282925
+3613,Louisiana,"Assumption Parish, Louisiana",-91.0505282,29.8998836
+3614,Minnesota,"Benton County, Minnesota",-94.0014395,45.7012268
+3615,Idaho,"Bonner County, Idaho",-116.5969397,48.3125124
+3616,Pennsylvania,"McKean County, Pennsylvania",-78.5724631,41.8145902
+3617,Massachusetts,"Nantucket County, Massachusetts",-70.1419099,41.3058778
+3618,Alabama,"Lauderdale County, Alabama",-87.6509966,34.9041221
+3619,Nebraska,"Cheyenne County, Nebraska",-103.0119289,41.2142358
+3620,Pennsylvania,"Lehigh County, Pennsylvania",-75.5906269,40.6142409
+3621,Louisiana,"Ascension Parish, Louisiana",-90.9100234,30.2029461
+3622,Kentucky,"Bell County, Kentucky",-83.6810456,36.7226801
+3623,Nebraska,"Colfax County, Nebraska",-97.0894549,41.5746753
+3624,Arkansas,"St. Francis County, Arkansas",-90.7421993,35.0144383
+3625,Michigan,"Cheboygan County, Michigan",-84.4952706,45.4761203
+3626,New Hampshire,"Merrimack County, New Hampshire",-71.6801295,43.2994849
+3627,California,"Fresno County, California",-119.6550193,36.7610058
+3628,Idaho,"Gooding County, Idaho",-114.8214203,42.9731849
+3629,Kentucky,"Clark County, Kentucky",-84.144974,37.9701332
+3630,Virginia,"Powhatan County, Virginia",-77.9128553,37.5494041
+3631,Tennessee,"Lauderdale County, Tennessee",-89.6277318,35.7629507
+3632,Texas,"Potter County, Texas",-101.893804,35.3986751
+3633,Virginia,"Lunenburg County, Virginia",-78.242313,36.9457567
+3634,Michigan,"Clinton County, Michigan",-84.5916949,42.950455
+3635,Arkansas,"Faulkner County, Arkansas",-92.3246543,35.1463563
+3636,Arkansas,"Johnson County, Arkansas",-93.4663223,35.5733586
+3637,Florida,"Charlotte County, Florida",-81.9408583,26.8688259
+3638,Tennessee,"Davidson County, Tennessee",-86.7847898,36.1691287
+3639,Kentucky,"Christian County, Kentucky",-87.4935542,36.8933877
+3640,Alabama,"Lamar County, Alabama",-88.0874309,33.7870852
+3641,Alabama,"Etowah County, Alabama",-86.0344203,34.0476377
+3642,Colorado,"Delta County, Colorado",-107.864757,38.8617559
+3643,Missouri,"St. Francois County, Missouri",-90.4738684,37.8107068
+3644,Ohio,"Lawrence County, Ohio",-82.5171856,38.6038659
+3645,Pennsylvania,"Armstrong County, Pennsylvania",-79.4641277,40.8123792
+3646,Idaho,"Bannock County, Idaho",-112.2289863,42.6929385
+3647,Louisiana,"West Carroll Parish, Louisiana",-91.4519982,32.7924797
+3648,Texas,"Gregg County, Texas",-94.8162759,32.4863971
+3649,Wisconsin,"Portage County, Wisconsin",-89.4980699,44.4762457
+3650,Ohio,"Fulton County, Ohio",-84.1242667,41.5972639
+3651,Alabama,"Dale County, Alabama",-85.609476,31.4306536
+3652,Minnesota,"Brown County, Minnesota",-94.7336472,44.2465415
+3653,Missouri,"Washington County, Missouri",-90.8970558,37.942315
+3654,Texas,"Bowie County, Texas",-94.4223747,33.4460512
+3655,Texas,"Ellis County, Texas",-96.7983357,32.3472789
+3656,Wisconsin,"Fond du Lac County, Wisconsin",-88.493284,43.7547219
+3657,Virginia,"Alleghany County, Virginia",-80.008669,37.7879048
+3658,Maryland,"Prince George's County, Maryland",-76.8472724,38.8258796
+3659,Wisconsin,"Chippewa County, Wisconsin",-91.2835054,45.0690918
+3660,Louisiana,"Acadia Parish, Louisiana",-92.4110366,30.291497
+3661,Louisiana,"Avoyelles Parish, Louisiana",-91.9937975,31.0850937
+3662,Kansas,"Allen County, Kansas",-95.3009448,37.8842285
+3663,Alabama,"Morgan County, Alabama",-86.8464021,34.4544844
+3664,Pennsylvania,"Erie County, Pennsylvania",-80.0963858,42.1179519
+3665,New York,"Erie County, New York",-78.7781922,42.752759
+3666,Kentucky,"Whitley County, Kentucky",-84.1445496,36.7580209
+3667,Kentucky,"Woodford County, Kentucky",-84.7481466,38.0427886
+3668,Louisiana,"Calcasieu Parish, Louisiana",-93.3580154,30.2295588
+3669,Michigan,"Monroe County, Michigan",-83.4871059,41.916097
+3670,Missouri,"Newton County, Missouri",-94.3347407,36.9080167
+3671,Mississippi,"Attala County, Mississippi",-89.5886221,33.0904703
+3672,Alabama,"Coffee County, Alabama",-85.9892014,31.4021833
+3673,Florida,"Miami-Dade County, Florida",-80.4990449,25.6104937
+3674,Texas,"Travis County, Texas",-97.6912697,30.2395128
+3675,Mississippi,"Tate County, Mississippi",-89.9431049,34.6495534
+3676,Kentucky,"Lyon County, Kentucky",-88.0833909,37.0239759
+3677,Wisconsin,"Green County, Wisconsin",-89.605639,42.6777275
+3678,California,"Orange County, California",-117.7772068,33.6756872
+3679,Florida,"Bay County, Florida",-85.6313477,30.2375633
+3680,Michigan,"Hillsdale County, Michigan",-84.6424093,41.8644753
+3681,Louisiana,"Morehouse Parish, Louisiana",-91.8003988,32.8200082
+3682,Mississippi,"Tunica County, Mississippi",-90.3717697,34.6522011
+3683,New York,"Bronx County, New York",-73.852939,40.8487111
+3684,Virginia,"Pulaski County, Virginia",-80.7134439,37.0633853
+3685,New Mexico,"Lincoln County, New Mexico",-105.4490834,33.7409407
+3686,Alabama,"Randolph County, Alabama",-85.4640679,33.2964753
+3687,Ohio,"Henry County, Ohio",-84.0658816,41.3350722
+3688,Utah,"Utah County, Utah",-111.6686673,40.120409
+3689,Kentucky,"Allen County, Kentucky",-86.192458,36.7507703
+3690,Louisiana,"Webster Parish, Louisiana",-93.3398245,32.7321522
+3691,Michigan,"Oakland County, Michigan",-83.3842103,42.6604518
+3692,Tennessee,"Bledsoe County, Tennessee",-85.205979,35.5936682
+3693,Arkansas,"Union County, Arkansas",-92.5981447,33.1682186
+3694,Iowa,"Des Moines County, Iowa",-91.1869253,40.9153392
+3695,Kentucky,"Ohio County, Kentucky",-86.844871,37.4778588
+3696,Alabama,"Elmore County, Alabama",-86.1427385,32.5972286
+3697,Oregon,"Union County, Oregon",-117.9991356,45.3040466
+3698,Tennessee,"Robertson County, Tennessee",-86.8693774,36.5275304
+3699,California,"Mono County, California",-118.8751668,37.9158363
+3700,Hawaii,"Honolulu County, Hawaii",-158.2019756,21.4613641
+3701,Pennsylvania,"Schuylkill County, Pennsylvania",-76.2178,40.7036899
+3702,South Carolina,"Edgefield County, South Carolina",-81.9682452,33.7764976
+3703,South Carolina,"Marion County, South Carolina",-79.3621305,34.0807006
+3704,South Carolina,"Darlington County, South Carolina",-79.9621155,34.3321854
+3705,Illinois,"Mercer County, Illinois",-90.7414333,41.2047906
+3706,Alabama,"Cherokee County, Alabama",-85.6542417,34.0695153
+3707,New York,"Fulton County, New York",-74.4236782,43.1156093
+3708,Kentucky,"Jessamine County, Kentucky",-84.5839603,37.8732908
+3709,Maine,"Kennebec County, Maine",-69.7657639,44.4170119
+3710,Alabama,"Limestone County, Alabama",-86.9813995,34.8102387
+3711,Tennessee,"Jackson County, Tennessee",-85.6741819,36.354242
+3712,Massachusetts,"Plymouth County, Massachusetts",-70.7419417,41.9871959
+3713,New York,"Ontario County, New York",-77.3032768,42.8566949
+3714,Arkansas,"Fulton County, Arkansas",-91.8192392,36.3834433
+3715,Minnesota,"Polk County, Minnesota",-96.4000266,47.7742536
+3716,Texas,"Denton County, Texas",-97.119046,33.2050051
+3717,Ohio,"Erie County, Ohio",-82.5258973,41.5540061
+3718,Maine,"Penobscot County, Maine",-68.6574869,45.3906022
+3719,Illinois,"Sangamon County, Illinois",-89.662311,39.7563782
+3720,Virginia,"Madison County, Virginia",-78.2769613,38.4120586
+3721,Nebraska,"Platte County, Nebraska",-97.5134673,41.5768655
+3722,Wisconsin,"Rock County, Wisconsin",-89.0751194,42.6699307
+3723,Iowa,"Cerro Gordo County, Iowa",-93.251266,43.0751708
+3724,Virginia,"Charlotte County, Virginia",-78.661424,37.0140909
+3725,Ohio,"Meigs County, Ohio",-82.0283968,39.0898068
+3726,Illinois,"Christian County, Illinois",-89.2795925,39.5455242
+3727,Oregon,"Columbia County, Oregon",-123.081079,45.941932
+3728,Massachusetts,"Barnstable County, Massachusetts",-70.2110827,41.7988188
+3729,Kansas,"Barton County, Kansas",-98.7678374,38.4812394
+3730,Pennsylvania,"Northampton County, Pennsylvania",-75.3074468,40.7527913
+3731,Mississippi,"Lauderdale County, Mississippi",-88.6604488,32.4039981
+3732,Michigan,"Newaygo County, Michigan",-85.7914227,43.5627086
+3733,Missouri,"Crawford County, Missouri",-91.3139328,37.9665605
+3734,Ohio,"Fairfield County, Ohio",-82.6282761,39.7529346
+3735,Nebraska,"Hall County, Nebraska",-98.4980036,40.8660232
+3736,Missouri,"Bates County, Missouri",-94.3392459,38.2572171
+3737,Virginia,"Franklin County, Virginia",-79.8839586,36.9923498
+3738,Pennsylvania,"Snyder County, Pennsylvania",-77.0729544,40.755348
+3739,Kentucky,"Mason County, Kentucky",-83.8280523,38.5940683
+3740,Montana,"Flathead County, Montana",-114.0543188,48.3146961
+3741,Arkansas,"Little River County, Arkansas",-94.229774,33.699497
+3742,Ohio,"Allen County, Ohio",-84.1065456,40.771528
+3743,Tennessee,"Anderson County, Tennessee",-84.1954177,36.1167307
+3744,New York,"Schenectady County, New York",-74.0435834,42.8175421
+3745,Kansas,"Cowley County, Kansas",-96.8372468,37.2345068
+3746,Pennsylvania,"Fayette County, Pennsylvania",-79.6445856,39.9141154
+3747,Oregon,"Josephine County, Oregon",-123.5972453,42.3853819
+3748,Arizona,"Apache County, Arizona",-109.4937467,35.3858453
+3749,California,"San Luis Obispo County, California",-120.4475404,35.3852268
+3750,Florida,"Wakulla County, Florida",-84.3751361,30.140378
+3751,New Jersey,"Atlantic County, New Jersey",-74.6337584,39.469354
+3752,Ohio,"Shelby County, Ohio",-84.2041425,40.3366802
+3753,Texas,"Lamar County, Texas",-95.5703477,33.6672628
+3754,Texas,"Panola County, Texas",-94.3051563,32.1639784
+3755,Louisiana,"Catahoula Parish, Louisiana",-91.846703,31.666517
+3756,Texas,"Upshur County, Texas",-94.9416491,32.7358779
+3757,Mississippi,"Lowndes County, Mississippi",-88.4397227,33.4714237
+3758,Montana,"Lincoln County, Montana",-115.4043432,48.5422316
+3759,Pennsylvania,"Butler County, Pennsylvania",-79.9189599,40.9138336
+3760,Virginia,"Bedford County, Virginia",-79.5279466,37.3124079
+3761,New York,"Suffolk County, New York",-72.6922184,40.943554
+3762,Mississippi,"Rankin County, Mississippi",-89.9465517,32.262057
+3763,Mississippi,"Wayne County, Mississippi",-88.6820566,31.6447604
+3764,Kansas,"Pottawatomie County, Kansas",-96.3371126,39.3821868
+3765,Tennessee,"Hardin County, Tennessee",-88.1856958,35.2018926
+3766,Michigan,"Van Buren County, Michigan",-86.3056965,42.2839861
+3767,Texas,"Smith County, Texas",-95.2696296,32.3770925
+3768,Wisconsin,"Marinette County, Wisconsin",-87.991198,45.3468989
+3769,Montana,"Silver Bow County, Montana",-112.6602218,45.895959
+3770,Pennsylvania,"Chester County, Pennsylvania",-75.7497323,39.9739654
+3771,Washington,"Clark County, Washington",-122.4859027,45.7716737
+3772,Louisiana,"Beauregard Parish, Louisiana",-93.3402526,30.6450184
+3773,Massachusetts,"Berkshire County, Massachusetts",-73.2139479,42.3753141
+3774,Louisiana,"Orleans Parish, Louisiana",-89.9390074,30.0686361
+3775,Minnesota,"Martin County, Minnesota",-94.5371975,43.677118
+3776,Missouri,"Oregon County, Missouri",-91.4029021,36.6848672
+3777,Montana,"Yellowstone County, Montana",-108.2766564,45.9369867
+3778,Kentucky,"Marshall County, Kentucky",-88.3327524,36.882017
+3779,New Jersey,"Sussex County, New Jersey",-74.6918545,41.1374239
+3780,New York,"Warren County, New York",-73.8381388,43.5551053
+3781,Florida,"Okaloosa County, Florida",-86.5941941,30.6658583
+3782,Missouri,"Lawrence County, Missouri",-93.8332618,37.1061352
+3783,Texas,"San Patricio County, Texas",-97.5171652,28.0117816
+3784,New Jersey,"Monmouth County, New Jersey",-74.1524457,40.287056
+3785,Missouri,"Callaway County, Missouri",-91.9240894,38.8359656
+3786,Texas,"Wood County, Texas",-95.3821664,32.7835881
+3787,Arizona,"Greenlee County, Arizona",-109.2423231,33.2388723
+3788,Mississippi,"Humphreys County, Mississippi",-90.523911,33.1329783
+3789,Mississippi,"Montgomery County, Mississippi",-89.6396251,33.5007144
+3790,Ohio,"Paulding County, Ohio",-84.5769665,41.1191409
+3791,Mississippi,"Alcorn County, Mississippi",-88.5810139,34.8866484
+3792,Michigan,"Jackson County, Michigan",-84.4208679,42.2484738
+3793,Missouri,"Christian County, Missouri",-93.1876139,36.9697388
+3794,Missouri,"Scott County, Missouri",-89.5680975,37.0477927
+3795,Illinois,"Kendall County, Illinois",-88.4306257,41.5881403
+3796,Iowa,"Scott County, Iowa",-90.6222899,41.6416793
+3797,New York,"Steuben County, New York",-77.3855253,42.2667252
+3798,Ohio,"Defiance County, Ohio",-84.4864334,41.3216789
+3799,Missouri,"McDonald County, Missouri",-94.3439556,36.630218
+3800,South Carolina,"Lexington County, South Carolina",-81.2728531,33.8925535
+3801,South Carolina,"Richland County, South Carolina",-80.8965664,34.0297833
+3802,Louisiana,"St. Charles Parish, Louisiana",-90.3593144,29.9138333
+3803,Kentucky,"Laurel County, Kentucky",-84.1193951,37.1132678
+3804,Washington,"Yakima County, Washington",-120.7401446,46.4565581
+3805,Louisiana,"St. John the Baptist Parish, Louisiana",-90.5046774,30.1174706
+3806,West Virginia,"Fayette County, West Virginia",-81.0860508,38.0309328
+3807,Alabama,"Winston County, Alabama",-87.3641471,34.1558884
+3808,Illinois,"Henry County, Illinois",-90.1308378,41.3500209
+3809,California,"Mendocino County, California",-123.4428811,39.4323876
+3810,Louisiana,"Jefferson Parish, Louisiana",-90.036231,29.5033
+3811,Missouri,"Andrew County, Missouri",-94.8035511,39.9888628
+3812,Pennsylvania,"Carbon County, Pennsylvania",-75.7094276,40.9178325
+3813,Virginia,"Spotsylvania County, Virginia",-77.6562804,38.1823112
+3814,Wisconsin,"Sawyer County, Wisconsin",-91.1471302,45.8649127
+3815,Iowa,"Pottawattamie County, Iowa",-95.5449053,41.3401835
+3816,Maryland,"Talbot County, Maryland",-76.1791304,38.7494273
+3817,Maine,"Cumberland County, Maine",-70.3303753,43.8083479
+3818,Wyoming,"Goshen County, Wyoming",-104.3534821,42.08958
+3819,Iowa,"Woodbury County, Iowa",-96.0532956,42.3932198
+3820,Pennsylvania,"Westmoreland County, Pennsylvania",-79.4666879,40.3110682
+3821,Arkansas,"Cleveland County, Arkansas",-92.1887141,33.8932006
+3822,Louisiana,"East Baton Rouge Parish, Louisiana",-91.093174,30.5440017
+3823,Nebraska,"Sarpy County, Nebraska",-96.1091254,41.1150635
+3824,Pennsylvania,"Blair County, Pennsylvania",-78.3106398,40.4979262
+3825,Florida,"Suwannee County, Florida",-82.9927542,30.1892438
+3826,Oregon,"Malheur County, Oregon",-117.6039759,43.1876999
+3827,West Virginia,"Nicholas County, West Virginia",-80.797516,38.2914157
+3828,Missouri,"Jasper County, Missouri",-94.3388687,37.2008646
+3829,Virginia,"Page County, Virginia",-78.4904708,38.6237508
+3830,Wyoming,"Sweetwater County, Wyoming",-108.8756762,41.6603393
+3831,New Mexico,"Bernalillo County, New Mexico",-106.6690645,35.0540019
+3832,Kentucky,"Jackson County, Kentucky",-84.0206858,37.4033198
+3833,Ohio,"Pike County, Ohio",-83.0529207,39.0713645
+3834,Delaware,"Sussex County, Delaware",-75.335495,38.6775108
+3835,Texas,"Hunt County, Texas",-96.0838072,33.1234378
+3836,California,"San Mateo County, California",-122.3715417,37.4146639
+3837,Louisiana,"Pointe Coupee Parish, Louisiana",-91.6046207,30.708319
+3838,Ohio,"Wood County, Ohio",-83.6226821,41.3601834
+3839,Washington,"Klickitat County, Washington",-120.7801171,45.8695091
+3840,Colorado,"Prowers County, Colorado",-102.3921613,37.9581814
+3841,Kansas,"Franklin County, Kansas",-95.2789618,38.5580187
+3842,Texas,"Cherokee County, Texas",-95.156504,31.8438587
+3843,Louisiana,"Iberville Parish, Louisiana",-91.3631498,30.2883936
+3844,Missouri,"Stoddard County, Missouri",-89.9417354,36.8554282
+3845,Mississippi,"Jefferson Davis County, Mississippi",-89.8266262,31.5647338
+3846,Oregon,"Hood River County, Oregon",-121.6559762,45.5117753
+3847,Florida,"Union County, Florida",-82.366918,30.0542796
+3848,Washington,"Chelan County, Washington",-120.6185425,47.8598915
+3849,Washington,"Jefferson County, Washington",-123.5218104,47.8026411
+3850,Pennsylvania,"Wyoming County, Pennsylvania",-76.0087796,41.525137
+3851,Colorado,"Denver County, Colorado",-104.8806251,39.7618487
+3852,Colorado,"Weld County, Colorado",-104.3836487,40.5557944
+3853,New York,"Tioga County, New York",-76.2974503,42.1780568
+3854,Pennsylvania,"Lancaster County, Pennsylvania",-76.250198,40.0419921
+3855,Ohio,"Cuyahoga County, Ohio",-81.7242168,41.760392
+3856,Virginia,"Goochland County, Virginia",-77.9142734,37.7241655
+3857,Washington,"Kittitas County, Washington",-120.6767136,47.1244443
+3858,Virginia,"Louisa County, Virginia",-77.9591779,37.9716808
+3859,Pennsylvania,"Luzerne County, Pennsylvania",-75.9760345,41.1727868
+3860,Missouri,"Adair County, Missouri",-92.6035922,40.1906655
+3861,Arkansas,"Pulaski County, Arkansas",-92.3165149,34.7739877
+3862,Florida,"Okeechobee County, Florida",-80.8873884,27.3855924
+3863,Kentucky,"Floyd County, Kentucky",-82.7403367,37.5582827
+3864,South Carolina,"Cherokee County, South Carolina",-81.6076469,35.0497962
+3865,Virginia,"Chesapeake city, Virginia",-76.3017884,36.6793761
+3866,Louisiana,"Iberia Parish, Louisiana",-91.8427057,29.6060126
+3867,Illinois,"Williamson County, Illinois",-88.9300182,37.7303533
+3868,Wisconsin,"St. Croix County, Wisconsin",-92.4472842,45.0289589
+3869,West Virginia,"Marshall County, West Virginia",-80.671378,39.8547174
+3870,Arkansas,"Marion County, Arkansas",-92.678588,36.2666562
+3871,Arkansas,"Independence County, Arkansas",-91.5599423,35.7374992
+3872,Pennsylvania,"Mercer County, Pennsylvania",-80.2527863,41.3000142
+3873,Texas,"Van Zandt County, Texas",-95.8363905,32.5589476
+3874,Ohio,"Morgan County, Ohio",-81.8616989,39.6249463
+3875,Virginia,"Carroll County, Virginia",-80.728043,36.7324256
+3876,South Carolina,"Horry County, South Carolina",-78.9766749,33.9092694
+3877,Mississippi,"Pontotoc County, Mississippi",-89.0372387,34.2270808
+3878,Wisconsin,"Walworth County, Wisconsin",-88.5417306,42.6681095
+3879,Arkansas,"Franklin County, Arkansas",-93.8876719,35.508573
+3880,Illinois,"Fulton County, Illinois",-90.2067925,40.4656878
+3881,Maryland,"Cecil County, Maryland",-75.9415843,39.5623524
+3882,Texas,"Harris County, Texas",-95.3930371,29.857273
+3883,Wisconsin,"Dunn County, Wisconsin",-91.8977203,44.9477408
+3884,Oregon,"Clackamas County, Oregon",-122.1951274,45.1604934
+3885,Mississippi,"Copiah County, Mississippi",-90.4487578,31.8669151
+3886,New York,"Tompkins County, New York",-76.4737116,42.4532811
+3887,Alabama,"Marshall County, Alabama",-86.3216681,34.3095637
+3888,Pennsylvania,"Berks County, Pennsylvania",-75.9268598,40.4139565
+3889,Texas,"Harrison County, Texas",-94.3744253,32.5479928
+3890,Florida,"Jackson County, Florida",-85.2103738,30.787812
+3891,Kentucky,"Hardin County, Kentucky",-85.9631827,37.6958356
+3892,Kentucky,"Morgan County, Kentucky",-83.2589444,37.9229402
+3893,Missouri,"Camden County, Missouri",-92.7651375,38.031995
+3894,Arkansas,"Logan County, Arkansas",-93.7205628,35.2185495
+3895,Hawaii,"Maui County, Hawaii",-156.6015503,20.8559306
+3896,Virginia,"Grayson County, Virginia",-81.2253365,36.6563026
+3897,California,"Siskiyou County, California",-122.5332868,41.5879861
+3898,Missouri,"Cole County, Missouri",-92.2714039,38.5068473
+3899,Mississippi,"Benton County, Mississippi",-89.2000291,34.8107726
+3900,Utah,"Sanpete County, Utah",-111.570451,39.3805876
+3901,Tennessee,"Cannon County, Tennessee",-86.0624044,35.808394
+3902,Tennessee,"Grainger County, Tennessee",-83.5094926,36.2774634
+3903,Texas,"DeWitt County, Texas",-97.3616556,29.0823417
+3904,Texas,"Hill County, Texas",-97.1298856,31.9822401
+3905,Ohio,"Auglaize County, Ohio",-84.2240177,40.561309
+3906,Mississippi,"Holmes County, Mississippi",-90.0911968,33.1259415
+3907,New Jersey,"Middlesex County, New Jersey",-74.4075852,40.4395925
+3908,Kentucky,"Warren County, Kentucky",-86.4235786,36.995634
+3909,Illinois,"Stephenson County, Illinois",-89.6659942,42.3497262
+3910,Louisiana,"Washington Parish, Louisiana",-90.0462534,30.8521435
+3911,Wisconsin,"Manitowoc County, Wisconsin",-87.3138281,44.1051076
+3912,Ohio,"Licking County, Ohio",-82.4812506,40.0936093
+3913,New Jersey,"Mercer County, New Jersey",-74.703724,40.2825027
+3914,Missouri,"Pemiscot County, Missouri",-89.7859419,36.2099162
+3915,Tennessee,"Gibson County, Tennessee",-88.9337756,35.9916941
+3916,New Jersey,"Morris County, New Jersey",-74.5474268,40.8585805
+3917,California,"San Francisco County, California",-123.0322294,37.7272391
+3918,Florida,"Broward County, Florida",-80.4766578,26.19352
+3919,Nebraska,"Buffalo County, Nebraska",-99.0749833,40.855226
+3920,Wisconsin,"Oneida County, Wisconsin",-89.5366933,45.7137913
+3921,South Carolina,"Orangeburg County, South Carolina",-80.8029131,33.436135
+3922,Ohio,"Seneca County, Ohio",-83.1274357,41.1200082
+3923,New York,"New York County, New York",-73.9701736,40.7765574
+3924,Arkansas,"Carroll County, Arkansas",-93.5416633,36.3377742
+3925,Kentucky,"Pike County, Kentucky",-82.4028687,37.4820665
+3926,New Mexico,"Doqa Ana County, New Mexico",-106.8321821,32.3509119
+3927,Wisconsin,"Trempealeau County, Wisconsin",-91.3588668,44.3030501
+3928,Maryland,"Howard County, Maryland",-76.9244057,39.2522639
+3929,Ohio,"Ross County, Ohio",-83.0595848,39.3237625
+3930,West Virginia,"Wetzel County, West Virginia",-80.6343936,39.5965743
+3931,Arkansas,"Poinsett County, Arkansas",-90.6805953,35.5689809
+3932,Kentucky,"Logan County, Kentucky",-86.8814363,36.8598288
+3933,Alabama,"Pike County, Alabama",-85.9419965,31.7987263
+3934,Alabama,"Tuscaloosa County, Alabama",-87.5228598,33.2902022
+3935,Tennessee,"Franklin County, Tennessee",-86.0992032,35.1559259
+3936,Idaho,"Elmore County, Idaho",-115.4707508,43.3948263
+3937,Mississippi,"Greene County, Mississippi",-88.6348108,31.2128455
+3938,New Mexico,"Valencia County, New Mexico",-106.8065821,34.7168404
+3939,Kentucky,"Wayne County, Kentucky",-84.8304404,36.8020113
+3940,Missouri,"Polk County, Missouri",-93.4008166,37.6167611
+3941,Arkansas,"Sebastian County, Arkansas",-94.274989,35.1969808
+3942,Texas,"Hardin County, Texas",-94.3931493,30.3296124
+3943,Maryland,"Somerset County, Maryland",-75.8533228,38.0744501
+3944,Mississippi,"Adams County, Mississippi",-91.3517814,31.4862176
+3945,Washington,"Asotin County, Washington",-117.2277813,46.1818612
+3946,Alabama,"Colbert County, Alabama",-87.8014569,34.703112
+3947,California,"Santa Clara County, California",-121.6906224,37.2207774
+3948,Virginia,"Warren County, Virginia",-78.2071314,38.9081874
+3949,Iowa,"Jasper County, Iowa",-93.0529712,41.6856863
+3950,Kansas,"Geary County, Kansas",-96.7680381,39.0021553
+3951,Minnesota,"Olmsted County, Minnesota",-92.4067216,44.0034295
+3952,Mississippi,"Calhoun County, Mississippi",-89.3371142,33.9366339
+3953,Arkansas,"Phillips County, Arkansas",-90.8483856,34.4258423
+3954,Florida,"DeSoto County, Florida",-81.8062531,27.1905809
+3955,Minnesota,"Faribault County, Minnesota",-93.9472338,43.6765219
+3956,Pennsylvania,"Mifflin County, Pennsylvania",-77.6206614,40.6118896
+3957,Texas,"Jefferson County, Texas",-94.1493306,29.8539997
+3958,Florida,"Manatee County, Florida",-82.3657835,27.481386
+3959,Texas,"Palo Pinto County, Texas",-98.3179744,32.7522101
+3960,Virginia,"Fairfax County, Virginia",-77.2761174,38.8337425
+3961,California,"Trinity County, California",-123.1144043,40.6477241
+3962,Michigan,"St. Clair County, Michigan",-82.6689135,42.9288035
+3963,Minnesota,"Dodge County, Minnesota",-92.869353,44.0207056
+3964,Tennessee,"Madison County, Tennessee",-88.8334238,35.6060563
+3965,Arkansas,"Lincoln County, Arkansas",-91.7276236,33.9576649
+3966,Michigan,"Cass County, Michigan",-85.9994574,41.91624
+3967,Alabama,"St. Clair County, Alabama",-86.3156631,33.7129627
+3968,New York,"Saratoga County, New York",-73.8553872,43.1061353
+3969,Pennsylvania,"Columbia County, Pennsylvania",-76.4042599,41.0455174
+3970,Tennessee,"Clay County, Tennessee",-85.5457178,36.5457651
+3971,Kentucky,"Meade County, Kentucky",-86.2008628,37.9674757
+3972,Texas,"Comanche County, Texas",-98.5496169,31.9516447
+3973,Texas,"Hale County, Texas",-101.8228878,34.0684364
+3974,Kentucky,"Simpson County, Kentucky",-86.5814635,36.7408632
+3975,Virginia,"Caroline County, Virginia",-77.3523482,38.0303193
+3976,Iowa,"Poweshiek County, Iowa",-92.5228819,41.6845262
+3977,Washington,"Pierce County, Washington",-122.144709,47.0407155
+3978,Kansas,"Jefferson County, Kansas",-95.375314,39.239644
+3979,Kansas,"McPherson County, Kansas",-97.6474893,38.395812
+3980,Oregon,"Klamath County, Oregon",-121.6461682,42.6837613
+3981,Pennsylvania,"Bedford County, Pennsylvania",-78.4899795,39.997115
+3982,South Dakota,"Day County, South Dakota",-97.5937339,45.3622825
+3983,Tennessee,"McNairy County, Tennessee",-88.5646713,35.1756263
+3984,Michigan,"Muskegon County, Michigan",-86.751892,43.2892579
+3985,Pennsylvania,"Jefferson County, Pennsylvania",-78.9990439,41.1302871
+3986,Rhode Island,"Providence County, Rhode Island",-71.5782416,41.8704877
+3987,Texas,"Tarrant County, Texas",-97.2912913,32.77204
+3988,Texas,"Walker County, Texas",-95.5698884,30.7430899
+3989,Virginia,"Amelia County, Virginia",-77.9732178,37.3361313
+3990,Ohio,"Sandusky County, Ohio",-83.142735,41.3552905
+3991,Oregon,"Yamhill County, Oregon",-123.3161171,45.2481382
+3992,Mississippi,"Harrison County, Mississippi",-89.0833762,30.4165357
+3993,West Virginia,"Taylor County, West Virginia",-80.0456287,39.3290724
+3994,Pennsylvania,"Perry County, Pennsylvania",-77.2663284,40.3977795
+3995,Minnesota,"Hennepin County, Minnesota",-93.4751846,45.0060644
+3996,Missouri,"Cooper County, Missouri",-92.8123231,38.8453861
+3997,California,"Ventura County, California",-119.1331432,34.3587415
+3998,Florida,"Indian River County, Florida",-80.5748033,27.7006382
+3999,Arizona,"Maricopa County, Arizona",-112.4955335,33.3465408
+4000,Tennessee,"Carter County, Tennessee",-82.1265932,36.2847441
+4001,Missouri,"New Madrid County, Missouri",-89.6559485,36.5942608
+4002,Virginia,"Franklin city, Virginia",-76.9413956,36.6840142
+4003,Tennessee,"Hickman County, Tennessee",-87.4671144,35.8023956
+4004,Alabama,"DeKalb County, Alabama",-85.803992,34.460929
+4005,Virginia,"Rockingham County, Virginia",-78.876307,38.5112574
+4006,West Virginia,"Harrison County, West Virginia",-80.3864869,39.2791993
+4007,New Jersey,"Camden County, New Jersey",-74.9612508,39.8023521
+4008,Ohio,"Lake County, Ohio",-81.3926429,41.9241163
+4009,South Carolina,"Dillon County, South Carolina",-79.3749638,34.3901723
+4010,Virginia,"Alexandria city, Virginia",-77.0820263,38.8183429
+4011,Wisconsin,"Clark County, Wisconsin",-90.6102007,44.7335964
+4012,Kentucky,"Menifee County, Kentucky",-83.5973453,37.9507147
+4013,Louisiana,"Rapides Parish, Louisiana",-92.5359531,31.1932037
+4014,Minnesota,"Goodhue County, Minnesota",-92.7160003,44.4061779
+4015,New Mexico,"Sierra County, New Mexico",-107.1881607,33.119479
+4016,Virginia,"Halifax County, Virginia",-78.9396142,36.766461
+4017,Colorado,"Otero County, Colorado",-103.7212597,37.8841698
+4018,Florida,"Hardee County, Florida",-81.8215798,27.4928458
+4019,West Virginia,"Morgan County, West Virginia",-78.2573143,39.5548351
+4020,Wyoming,"Fremont County, Wyoming",-108.605531,43.0553034
+4021,West Virginia,"Pendleton County, West Virginia",-79.333707,38.6868364
+4022,South Carolina,"Union County, South Carolina",-81.6158309,34.6905135
+4023,Virginia,"Lee County, Virginia",-83.1303336,36.7021617
+4024,Tennessee,"Blount County, Tennessee",-83.9229731,35.6881849
+4025,Maryland,"Montgomery County, Maryland",-77.2030633,39.1373815
+4026,Maryland,"Worcester County, Maryland",-75.3099315,38.2221332
+4027,Arizona,"Gila County, Arizona",-110.8118696,33.7896177
+4028,Oregon,"Morrow County, Oregon",-119.6023111,45.4254956
+4029,Louisiana,"La Salle Parish, Louisiana",-92.161809,31.6808355
+4030,Michigan,"Ingham County, Michigan",-84.3738107,42.6035338
+4031,New York,"Oneida County, New York",-75.4342824,43.2427273
+4032,Minnesota,"Washington County, Minnesota",-92.890117,45.037929
+4033,Louisiana,"Madison Parish, Louisiana",-91.240729,32.3658243
+4034,South Carolina,"Beaufort County, South Carolina",-80.6893201,32.3581474
+4035,Louisiana,"St. James Parish, Louisiana",-90.7939556,30.02482
+4036,Mississippi,"Bolivar County, Mississippi",-90.8844762,33.799278
+4037,Wisconsin,"Marquette County, Wisconsin",-89.4090953,43.8260529
+4038,Texas,"Lubbock County, Texas",-101.8199438,33.6114688
+4039,Minnesota,"Carver County, Minnesota",-93.8005751,44.8213808
+4040,Kentucky,"Greenup County, Kentucky",-82.9338325,38.5635956
+4041,Massachusetts,"Middlesex County, Massachusetts",-71.396507,42.479477
+4042,Minnesota,"Pine County, Minnesota",-92.7630936,46.1009402
+4043,Missouri,"Lafayette County, Missouri",-93.8026388,39.0687048
+4044,West Virginia,"Brooke County, West Virginia",-80.5786912,40.2726454
+4045,Arkansas,"Van Buren County, Arkansas",-92.5159772,35.5829588
+4046,Missouri,"Jefferson County, Missouri",-90.5431382,38.2574144
+4047,New Jersey,"Ocean County, New Jersey",-74.2630272,39.8658498
+4048,Kentucky,"Monroe County, Kentucky",-85.713508,36.714077
+4049,Alabama,"Dallas County, Alabama",-87.1143556,32.3335397
+4050,Michigan,"Lake County, Michigan",-85.8113997,43.9951867
+4051,Texas,"Maverick County, Texas",-100.3113679,28.7452172
+4052,Wyoming,"Albany County, Wyoming",-105.7218826,41.6655141
+4053,Alabama,"Madison County, Alabama",-86.5510803,34.7642377
+4054,Missouri,"St. Charles County, Missouri",-90.6749153,38.7811023
+4055,Texas,"Angelina County, Texas",-94.6110558,31.2519514
+4056,Missouri,"Howard County, Missouri",-92.6959255,39.143365
+4057,Alabama,"Jackson County, Alabama",-85.9774003,34.7635224
+4058,Alabama,"Jefferson County, Alabama",-86.8965359,33.5534439
+4059,South Carolina,"Jasper County, South Carolina",-81.021627,32.43059
+4060,Kansas,"Bourbon County, Kansas",-94.8509284,37.8560997
+4061,Alabama,"Cullman County, Alabama",-86.8692666,34.1319229
+4062,Michigan,"Kent County, Michigan",-85.547446,43.0324971
+4063,Alabama,"Butler County, Alabama",-86.6819689,31.751667
+4064,Arkansas,"Lonoke County, Arkansas",-91.894132,34.7551137
+4065,Tennessee,"Scott County, Tennessee",-84.4983861,36.4372392
+4066,Kansas,"Dickinson County, Kansas",-97.1579434,38.8677353
+4067,Missouri,"Cass County, Missouri",-94.3542424,38.6471588
+4068,Utah,"Davis County, Utah",-112.2021234,41.0370451
+4069,Kentucky,"Harrison County, Kentucky",-84.3327961,38.4434891
+4070,Maine,"Aroostook County, Maine",-68.6494098,46.7270567
+4071,Ohio,"Tuscarawas County, Ohio",-81.471157,40.4474411
+4072,Iowa,"Page County, Iowa",-95.1442898,40.7390902
+4073,Ohio,"Warren County, Ohio",-84.1699063,39.4256516
+4074,Arkansas,"Sharp County, Arkansas",-91.4710689,36.1733989
+4075,Tennessee,"Knox County, Tennessee",-83.9377209,35.9927265
+4076,Mississippi,"Yazoo County, Mississippi",-90.3879282,32.7656747
+4077,Massachusetts,"Hampshire County, Massachusetts",-72.6636936,42.3394593
+4078,Texas,"Brown County, Texas",-98.9984697,31.7641026
+4079,Louisiana,"Jackson Parish, Louisiana",-92.5566722,32.3044796
+4080,Arkansas,"Arkansas County, Arkansas",-91.3765467,34.2895735
+4081,Illinois,"Cook County, Illinois",-87.6454546,41.8942937
+4082,Mississippi,"Jackson County, Mississippi",-88.6199906,30.4584911
+4083,Arkansas,"Greene County, Arkansas",-90.5652409,36.1199223
+4084,Colorado,"La Plata County, Colorado",-107.8397178,37.2873673
+4085,Ohio,"Butler County, Ohio",-84.5653972,39.4399154
+4086,Ohio,"Summit County, Ohio",-81.5349361,41.1218513
+4087,Kentucky,"Todd County, Kentucky",-87.1836416,36.8403384
+4088,Kansas,"Butler County, Kansas",-96.8387616,37.7736811
+4089,Washington,"Mason County, Washington",-123.1738498,47.3541257
+4090,New York,"Queens County, New York",-73.8379293,40.6585571
+4091,Louisiana,"Tangipahoa Parish, Louisiana",-90.4066332,30.6215806
+4092,Virginia,"Shenandoah County, Virginia",-78.5739867,38.856204
+4093,Iowa,"Wapello County, Iowa",-92.4094822,41.0312631
+4094,Colorado,"Boulder County, Colorado",-105.3983824,40.0948262
+4095,Minnesota,"Nobles County, Minnesota",-95.7631323,43.6776863
+4096,Texas,"Brazos County, Texas",-96.3023887,30.6567254
+4097,New Mexico,"Los Alamos County, New Mexico",-106.3079679,35.8700469
+4098,South Carolina,"Calhoun County, South Carolina",-80.7803468,33.6747804
+4099,Alabama,"Pickens County, Alabama",-88.096878,33.2968085
+4100,Missouri,"DeKalb County, Missouri",-94.4071901,39.8946645
+4101,Mississippi,"Scott County, Mississippi",-89.5332094,32.4271272
+4102,Ohio,"Knox County, Ohio",-82.422393,40.4036198
+4103,Ohio,"Mercer County, Ohio",-84.6320588,40.5353325
+4104,Wisconsin,"Juneau County, Wisconsin",-90.1139837,43.9328362
+4105,Minnesota,"Beltrami County, Minnesota",-94.9866978,47.8788247
+4106,New Hampshire,"Grafton County, New Hampshire",-71.8422643,43.9264884
+4107,Ohio,"Clark County, Ohio",-83.783676,39.9170315
+4108,Florida,"Osceola County, Florida",-81.1393116,28.0590267
+4109,Alabama,"Montgomery County, Alabama",-86.2038308,32.2036505
+4110,Massachusetts,"Essex County, Massachusetts",-70.8651073,42.642711
+4111,Oregon,"Benton County, Oregon",-123.4263169,44.4906234
+4112,Alabama,"Choctaw County, Alabama",-88.2488874,31.9910082
+4113,Colorado,"Saguache County, Colorado",-106.2466749,38.0339518
+4114,Tennessee,"Greene County, Tennessee",-82.847746,36.1789979
+4115,Michigan,"Wayne County, Michigan",-83.2619533,42.2846636
+4116,Virginia,"Gloucester County, Virginia",-76.5235051,37.4035413
+4117,Wisconsin,"Green Lake County, Wisconsin",-88.9872277,43.7614097
+4118,Arkansas,"Desha County, Arkansas",-91.2444274,33.8287478
+4119,Arkansas,"Chicot County, Arkansas",-91.2971578,33.2671393
+4120,Kentucky,"Barren County, Kentucky",-85.92499,36.9636142
+4121,Minnesota,"Freeborn County, Minnesota",-93.3502887,43.6742019
+4122,Massachusetts,"Hampden County, Massachusetts",-72.6356476,42.1361975
+4123,Virginia,"Portsmouth city, Virginia",-76.3562686,36.8594298
+4124,New Mexico,"Santa Fe County, New Mexico",-105.9664409,35.5137223
+4125,Illinois,"Logan County, Illinois",-89.3653078,40.1290697
+4126,Arizona,"Yavapai County, Arizona",-112.5737449,34.6300439
+4127,Ohio,"Miami County, Ohio",-84.2284135,40.0533257
+4128,Florida,"Pinellas County, Florida",-82.739518,27.903122
+4129,Idaho,"Minidoka County, Idaho",-113.6400095,42.8569373
+4130,Illinois,"Kane County, Illinois",-88.4280395,41.9395938
+4131,New York,"Rensselaer County, New York",-73.5138454,42.7104206
+4132,Virginia,"Culpeper County, Virginia",-77.9564758,38.4859303
+4133,New York,"Oswego County, New York",-76.209258,43.4614428
+4134,Tennessee,"Bradley County, Tennessee",-84.8594137,35.1539144
+4135,Michigan,"Mason County, Michigan",-86.7508137,43.9966363
+4136,Tennessee,"Carroll County, Tennessee",-88.4516591,35.9678963
+4137,Alabama,"Covington County, Alabama",-86.4487206,31.2439873
+4138,Pennsylvania,"Somerset County, Pennsylvania",-79.0284859,39.9812968
+4139,Ohio,"Scioto County, Ohio",-82.9990277,38.8150188
+4140,Idaho,"Blaine County, Idaho",-113.9552897,43.3944816
+4141,Washington,"Grays Harbor County, Washington",-123.8270425,47.1427856
+4142,Idaho,"Nez Perce County, Idaho",-116.7609025,46.3337663
+4143,Texas,"Freestone County, Texas",-96.1442374,31.701654
+4144,Illinois,"Woodford County, Illinois",-89.2103006,40.7895956
+4145,Michigan,"Chippewa County, Michigan",-84.5206297,46.3218192
+4146,West Virginia,"Mingo County, West Virginia",-82.1589931,37.7211509
+4147,New York,"Rockland County, New York",-74.0247721,41.1547851
+4148,Virginia,"Fauquier County, Virginia",-77.8215847,38.7441032
+4149,Mississippi,"Warren County, Mississippi",-90.8517913,32.3570054
+4150,Kentucky,"Butler County, Kentucky",-86.6824707,37.2070133
+4151,Louisiana,"Richland Parish, Louisiana",-91.7583745,32.4181207
+4152,Texas,"McLennan County, Texas",-97.2014721,31.549493
+4153,Kentucky,"Trigg County, Kentucky",-87.8586515,36.8076808
+4154,Illinois,"McHenry County, Illinois",-88.452245,42.3242982
+4155,Virginia,"Tazewell County, Virginia",-81.5629237,37.1253949
+4156,Virginia,"Hanover County, Virginia",-77.4909916,37.7601655
+4157,Wisconsin,"Adams County, Wisconsin",-89.7672232,43.9737629
+4158,Connecticut,"Hartford County, Connecticut",-72.7329157,41.8060534
+4159,Kentucky,"Caldwell County, Kentucky",-87.87051,37.1486431
+4160,South Carolina,"Dorchester County, South Carolina",-80.4046966,33.0821859
+4161,Tennessee,"Maury County, Tennessee",-87.0777632,35.6156963
+4162,Michigan,"Lapeer County, Michigan",-83.2243247,43.0886327
+4163,Colorado,"Grand County, Colorado",-106.0958757,40.1232891
+4164,Ohio,"Lucas County, Ohio",-83.4688665,41.6823213
+4165,Arkansas,"Jackson County, Arkansas",-91.223178,35.5966053
+4166,California,"San Bernardino County, California",-116.1811967,34.8572198
+4167,Maryland,"Baltimore County, Maryland",-76.6165693,39.4431666
+4168,Missouri,"Henry County, Missouri",-93.7926278,38.3864909
+4169,Alabama,"Greene County, Alabama",-87.9642005,32.8444965
+4170,Texas,"Grayson County, Texas",-96.6756986,33.6245082
+4171,California,"Tehama County, California",-122.2322757,40.1261561
+4172,Missouri,"Nodaway County, Missouri",-94.8832814,40.3604838
+4173,Mississippi,"George County, Mississippi",-88.6422679,30.8554305
+4174,Arkansas,"Boone County, Arkansas",-93.0792041,36.3043077
+4175,California,"Tuolumne County, California",-119.9647084,38.021451
+4176,Colorado,"Moffat County, Colorado",-108.2045214,40.5739839
+4177,Kansas,"Norton County, Kansas",-99.8992352,39.7838666
+4178,Ohio,"Logan County, Ohio",-83.766343,40.3875532
+4179,Idaho,"Latah County, Idaho",-116.7309737,46.8189202
+4180,Tennessee,"Shelby County, Tennessee",-89.895397,35.1837942
+4181,West Virginia,"Ritchie County, West Virginia",-81.0663167,39.1771117
+4182,Arkansas,"Searcy County, Arkansas",-92.6993507,35.9096596
+4183,Texas,"Montgomery County, Texas",-95.5035226,30.3023644
+4184,Wisconsin,"Polk County, Wisconsin",-92.4531541,45.4680297
+4185,Arkansas,"Conway County, Arkansas",-92.6892483,35.2657024
+4186,New York,"Jefferson County, New York",-76.0535218,43.9953714
+4187,Tennessee,"Unicoi County, Tennessee",-82.4182453,36.1002148
+4188,Virginia,"Henry County, Virginia",-79.9805844,36.6205931
+4189,Virginia,"Hampton city, Virginia",-76.2971486,37.0480303
+4190,Iowa,"Clayton County, Iowa",-91.3235108,42.8409979
+4191,Iowa,"Boone County, Iowa",-93.9391375,42.0386005
+4192,Texas,"Brazoria County, Texas",-95.434647,29.1678175
+4193,New Hampshire,"Coos County, New Hampshire",-71.2893827,44.6524194
+4194,Illinois,"Rock Island County, Illinois",-90.5722031,41.4684044
+4195,Wisconsin,"Grant County, Wisconsin",-90.6953683,42.8700621
+4196,Texas,"Kerr County, Texas",-99.351968,30.0539275
+4197,Virginia,"Smyth County, Virginia",-81.5397861,36.8423183
+4198,Virginia,"Salem city, Virginia",-80.0552407,37.2853329
+4199,Minnesota,"Le Sueur County, Minnesota",-93.7301797,44.3733973
+4200,Kansas,"Douglas County, Kansas",-95.2905294,38.8965726
+4201,Florida,"Highlands County, Florida",-81.3409213,27.3426272
+4202,Michigan,"Otsego County, Michigan",-84.5765966,45.0217942
+4203,Nebraska,"Cass County, Nebraska",-96.1406086,40.9098778
+4204,Texas,"Taylor County, Texas",-99.8932198,32.2956844
+4205,New Mexico,"Chaves County, New Mexico",-104.4698374,33.3616045
+4206,Colorado,"Elbert County, Colorado",-104.1179275,39.3108167
+4207,Wisconsin,"Washington County, Wisconsin",-88.2329166,43.391156
+4208,Tennessee,"Benton County, Tennessee",-88.0712118,36.069253
+4209,Tennessee,"Roane County, Tennessee",-84.5238612,35.8474721
+4210,Illinois,"Adams County, Illinois",-91.1949607,39.9860525
+4211,Arkansas,"Grant County, Arkansas",-92.4239843,34.2880633
+4212,Colorado,"Montrose County, Colorado",-108.2630424,38.4134267
+4213,Virginia,"Russell County, Virginia",-82.0959342,36.9334198
+4214,Arkansas,"Baxter County, Arkansas",-92.3304383,36.28071
+4215,Colorado,"Adams County, Colorado",-104.3318718,39.8743252
+4216,Tennessee,"Hawkins County, Tennessee",-82.9313857,36.452206
+4217,Virginia,"James City County, Virginia",-76.7783194,37.3244273
+4218,Washington,"Snohomish County, Washington",-121.7664118,48.054913
+4219,Pennsylvania,"Huntingdon County, Pennsylvania",-77.9685836,40.4223212
+4220,Colorado,"El Paso County, Colorado",-104.5274718,38.8273831
+4221,West Virginia,"Gilmer County, West Virginia",-80.8494093,38.9158652
+4222,Kentucky,"Union County, Kentucky",-87.9516496,37.6580293
+4223,Virginia,"Patrick County, Virginia",-80.2861409,36.6673274
+4224,Wisconsin,"Calumet County, Wisconsin",-88.2121322,44.0784104
+4225,Minnesota,"Ramsey County, Minnesota",-93.1001408,45.0152499
+4226,Missouri,"Howell County, Missouri",-91.8873677,36.7743685
+4227,Florida,"Escambia County, Florida",-87.33904,30.6116644
+4228,Illinois,"Marion County, Illinois",-88.9202214,38.6483956
+4229,West Virginia,"Putnam County, West Virginia",-81.906109,38.5105128
+4230,New York,"Chenango County, New York",-75.6049051,42.489732
+4231,Texas,"Coryell County, Texas",-97.7980223,31.3911774
+4232,Michigan,"Montcalm County, Michigan",-85.1494679,43.3127822
+4233,Missouri,"Audrain County, Missouri",-91.8434148,39.2144798
+4234,Arkansas,"Izard County, Arkansas",-91.9136252,36.0948792
+4235,Wisconsin,"Ashland County, Wisconsin",-90.6651539,46.5462905
+4236,Iowa,"Dallas County, Iowa",-94.0407065,41.6853206
+4237,Wisconsin,"Sauk County, Wisconsin",-89.943329,43.4279976
+4238,West Virginia,"Hancock County, West Virginia",-80.5700565,40.5169313
+4239,Iowa,"Marion County, Iowa",-93.093849,41.3314552
+4240,New York,"Richmond County, New York",-74.1370633,40.5638553
+4241,Illinois,"Will County, Illinois",-87.9784564,41.4484742
+4242,Kansas,"Crawford County, Kansas",-94.8539407,37.5056283
+4243,Kansas,"Shawnee County, Kansas",-95.7556639,39.0418052
+4244,Tennessee,"Williamson County, Tennessee",-86.896958,35.894972
+4245,Minnesota,"Isanti County, Minnesota",-93.2963388,45.5624313
+4246,Arkansas,"Sevier County, Arkansas",-94.2432898,33.9946083
+4247,Florida,"Putnam County, Florida",-81.7408939,29.6060059
+4248,Tennessee,"Hamblen County, Tennessee",-83.2660711,36.2183967
+4249,Minnesota,"Mower County, Minnesota",-92.7595136,43.6662486
+4250,Missouri,"Miller County, Missouri",-92.4298711,38.2167197
+4251,West Virginia,"McDowell County, West Virginia",-81.6582048,37.3826627
+4252,Ohio,"Delaware County, Ohio",-83.0074622,40.2789411
+4253,Washington,"King County, Washington",-121.8323748,47.4935537
+4254,Virginia,"Buckingham County, Virginia",-78.5291687,37.573928
+4255,Massachusetts,"Norfolk County, Massachusetts",-71.1798747,42.1697025
+4256,Rhode Island,"Washington County, Rhode Island",-71.6176118,41.4011616
+4257,Mississippi,"Clarke County, Mississippi",-88.6859638,32.0484478
+4258,Massachusetts,"Worcester County, Massachusetts",-71.940282,42.3116934
+4259,Missouri,"Macon County, Missouri",-92.56434,39.829795
+4260,New Mexico,"Roosevelt County, New Mexico",-103.4827248,34.0214569
+4261,Ohio,"Jefferson County, Ohio",-80.7614097,40.399188
+4262,Texas,"Randall County, Texas",-101.8955472,34.962529
+4263,California,"Santa Cruz County, California",-122.007205,37.0124883
+4264,Kansas,"Finney County, Kansas",-100.7399289,38.0498552
+4265,Michigan,"Berrien County, Michigan",-86.7418216,41.7926389
+4266,Texas,"Hood County, Texas",-97.8316766,32.430149
+4267,North Carolina,"Yadkin County, North Carolina",-80.6651641,36.1587653
+4268,Tennessee,"Hamilton County, Tennessee",-85.2022955,35.159186
+4269,Virginia,"Southampton County, Virginia",-77.1038556,36.7201725
+4270,Iowa,"Jones County, Iowa",-91.1169141,42.1251175
+4271,Missouri,"Greene County, Missouri",-93.3406409,37.2581957
+4272,Wisconsin,"Shawano County, Wisconsin",-88.7558134,44.7896407
+4273,Florida,"Hamilton County, Florida",-82.9510488,30.4911024
+4274,Pennsylvania,"Indiana County, Pennsylvania",-79.0875451,40.6514319
+4275,Oregon,"Harney County, Oregon",-118.9859493,43.0643552
+4276,New Mexico,"Cibola County, New Mexico",-108.0002545,34.93205
+4277,New York,"Seneca County, New York",-76.827088,42.7822943
+4278,Virginia,"Colonial Heights city, Virginia",-77.3968043,37.2616846
+4279,Illinois,"Ford County, Illinois",-88.2247456,40.5944228
+4280,Connecticut,"Windham County, Connecticut",-71.9907017,41.8249987
+4281,Mississippi,"Winston County, Mississippi",-89.0373913,33.0787236
+4282,Virginia,"Giles County, Virginia",-80.7171778,37.3119298
+4283,Wisconsin,"Eau Claire County, Wisconsin",-91.2864137,44.7263547
+4284,Ohio,"Franklin County, Ohio",-83.008258,39.9694465
+4285,Alabama,"Russell County, Alabama",-85.1869798,32.2898113
+4286,California,"Contra Costa County, California",-121.9515431,37.919479
+4287,Colorado,"Teller County, Colorado",-105.1825519,38.8719937
+4288,Maryland,"Carroll County, Maryland",-77.0155121,39.5631892
+4289,Mississippi,"Lawrence County, Mississippi",-90.1075299,31.5500087
+4290,Mississippi,"Webster County, Mississippi",-89.2838356,33.6120482
+4291,Illinois,"Effingham County, Illinois",-88.5927862,39.0476943
+4292,Idaho,"Bingham County, Idaho",-112.3992058,43.2163568
+4293,Tennessee,"Cocke County, Tennessee",-83.1192234,35.9161984
+4294,Illinois,"Montgomery County, Illinois",-89.4780068,39.2280917
+4295,West Virginia,"Jackson County, West Virginia",-81.6777168,38.8342339
+4296,Louisiana,"De Soto Parish, Louisiana",-93.7407968,32.0592476
+4297,Michigan,"Livingston County, Michigan",-83.9117183,42.6025316
+4298,Iowa,"Bremer County, Iowa",-92.3275863,42.7808902
+4299,Minnesota,"Douglas County, Minnesota",-95.4606101,45.9364288
+4300,Colorado,"Rio Grande County, Colorado",-106.4532135,37.4857631
+4301,Tennessee,"Van Buren County, Tennessee",-85.4584114,35.6992446
+4302,Texas,"Anderson County, Texas",-95.6617444,31.841266
+4303,Mississippi,"Pearl River County, Mississippi",-89.5868315,30.7737908
+4304,Florida,"Hillsborough County, Florida",-82.3495681,27.9065898
+4305,Kentucky,"Hickman County, Kentucky",-88.9720197,36.675916
+4306,Missouri,"Butler County, Missouri",-90.40313,36.7151802
+4307,New York,"Wyoming County, New York",-78.2285667,42.7013627
+4308,Tennessee,"Rhea County, Tennessee",-84.9495522,35.600587
+4309,Kansas,"Osage County, Kansas",-95.7272747,38.6497056
+4310,New Mexico,"Grant County, New Mexico",-108.3815043,32.732087
+4311,Illinois,"Lee County, Illinois",-89.2993505,41.7474419
+4312,Maryland,"Charles County, Maryland",-77.0154272,38.4728532
+4313,Colorado,"Clear Creek County, Colorado",-105.6707908,39.6894025
+4314,Michigan,"Antrim County, Michigan",-85.1756245,45.0054565
+4315,Texas,"Tom Green County, Texas",-100.4613549,31.4015829
+4316,Wisconsin,"Jefferson County, Wisconsin",-88.7739855,43.0138065
+4317,Pennsylvania,"Adams County, Pennsylvania",-77.2177296,39.8694707
+4318,Illinois,"Ogle County, Illinois",-89.3201764,42.041884
+4319,New Mexico,"Torrance County, New Mexico",-105.8468361,34.6346444
+4320,Colorado,"Summit County, Colorado",-106.1375545,39.6210227
+4321,Mississippi,"Leflore County, Mississippi",-90.2949343,33.5497896
+4322,Wisconsin,"Monroe County, Wisconsin",-90.6199687,43.9451751
+4323,California,"Butte County, California",-121.6019188,39.6659588
+4324,Colorado,"Larimer County, Colorado",-105.4821309,40.6630912
+4325,California,"Solano County, California",-121.939594,38.2672255
+4326,Iowa,"Johnson County, Iowa",-91.5888122,41.6687365
+4327,Kentucky,"Fayette County, Kentucky",-84.4584429,38.0401572
+4328,Vermont,"Grand Isle County, Vermont",-73.3007577,44.8017876
+4329,Virginia,"Northampton County, Virginia",-75.9238683,37.3026286
+4330,Michigan,"Houghton County, Michigan",-88.6520662,46.9983053
+4331,Alabama,"Clay County, Alabama",-85.862051,33.2678085
+4332,South Carolina,"Greenwood County, South Carolina",-82.1278759,34.1557959
+4333,New Mexico,"McKinley County, New Mexico",-108.2553073,35.5737323
+4334,New Mexico,"Otero County, New Mexico",-105.7810785,32.5887764
+4335,California,"Monterey County, California",-121.3155732,36.240107
+4336,California,"Madera County, California",-119.7498519,37.2100387
+4337,California,"Yolo County, California",-121.9031776,38.6792682
+4338,Illinois,"Boone County, Illinois",-88.8242951,42.3189831
+4339,Arkansas,"Cleburne County, Arkansas",-92.0599743,35.5662882
+4340,California,"San Diego County, California",-116.7761174,33.0236041
+4341,Idaho,"Clearwater County, Idaho",-115.6535003,46.67257
+4342,Missouri,"Lincoln County, Missouri",-90.9577713,39.058568
+4343,Nebraska,"Adams County, Nebraska",-98.5000441,40.5206322
+4344,Maryland,"Wicomico County, Maryland",-75.6322064,38.3673888
+4345,Ohio,"Champaign County, Ohio",-83.7675425,40.1327594
+4346,Florida,"Alachua County, Florida",-82.357221,29.6757403
+4347,Nebraska,"Gage County, Nebraska",-96.6834528,40.2552337
+4348,Iowa,"Henry County, Iowa",-91.5442697,40.985864
+4349,West Virginia,"Greenbrier County, West Virginia",-80.4505904,37.9244182
+4350,Mississippi,"Chickasaw County, Mississippi",-88.9458075,33.9216539
+4351,Kentucky,"Campbell County, Kentucky",-84.3795832,38.9469811
+4352,Missouri,"Ray County, Missouri",-93.9957462,39.3084005
+4353,Iowa,"Butler County, Iowa",-92.7800664,42.7347076
+4354,Texas,"Red River County, Texas",-95.0484293,33.6196255
+4355,New Jersey,"Bergen County, New Jersey",-74.0745218,40.9590904
+4356,Washington,"Lewis County, Washington",-122.3774443,46.5800714
+4357,Alabama,"Crenshaw County, Alabama",-86.3192219,31.7328256
+4358,Arkansas,"Scott County, Arkansas",-94.0636413,34.8588693
+4359,Virginia,"Frederick County, Virginia",-78.2639164,39.203637
+4360,Virginia,"Danville city, Virginia",-79.4080707,36.5833337
+4361,Vermont,"Orange County, Vermont",-72.3696871,44.0033924
+4362,Colorado,"Gunnison County, Colorado",-107.078108,38.6696792
+4363,Virginia,"Buchanan County, Virginia",-82.0381508,37.2681198
+4364,Virginia,"Fredericksburg city, Virginia",-77.4866583,38.2992718
+4365,New York,"Dutchess County, New York",-73.7399512,41.7550085
+4366,Minnesota,"Sherburne County, Minnesota",-93.7750915,45.4431712
+4367,Colorado,"Chaffee County, Colorado",-106.3169723,38.7382457
+4368,Texas,"Johnson County, Texas",-97.3648234,32.3795112
+4369,Ohio,"Montgomery County, Ohio",-84.2905455,39.7552177
+4370,Ohio,"Pickaway County, Ohio",-83.0528267,39.648947
+4371,Virginia,"Botetourt County, Virginia",-79.8053176,37.553193
+4372,Maine,"Knox County, Maine",-69.0385145,44.0420446
+4373,Tennessee,"Sumner County, Tennessee",-86.4585173,36.4700152
+4374,New York,"Washington County, New York",-73.4394282,43.3123766
+4375,Tennessee,"Loudon County, Tennessee",-84.316204,35.73745
+4376,Illinois,"Jefferson County, Illinois",-88.92421,38.3007796
+4377,Kansas,"Saline County, Kansas",-97.6501534,38.7863268
+4378,Kentucky,"Bullitt County, Kentucky",-85.7030364,37.9695717
+4379,Wyoming,"Uinta County, Wyoming",-110.5589468,41.2847255
+4380,New Mexico,"Rio Arriba County, New Mexico",-106.6939829,36.5096687
+4381,Ohio,"Madison County, Ohio",-83.4008847,39.8966074
+4382,Iowa,"Louisa County, Iowa",-91.2569936,41.2182111
+4383,Illinois,"Knox County, Illinois",-90.2137611,40.9309412
+4384,New York,"Yates County, New York",-77.1043238,42.638237
+4385,Tennessee,"Sevier County, Tennessee",-83.5219545,35.7912836
+4386,Alabama,"Tallapoosa County, Alabama",-85.7995532,32.8633694
+4387,Colorado,"Huerfano County, Colorado",-104.9599278,37.6878154
+4388,Louisiana,"Grant Parish, Louisiana",-92.5617156,31.5977873
+4389,Mississippi,"Marshall County, Mississippi",-89.504231,34.7661897
+4390,New Mexico,"Luna County, New Mexico",-107.7466387,32.1844822
+4391,Pennsylvania,"Franklin County, Pennsylvania",-77.7244853,39.9266863
+4392,Utah,"Cache County, Utah",-111.7445805,41.7342254
+4393,Virginia,"Greensville County, Virginia",-77.5602607,36.6802247
+4394,Louisiana,"Claiborne Parish, Louisiana",-92.991125,32.8275848
+4395,Mississippi,"Kemper County, Mississippi",-88.6256306,32.7501361
+4396,Mississippi,"Lamar County, Mississippi",-89.5149516,31.1971349
+4397,New Jersey,"Burlington County, New Jersey",-74.6630063,39.8757858
+4398,Texas,"Collin County, Texas",-96.5781528,33.1938849
+4399,Kentucky,"Lewis County, Kentucky",-83.3733027,38.5320508
+4400,Pennsylvania,"York County, Pennsylvania",-76.7284464,39.921839
+4401,Illinois,"Greene County, Illinois",-90.3877569,39.3554444
+4402,Minnesota,"Lyon County, Minnesota",-95.8472678,44.4091953
+4403,Wisconsin,"Dane County, Wisconsin",-89.4178523,43.0674684
+4404,California,"Tulare County, California",-118.7805422,36.2304529
+4405,Missouri,"St. Louis city, Missouri",-90.2445816,38.6356988
+4406,Kentucky,"Lawrence County, Kentucky",-82.7383054,38.0744587
+4407,Ohio,"Greene County, Ohio",-83.8948943,39.6874785
+4408,Tennessee,"Smith County, Tennessee",-85.9420775,36.2556502
+4409,Texas,"Bexar County, Texas",-98.5201465,29.4486708
+4410,Wisconsin,"Waukesha County, Wisconsin",-88.3067069,43.0193081
+4411,West Virginia,"Wood County, West Virginia",-81.5159276,39.2116786
+4412,Illinois,"Jackson County, Illinois",-89.3812119,37.7860959
+4413,Tennessee,"Wayne County, Tennessee",-87.8197026,35.2426873
+4414,Idaho,"Canyon County, Idaho",-116.7085267,43.6230509
+4415,Ohio,"Muskingum County, Ohio",-81.9435064,39.9660457
+4416,Kentucky,"Lee County, Kentucky",-83.7184968,37.6053832
+4417,Florida,"Washington County, Florida",-85.6627968,30.6022166
+4418,Rhode Island,"Kent County, Rhode Island",-71.5763135,41.6777498
+4419,Vermont,"Bennington County, Vermont",-73.1114599,43.0353251
+4420,Iowa,"Mahaska County, Iowa",-92.6363663,41.3307969
+4421,Vermont,"Washington County, Vermont",-72.6094749,44.2749532
+4422,Mississippi,"Perry County, Mississippi",-88.9887554,31.1693073
+4423,Pennsylvania,"Beaver County, Pennsylvania",-80.3507209,40.6841401
+4424,Alabama,"Bibb County, Alabama",-87.1271475,33.0158929
+4425,Arkansas,"Hempstead County, Arkansas",-93.6658093,33.7286109
+4426,Mississippi,"Washington County, Mississippi",-90.9444296,33.2731314
+4427,New York,"Allegany County, New York",-78.0261758,42.2478938
+4428,California,"Los Angeles County, California",-118.2618616,34.1963983
+4429,Florida,"Glades County, Florida",-81.1908197,26.9548102
+4430,Pennsylvania,"Bucks County, Pennsylvania",-75.10706,40.3368872
+4431,South Carolina,"Lancaster County, South Carolina",-80.7036885,34.6868182
+4432,Michigan,"Emmet County, Michigan",-84.9868217,45.5900944
+4433,Pennsylvania,"Philadelphia County, Pennsylvania",-75.1333459,40.0093755
+4434,Colorado,"Washington County, Colorado",-103.2096046,39.965413
+4435,Colorado,"Arapahoe County, Colorado",-104.3317329,39.6446318
+4436,Ohio,"Guernsey County, Ohio",-81.497875,40.0566648
+4437,Ohio,"Lorain County, Ohio",-82.179722,41.4388045
+4438,Texas,"Liberty County, Texas",-94.8226815,30.1621885
+4439,Tennessee,"Campbell County, Tennessee",-84.1592495,36.4015922
+4440,Hawaii,"Hawaii County, Hawaii",-155.5024434,19.5977643
+4441,Iowa,"Lee County, Iowa",-91.4771574,40.6475875
+4442,Oregon,"Washington County, Oregon",-123.0976146,45.5535419
+4443,Virginia,"Dinwiddie County, Virginia",-77.6354922,37.0734984
+4444,Alabama,"Sumter County, Alabama",-88.2000571,32.5974811
+4445,Arkansas,"Montgomery County, Arkansas",-93.6641468,34.5456518
+4446,Michigan,"Mecosta County, Michigan",-85.3327509,43.6352949
+4447,Texas,"Ector County, Texas",-102.5425068,31.8653008
+4448,Texas,"Fort Bend County, Texas",-95.7710149,29.5266017
+4449,Virginia,"Surry County, Virginia",-76.8801717,37.1197611
+4450,Arkansas,"Mississippi County, Arkansas",-90.0522086,35.7669426
+4451,Arkansas,"Lee County, Arkansas",-90.7792884,34.77975
+4452,Kentucky,"Russell County, Kentucky",-85.0589762,36.9891273
+4453,Oregon,"Curry County, Oregon",-124.2114065,42.4666711
+4454,Iowa,"Hamilton County, Iowa",-93.709198,42.3907681
+4455,New Mexico,"Eddy County, New Mexico",-104.3064708,32.4578575
+4456,New York,"Onondaga County, New York",-76.1961167,43.0065299
+4457,Iowa,"Polk County, Iowa",-93.5697204,41.6842807
+4458,Nebraska,"Dawson County, Nebraska",-99.8151537,40.8673784
+4459,Michigan,"Gladwin County, Michigan",-84.3898162,43.9897504
+4460,Mississippi,"Leake County, Mississippi",-89.5225675,32.753268
+4461,Mississippi,"Coahoma County, Mississippi",-90.603165,34.2286699
+4462,Florida,"Lake County, Florida",-81.7122822,28.7641128
+4463,New York,"Essex County, New York",-73.7775726,44.1089711
+4464,Wisconsin,"Burnett County, Wisconsin",-92.3679775,45.8652545
+4465,Colorado,"Eagle County, Colorado",-106.6929439,39.6306381
+4466,Florida,"Hendry County, Florida",-81.1515844,26.53934
+4467,Arkansas,"Ouachita County, Arkansas",-92.8784177,33.5911582
+4468,Mississippi,"Jefferson County, Mississippi",-91.0438779,31.7336333
+4469,Missouri,"Benton County, Missouri",-93.2879421,38.3010358
+4470,Colorado,"Alamosa County, Colorado",-105.7880414,37.5684423
+4471,Ohio,"Morrow County, Ohio",-82.7977288,40.5252659
+4472,Minnesota,"Kandiyohi County, Minnesota",-95.0049812,45.1527137
+4473,Washington,"Whitman County, Washington",-117.5229619,46.9033216
+4474,South Carolina,"Oconee County, South Carolina",-83.0615216,34.7487585
+4475,South Carolina,"Spartanburg County, South Carolina",-81.991053,34.9332392
+4476,Wyoming,"Campbell County, Wyoming",-105.5520294,44.2413213
+4477,Florida,"Sarasota County, Florida",-82.3658351,27.1843855
+4478,Louisiana,"Allen Parish, Louisiana",-92.8196052,30.6527435
+4479,Virginia,"Richmond city, Virginia",-77.4760085,37.531399
+4480,Michigan,"Wexford County, Michigan",-85.5700462,44.3313751
+4481,New York,"Genesee County, New York",-78.1927784,43.0009096
+4482,Virginia,"Washington County, Virginia",-81.9502907,36.7478126
+4483,Kentucky,"Anderson County, Kentucky",-84.9864171,38.0053963
+4484,Texas,"Eastland County, Texas",-98.8365596,32.3246454
+4485,Virginia,"Arlington County, Virginia",-77.1007034,38.8783374
+4486,California,"El Dorado County, California",-120.5343981,38.785532
+4487,Illinois,"LaSalle County, Illinois",-88.8859312,41.3433407
+4488,Kentucky,"Carter County, Kentucky",-83.0488208,38.3095549
+4489,Texas,"Henderson County, Texas",-95.8534183,32.2116334
+4490,Louisiana,"St. Mary Parish, Louisiana",-91.4638037,29.6293488
+4491,Pennsylvania,"Venango County, Pennsylvania",-79.7544181,41.4019797
+4492,Pennsylvania,"Lycoming County, Pennsylvania",-77.0552534,41.3436239
+4493,Maryland,"Queen Anne's County, Maryland",-76.0824053,39.0406929
+4494,New Jersey,"Gloucester County, New Jersey",-75.1437077,39.7210193
+4495,Missouri,"Montgomery County, Missouri",-91.4654372,38.9351623
+4496,Tennessee,"Coffee County, Tennessee",-86.0782188,35.4887586
+4497,Pennsylvania,"Warren County, Pennsylvania",-79.3131731,41.8436691
+4498,Oklahoma,"Hughes County, Oklahoma",-96.2511829,35.0529339
+4499,South Dakota,"Hughes County, South Dakota",-99.9858456,44.3922578
+4500,Michigan,"Midland County, Michigan",-84.3792195,43.648378
+4501,Kansas,"Labette County, Kansas",-95.2974732,37.1914676
+4502,Michigan,"Delta County, Michigan",-86.9013728,45.8051009
+4503,Vermont,"Rutland County, Vermont",-73.0381964,43.5808439
+4504,Louisiana,"Bossier Parish, Louisiana",-93.6179774,32.6962022
+4505,Mississippi,"Covington County, Mississippi",-89.5488968,31.633331
+4506,Texas,"Webb County, Texas",-99.3266413,27.7705836
+4507,Wisconsin,"Crawford County, Wisconsin",-90.9512302,43.24991
+4508,Texas,"Dallas County, Texas",-96.7784238,32.7669866
+4509,New Mexico,"San Juan County, New Mexico",-108.3245778,36.5116245
+4510,Maine,"Waldo County, Maine",-69.1396775,44.5053607
+4511,Arizona,"Navajo County, Arizona",-110.3209076,35.3909336
+4512,Florida,"Levy County, Florida",-82.7834825,29.2844092
+4513,Texas,"Wharton County, Texas",-96.2296745,29.2784805
+4514,Washington,"Thurston County, Washington",-122.8294407,46.9325978
+4515,Kentucky,"Scott County, Kentucky",-84.579376,38.2898823
+4516,Pennsylvania,"Clinton County, Pennsylvania",-77.6491409,41.2453009
+4517,West Virginia,"Kanawha County, West Virginia",-81.5235223,38.3280607
+4518,Tennessee,"Union County, Tennessee",-83.8360878,36.2841401
+4519,Kentucky,"Henry County, Kentucky",-85.1200786,38.4515607
+4520,Utah,"Box Elder County, Utah",-113.052922,41.476021
+4521,Wisconsin,"Richland County, Wisconsin",-90.4356927,43.3761994
+4522,Missouri,"Ste. Genevieve County, Missouri",-90.1811702,37.8901797
+4523,Arkansas,"Newton County, Arkansas",-93.2150843,35.9100625
+4524,Arkansas,"Yell County, Arkansas",-93.4083032,34.9977133
+4525,Texas,"Val Verde County, Texas",-101.1466458,29.8849608
+4526,Pennsylvania,"Susquehanna County, Pennsylvania",-75.8009686,41.8196651
+4527,Wyoming,"Converse County, Wyoming",-105.5073672,42.9728389
+4528,Louisiana,"Union Parish, Louisiana",-92.3756501,32.8293486
+4529,Kentucky,"Pulaski County, Kentucky",-84.5799857,37.1083118
+4530,Wyoming,"Natrona County, Wyoming",-106.7648769,42.9736408
+4531,Arizona,"Cochise County, Arizona",-109.7541201,31.8817928
+4532,California,"Lassen County, California",-120.6299314,40.7210889
+4533,Florida,"Gilchrist County, Florida",-82.7958011,29.7234556
+4534,Washington,"Adams County, Washington",-118.5333078,47.0048395
+4535,Mississippi,"Lincoln County, Mississippi",-90.4535663,31.5352155
+4536,Alabama,"Mobile County, Alabama",-88.1965684,30.684573
+4537,Arizona,"Mohave County, Arizona",-113.7496891,35.717705
+4538,Colorado,"Broomfield County, Colorado",-105.052125,39.9533825
+4539,Virginia,"Accomack County, Virginia",-75.7578073,37.7659435
+4540,Louisiana,"Livingston Parish, Louisiana",-90.7274738,30.4404194
+4541,Texas,"Cass County, Texas",-94.3575786,33.0836979
+4542,Virginia,"Prince Edward County, Virginia",-78.4329574,37.2248813
+4543,Alabama,"Coosa County, Alabama",-86.2434818,32.9314453
+4544,Missouri,"Stone County, Missouri",-93.4677823,36.7478573
+4545,Mississippi,"Oktibbeha County, Mississippi",-88.8761514,33.4223134
+4546,Nebraska,"Polk County, Nebraska",-97.5706627,41.1879253
+4547,New Hampshire,"Rockingham County, New Hampshire",-71.0994374,42.9893596
+4548,Colorado,"Morgan County, Colorado",-103.8070921,40.2623535
+4549,Texas,"Milam County, Texas",-96.9843946,30.791242
+4550,Texas,"Bosque County, Texas",-97.6376322,31.9007636
+4551,Montana,"Lewis and Clark County, Montana",-112.3829537,47.1221333
+4552,West Virginia,"Grant County, West Virginia",-79.195064,39.1059882
+4553,Arkansas,"Prairie County, Arkansas",-91.5571995,34.828225
+4554,Massachusetts,"Suffolk County, Massachusetts",-71.0201725,42.33196
+4555,Texas,"Guadalupe County, Texas",-97.9490268,29.5832081
+4556,New York,"Ulster County, New York",-74.265447,41.9472321
+4557,Virginia,"Westmoreland County, Virginia",-76.8041695,38.1091912
+4558,Washington,"San Juan County, Washington",-123.1006162,48.5088615
+4559,Illinois,"Washington County, Illinois",-89.4171873,38.3531405
+4560,Texas,"Jasper County, Texas",-94.0222943,30.7529323
+4561,New York,"Clinton County, New York",-73.7056478,44.7527103
+4562,Kentucky,"Knox County, Kentucky",-83.8556299,36.8874758
+4563,Kentucky,"Powell County, Kentucky",-83.8269851,37.8103787
+4564,Michigan,"Kalamazoo County, Michigan",-85.5328544,42.2462657
+4565,Missouri,"Marion County, Missouri",-91.6353791,39.8075383
+4566,Alabama,"Chilton County, Alabama",-86.7266275,32.8540595
+4567,California,"Nevada County, California",-120.7734456,39.2951907
+4568,Michigan,"Sanilac County, Michigan",-82.6428148,43.4491547
+4569,Tennessee,"Chester County, Tennessee",-88.6055046,35.4166392
+4570,Utah,"Iron County, Utah",-113.2900593,37.8827271
+4571,Washington,"Clallam County, Washington",-123.9306111,48.1130086
+4572,Colorado,"Douglas County, Colorado",-104.9261993,39.3264348
+4573,Missouri,"Pike County, Missouri",-91.1710415,39.3441784
+4574,Missouri,"Clay County, Missouri",-94.4215023,39.3155512
+4575,Maryland,"Baltimore city, Maryland",-76.6105159,39.3002135
+4576,Nebraska,"Lancaster County, Nebraska",-96.6886584,40.7835474
+4577,Virginia,"Albemarle County, Virginia",-78.5535056,38.0241841
+4578,Missouri,"Vernon County, Missouri",-94.3415972,37.8501957
+4579,Ohio,"Columbiana County, Ohio",-80.7772307,40.7684619
+4580,Alabama,"Houston County, Alabama",-85.2963976,31.1581928
+4581,Florida,"Citrus County, Florida",-82.5247964,28.8436275
+4582,Montana,"Lake County, Montana",-114.0836866,47.6429007
+4583,Iowa,"Muscatine County, Iowa",-91.1186992,41.483776
+4584,Texas,"Parker County, Texas",-97.8059049,32.7770964
+4585,Texas,"Wilson County, Texas",-98.0858986,29.1743028
+4586,Virginia,"Nottoway County, Virginia",-78.0521623,37.1436955
+4587,Michigan,"Washtenaw County, Michigan",-83.8446336,42.2523272
+4588,Pennsylvania,"Pike County, Pennsylvania",-75.0315143,41.3259485
+4589,New Hampshire,"Cheshire County, New Hampshire",-72.2482169,42.9254553
+4590,Ohio,"Hardin County, Ohio",-83.6640773,40.6604152
+4591,Tennessee,"Polk County, Tennessee",-84.5411124,35.1094371
+4592,Ohio,"Perry County, Ohio",-82.2379525,39.7431874
+4593,Michigan,"Grand Traverse County, Michigan",-85.5538484,44.7186875
+4594,Wyoming,"Sheridan County, Wyoming",-106.8812114,44.7813692
+4595,Virginia,"Richmond County, Virginia",-76.7305609,37.9428935
+4596,Wisconsin,"Door County, Wisconsin",-87.0879363,45.067808
+4597,Virginia,"Loudoun County, Virginia",-77.6388572,39.0811303
+4598,Michigan,"Allegan County, Michigan",-86.6347446,42.5957875
+4599,Mississippi,"Choctaw County, Mississippi",-89.2513319,33.3459637
+4600,Wisconsin,"La Crosse County, Wisconsin",-91.1117584,43.9082222
+4601,Florida,"Sumter County, Florida",-82.0747152,28.7142938
+4602,Kentucky,"Crittenden County, Kentucky",-88.1050103,37.3581494
+4603,Arkansas,"Howard County, Arkansas",-93.9909884,34.0831786
+4604,South Carolina,"York County, South Carolina",-81.1831885,34.9701904
+4605,Maine,"Lincoln County, Maine",-69.5140292,43.9942645
+4606,Mississippi,"Jasper County, Mississippi",-89.1194302,32.0169894
+4607,New York,"Nassau County, New York",-73.5893844,40.729687
+4608,Ohio,"Preble County, Ohio",-84.6453581,39.7379056
+4609,Iowa,"Iowa County, Iowa",-92.0591226,41.6839184
+4610,Michigan,"Roscommon County, Michigan",-84.6112715,44.3395168
+4611,Mississippi,"Neshoba County, Mississippi",-89.1192743,32.752518
+4612,Kansas,"Reno County, Kansas",-98.0783463,37.9481849
+4613,New York,"Cattaraugus County, New York",-78.6810055,42.2448527
+4614,Florida,"Martin County, Florida",-80.3982112,27.0799538
+4615,Oregon,"Lincoln County, Oregon",-123.9111826,44.6410762
+4616,Iowa,"Sioux County, Iowa",-96.1779289,43.0828542
+4617,Kansas,"Seward County, Kansas",-100.8547406,37.1805849
+4618,Kentucky,"Boyle County, Kentucky",-84.8730164,37.6182001
+4619,Pennsylvania,"Juniata County, Pennsylvania",-77.4004377,40.530673
+4620,Utah,"Weber County, Utah",-111.8758787,41.2703552
+4621,Vermont,"Caledonia County, Vermont",-72.1121676,44.4687907
+4622,California,"Riverside County, California",-116.0022389,33.7298275
+4623,Illinois,"Jersey County, Illinois",-90.3613647,39.0801918
+4624,New Jersey,"Salem County, New Jersey",-75.3573559,39.5738282
+4625,Louisiana,"Bienville Parish, Louisiana",-93.0615128,32.3442678
+4626,Delaware,"Kent County, Delaware",-75.5029819,39.0970884
+4627,Kentucky,"Henderson County, Kentucky",-87.5725767,37.7925421
+4628,Ohio,"Huron County, Ohio",-82.594641,41.1450798
+4629,Ohio,"Carroll County, Ohio",-81.090787,40.5798841
+4630,Kentucky,"Casey County, Kentucky",-84.9282195,37.3219623
+4631,Virginia,"Chesterfield County, Virginia",-77.5858474,37.3784338
+4632,New York,"Wayne County, New York",-77.0631637,43.4587577
+4633,Illinois,"Macoupin County, Illinois",-89.9263435,39.2659
+4634,Mississippi,"Lee County, Mississippi",-88.6808868,34.2889645
+4635,Ohio,"Hocking County, Ohio",-82.4834447,39.4903425
+4636,Missouri,"Boone County, Missouri",-92.3107786,38.989657
+4637,Louisiana,"Lafourche Parish, Louisiana",-90.394849,29.4919925
+4638,Kansas,"Ellis County, Kansas",-99.3173291,38.9145957
+4639,Kentucky,"Nelson County, Kentucky",-85.4659548,37.8031876
+4640,Wisconsin,"Vilas County, Wisconsin",-89.501254,46.049848
+4641,Maryland,"St. Mary's County, Maryland",-76.5342705,38.222666
+4642,South Carolina,"Georgetown County, South Carolina",-79.3008115,33.41753
+4643,West Virginia,"Preston County, West Virginia",-79.6688649,39.4690296
+4644,Minnesota,"Cass County, Minnesota",-94.3337731,46.9514271
+4645,Mississippi,"Madison County, Mississippi",-90.0341603,32.6343703
+4646,Kansas,"Atchison County, Kansas",-95.3133975,39.5325441
+4647,Kentucky,"Calloway County, Kentucky",-88.2740857,36.6209783
+4648,California,"Sonoma County, California",-122.9451943,38.532574
+4649,Ohio,"Williams County, Ohio",-84.5843225,41.5649581
+4650,South Carolina,"Hampton County, South Carolina",-81.1433619,32.7783233
+4651,West Virginia,"Berkeley County, West Virginia",-78.0323378,39.4578544
+4652,Mississippi,"Claiborne County, Mississippi",-90.9154239,31.9728096
+4653,Utah,"Uintah County, Utah",-109.5177482,40.1258872
+4654,Mississippi,"Hancock County, Mississippi",-89.4798501,30.3914372
+4655,Iowa,"Warren County, Iowa",-93.5643662,41.3367685
+4656,New York,"Madison County, New York",-75.6635749,42.9100255
+4657,Kentucky,"Livingston County, Kentucky",-88.363426,37.2095173
+4658,West Virginia,"Jefferson County, West Virginia",-77.86322,39.3073985
+4659,Tennessee,"Humphreys County, Tennessee",-87.7906251,36.0404396
+4660,Texas,"Nacogdoches County, Texas",-94.6202497,31.6205598
+4661,Washington,"Whatcom County, Washington",-121.8364325,48.8426531
+4662,Tennessee,"Perry County, Tennessee",-87.8770272,35.659785
+4663,California,"Imperial County, California",-115.3553946,33.0408155
+4664,Iowa,"Keokuk County, Iowa",-92.1677213,41.3311823
+4665,Kentucky,"Boone County, Kentucky",-84.7314442,38.9745952
+4666,Mississippi,"Grenada County, Mississippi",-89.8027404,33.770031
+4667,Mississippi,"Quitman County, Mississippi",-90.2905254,34.2526398
+4668,Michigan,"Manistee County, Michigan",-86.6029672,44.3503854
+4669,Virginia,"Northumberland County, Virginia",-76.3796872,37.8569736
+4670,Illinois,"DeKalb County, Illinois",-88.768991,41.8946125
+4671,Alabama,"Calhoun County, Alabama",-85.8225133,33.7717061
+4672,Arkansas,"Stone County, Arkansas",-92.1404941,35.8569888
+4673,Tennessee,"Lawrence County, Tennessee",-87.396546,35.2204764
+4674,Louisiana,"Lafayette Parish, Louisiana",-92.06417,30.2065065
+4675,Missouri,"Wright County, Missouri",-92.4800104,37.2676356
+4676,New Jersey,"Passaic County, New Jersey",-74.3003075,41.0337634
+4677,Pennsylvania,"Tioga County, Pennsylvania",-77.2572882,41.7668593
+4678,Tennessee,"White County, Tennessee",-85.4557657,35.9270621
+4679,Kansas,"Leavenworth County, Kansas",-95.038977,39.1895108
+4680,Texas,"Trinity County, Texas",-95.1532906,31.0874829
+4681,Tennessee,"DeKalb County, Tennessee",-85.8335963,35.9822204
+4682,Texas,"Hopkins County, Texas",-95.5651936,33.1489586
+4683,Arkansas,"Columbia County, Arkansas",-93.2269012,33.2150704
+4684,Texas,"Williamson County, Texas",-97.6050692,30.6490296
+4685,Alabama,"Monroe County, Alabama",-87.3832656,31.5803324
+4686,Texas,"Cameron County, Texas",-97.4789584,26.1029227
+4687,Minnesota,"Swift County, Minnesota",-95.6903976,45.2754495
+4688,Tennessee,"Putnam County, Tennessee",-85.4969279,36.1408072
+4689,West Virginia,"Cabell County, West Virginia",-82.2433916,38.41958
+4690,West Virginia,"Wyoming County, West Virginia",-81.5488841,37.6037173
+4691,Arkansas,"Calhoun County, Arkansas",-92.513879,33.5604604
+4692,Oregon,"Umatilla County, Oregon",-118.7338795,45.5911997
+4693,Tennessee,"Lake County, Tennessee",-89.4855365,36.3339054
+4694,West Virginia,"Ohio County, West Virginia",-80.6207278,40.0989316
+4695,Oregon,"Polk County, Oregon",-123.3973288,44.9043946
+4696,South Carolina,"Colleton County, South Carolina",-80.6553452,32.8349797
+4697,Florida,"Baker County, Florida",-82.3022838,30.3244416
+4698,Michigan,"Bay County, Michigan",-83.9787007,43.6997112
+4699,Illinois,"Fayette County, Illinois",-89.0179232,39.0011246
+4700,Mississippi,"Sunflower County, Mississippi",-90.5950901,33.6055289
+4701,Pennsylvania,"Montgomery County, Pennsylvania",-75.3702011,40.2099992
+4702,Tennessee,"Cheatham County, Tennessee",-87.1008163,36.25518
+4703,Tennessee,"Fentress County, Tennessee",-84.9327026,36.3760785
+4704,South Carolina,"Greenville County, South Carolina",-82.3720772,34.8926452
+4705,Kansas,"Lyon County, Kansas",-96.1615888,38.4554978
+4706,South Carolina,"Saluda County, South Carolina",-81.7279033,34.0052784
+4707,Virginia,"Amherst County, Virginia",-79.1478477,37.6303621
+4708,Michigan,"Charlevoix County, Michigan",-85.450392,45.5131638
+4709,Louisiana,"Winn Parish, Louisiana",-92.6412694,31.9411871
+4710,South Carolina,"Allendale County, South Carolina",-81.3634213,32.9797838
+4711,Iowa,"Dubuque County, Iowa",-90.8787708,42.4634808
+4712,Virginia,"Roanoke city, Virginia",-79.9584716,37.2778301
+4713,Virginia,"Campbell County, Virginia",-79.0954285,37.210151
+4714,Virginia,"Stafford County, Virginia",-77.4590432,38.4189333
+4715,Mississippi,"Carroll County, Mississippi",-89.918887,33.4407948
+4716,New Mexico,"Socorro County, New Mexico",-106.9390026,33.9916142
+4717,Kentucky,"Mercer County, Kentucky",-84.8796945,37.8120851
+4718,Massachusetts,"Franklin County, Massachusetts",-72.5916552,42.5837911
+4719,Kansas,"Harvey County, Kansas",-97.4367065,38.0501436
+4720,Alabama,"Clarke County, Alabama",-87.8186244,31.6855211
+4721,Ohio,"Geauga County, Ohio",-81.1735054,41.4993217
+4722,Louisiana,"St. Tammany Parish, Louisiana",-89.9519622,30.4100224
+4723,Michigan,"Gratiot County, Michigan",-84.60469,43.2923259
+4724,Michigan,"Isabella County, Michigan",-84.8394245,43.6452331
+4725,Wisconsin,"Marathon County, Wisconsin",-89.757823,44.8980363
+4726,New Hampshire,"Carroll County, New Hampshire",-71.201665,43.8675668
+4727,Connecticut,"New London County, Connecticut",-72.1034515,41.4786303
+4728,Texas,"Tyler County, Texas",-94.3794486,30.7695792
+4729,New York,"Delaware County, New York",-74.966728,42.1939865
+4730,South Carolina,"Fairfield County, South Carolina",-81.1270007,34.3956685
+4731,Virginia,"Scott County, Virginia",-82.6136268,36.7127783
+4732,West Virginia,"Lincoln County, West Virginia",-82.0775472,38.1716505
+4733,Missouri,"Douglas County, Missouri",-92.5158918,36.9465168
+4734,Illinois,"Vermilion County, Illinois",-87.7267715,40.1867398
+4735,Tennessee,"Wilson County, Tennessee",-86.2902097,36.1484757
+4736,Mississippi,"Lafayette County, Mississippi",-89.4859026,34.3492982
+4737,Montana,"Gallatin County, Montana",-111.1734431,45.5355586
+4738,Kentucky,"Harlan County, Kentucky",-83.2214968,36.8592233
+4739,Minnesota,"Stearns County, Minnesota",-94.6104822,45.5552345
+4740,Montana,"Cascade County, Montana",-111.350571,47.3164427
+4741,Ohio,"Mahoning County, Ohio",-80.7703956,41.0108798
+4742,Pennsylvania,"Allegheny County, Pennsylvania",-79.9809196,40.4689204
+4743,Missouri,"Texas County, Missouri",-91.9644783,37.3142565
+4744,Tennessee,"Dyer County, Tennessee",-89.3983056,36.0541962
+4745,Alabama,"Wilcox County, Alabama",-87.3022049,31.9903296
+4746,Vermont,"Lamoille County, Vermont",-72.6383555,44.6035041
+4747,Ohio,"Highland County, Ohio",-83.6036681,39.1844883
+4748,Louisiana,"St. Bernard Parish, Louisiana",-89.2634941,29.9181102
+4749,Wisconsin,"Racine County, Wisconsin",-87.414676,42.7540747
+4750,New York,"Chemung County, New York",-76.7471788,42.1552807
+4751,South Carolina,"Lee County, South Carolina",-80.2512086,34.1586401
+4752,Idaho,"Twin Falls County, Idaho",-114.6656386,42.352309
+4753,Kentucky,"Taylor County, Kentucky",-85.3266981,37.3651061
+4754,Ohio,"Coshocton County, Ohio",-81.9301123,40.2967203
+4755,Tennessee,"Marshall County, Tennessee",-86.7658862,35.4683866
+4756,Louisiana,"Jefferson Davis Parish, Louisiana",-92.8162205,30.2695293
+4757,Kentucky,"Martin County, Kentucky",-82.5066231,37.796774
+4758,Michigan,"Oceana County, Michigan",-86.8075751,43.6472546
+4759,Mississippi,"Hinds County, Mississippi",-90.4658999,32.2679235
+4760,Mississippi,"Wilkinson County, Mississippi",-91.3255665,31.1602492
+4761,Alabama,"Marengo County, Alabama",-87.791091,32.2475911
+4762,Alabama,"Autauga County, Alabama",-86.6444901,32.5363818
+4763,Colorado,"Lincoln County, Colorado",-103.5075545,38.9937401
+4764,Colorado,"Jefferson County, Colorado",-105.2456005,39.5864595
+4765,Connecticut,"Tolland County, Connecticut",-72.3409774,41.8580762
+4766,Ohio,"Athens County, Ohio",-82.0460078,39.3338481
+4767,Tennessee,"Obion County, Tennessee",-89.1501746,36.3581749
+4768,Michigan,"Macomb County, Michigan",-82.9108693,42.6714669
+4769,West Virginia,"Braxton County, West Virginia",-80.731649,38.6993021
+4770,Maryland,"Dorchester County, Maryland",-76.0474333,38.4291957
