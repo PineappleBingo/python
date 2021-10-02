@@ -51,7 +51,17 @@ republicans = votes["republicans_2016"]
 democrats = votes["democrats_2016"]
 
 winningParty = votes[republicans > democrats]
-print(winningParty)
+# or winningParty = votes[( votes["republicans_2016"] ) > (votes["democrats_2016"]) ]
+print(winningParty.head())
+
+# isin()
+# Select New York states and display
+newyork = location[location["state"].isin(["New York"])]
+print(newyork.head())
+
+East = ['New York', 'New Jeresy', 'Florida']
+EastenState = location[location["state"].isin(East)]
+print(EastenState.head())
 
 # print(type(location["state"]))
 # Wstate = location[location["state"][0] != "W"]
