@@ -79,3 +79,6 @@ print(new_result.head())
 new_region = location.iloc[0:3, 0:2]
 print(new_region)
 
+# select row and column to assign new data 
+location.iloc[0:2, 2] = "Empty"
+print(location.head())
