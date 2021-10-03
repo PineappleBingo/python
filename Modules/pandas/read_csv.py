@@ -61,7 +61,11 @@ print(newyork.head())
 
 East = ['New York', 'New Jeresy', 'Florida']
 EastenState = location[location["state"].isin(East)]
-print(EastenState.head())
+print(EastenState.head(5))
+
+# Select only state column as an index, selecting by East index 
+EastenState1 = location["state"][location["state"].isin(East)]
+print(EastenState1.head(5))
 
 # print(type(location["state"]))
 # Wstate = location[location["state"][0] != "W"]
