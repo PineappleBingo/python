@@ -2,7 +2,7 @@ import mariadb
 
 # MariaDB credentials
 _HST = '127.0.0.1'
-_DBN = 'test'
+_DBN = 'k2'
 _USR = 'root'
 _PWD = 'little5'
 
@@ -16,8 +16,7 @@ except mariadb.Error as e:
 csr = con.cursor()
 con.autocommit = False
              
-# try:
-    
+# try:    
 #     for TBL in TBLS:
 #         csr.execute(f'DELETE FROM all_{TBL};')
 #         # csr.execute(f'CREATE TABLE IF NOT EXISTS all_{TBL} LIKE {TBL};')
