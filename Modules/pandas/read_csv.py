@@ -67,28 +67,27 @@ print(EastenState.head(5))
 EastenState1 = location["state"][location["state"].isin(East)]
 print(EastenState1.head(5))
 
-# # 3. How do I select specific rows and columns from a DataFrame?
+# 3. How do I select specific rows and columns from a DataFrame?
 
-# # loc
-# # Select rows where total votes are less than 2000, column location_id
-# new_result = votes.loc[votes["total_votes"] < 2000, "location_id"]
-# print(new_result.head())
+# loc
+# Select rows where total votes are less than 2000, column location_id
+new_result = votes.loc[votes["total_votes"] < 2000, "location_id"]
+print(new_result.head())
 
-# # iloc
-# # select row 0 ~ 2 and column 0 ~ 1
-# new_region = location.iloc[0:3, 0:2]
-# print(new_region)
+# iloc
+# select row 0 ~ 2 and column 0 ~ 1
+new_region = location.iloc[0:3, 0:2]
+print(new_region)
 
-# # select row and column to assign new data 
-# location.iloc[0:2, 2] = "Empty"
-# print(location.head())
+# select row and column to assign new data 
+location.iloc[0:2, 2] = "Empty"
+print(location.head())
 
-# # Setting multiple items using a mask
-# # Select state starts with 'w' and manipulate county to 'W COUNTY'
-# NewLocation = location.copy()
-# mask = NewLocation['state'].str.startswith('W')
-# NewLocation.loc[mask, 'county'] = 'W COUNTY'
-# print(NewLocation.head(5))
+# Setting multiple items using a mask
+# Select state starts with 'w' and manipulate county to 'W COUNTY'
+NewLocation = location.copy()
+mask = NewLocation['state'].str.startswith('W')
+NewLocation.loc[mask, 'county'] = 'W COUNTY'
+print(NewLocation.head(5))
 
-
-# # 4. Append a new column
+# 4. Append a new column
