@@ -52,12 +52,22 @@ print(select_location2.head())
 
 # The labels parameter name can be omitted, and axis is 0 by default
 
-trimmed1 = select_location2.drop(labels=0, axis=0)
+trimmed1 = select_location.drop(labels=0, axis=0)
 # trimmed1 = select_location2.drop(0)
-trimmed1 = select_location2.drop(labels=[1,15,20], axis=0)
+trimmed1 = select_location.drop(labels=[1,15,20], axis=0)
 # trimmed1 = select_location2.drop([0, 15, 20])
-trimmed1 = select_location2.drop(labels=range(40, 45), axis=0)
+trimmed1 = select_location.drop(labels=range(40, 45), axis=0)
 # trimmed1 = select_location2.drop(range(10,20))
+
+# Delete the 2nd row in the DataFrame (note indices starting from 0)
+trimmed2 = select_location.drop(select_location.index[1])
+# Delete some chosen rows by row numbers - 2nd, 10th, 30th:
+trimmed2 = select_location.drop(select_location.index[[1, 9, 29]])
+# Delete the first 5 rows
+trimmed2 = select_location.drop(select_location.index[range(5)])
+# Delete the last row in the DataFrame
+trimmed2 = select_location.drop(select_location.index[-1])
+
 
 # display index
 print(select_location2.index)
@@ -80,9 +90,10 @@ w_states = select_location['county'].str.startswith('W')
 trimmed5 = select_location.loc[w_states, :]
 print(trimmed5.head())
 
-
+# Drop single row
 trimmed6 = select_location2.drop("Utah")
 print(trimmed6.head())
 # Drop rows for multiple countries:
 trimmed6 = select_location2.drop(["New York", "Missouri"])
 print(trimmed6.head())
+
