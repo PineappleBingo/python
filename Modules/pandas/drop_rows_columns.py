@@ -50,6 +50,15 @@ print(trimmed3.head(5))
 select_location2 = pd.read_sql_table("location", engine, index_col = "state")
 print(select_location2.head())
 
+# The labels parameter name can be omitted, and axis is 0 by default
+
+trimmed1 = select_location2.drop(labels=0, axis=0)
+# trimmed1 = select_location2.drop(0)
+trimmed1 = select_location2.drop(labels=[1,15,20], axis=0)
+# trimmed1 = select_location2.drop([0, 15, 20])
+trimmed1 = select_location2.drop(labels=range(40, 45), axis=0)
+# trimmed1 = select_location2.drop(range(10,20))
+
 # display index
 print(select_location2.index)
 # Access each index
@@ -70,3 +79,10 @@ print(trimmed4.head())
 w_states = select_location['county'].str.startswith('W')
 trimmed5 = select_location.loc[w_states, :]
 print(trimmed5.head())
+
+
+trimmed6 = select_location2.drop("Utah")
+print(trimmed6.head())
+# Drop rows for multiple countries:
+trimmed6 = select_location2.drop(["New York", "Missouri"])
+print(trimmed6.head())
