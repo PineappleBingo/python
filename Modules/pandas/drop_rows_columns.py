@@ -97,3 +97,13 @@ print(trimmed6.head())
 trimmed6 = select_location2.drop(["New York", "Missouri"])
 print(trimmed6.head())
 
+# Drop rows using .loc
+print(select_location.shape)
+trimmed7 = select_location.loc[select_location["lat"] > 40 ]
+print(trimmed7.head())
+print(trimmed7.shape)
+
+# Drop rows where lat > 30 and lon < -50
+trimmed8 = select_location.loc[(select_location["lat"] > 30) & (select_location["lon"] < -50) ]
+print(trimmed8.head())
+print(trimmed8.shape)
