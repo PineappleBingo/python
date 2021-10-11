@@ -3,18 +3,13 @@ import numpy as np
 
 location = pd.read_csv("data/CSV/location.csv")
 votes = pd.read_csv("data/CSV/votes.csv")
-
+# trim data
 location = location.loc[:4]
 votes = votes.drop(range(5,votes.shape[0]))
-print(votes)
 
-# df = pd.DataFrame([['NewYork', 'NewJeresy', 'Florida']] * 3, columns = list("abc"))
-# print(df.head())
-
-# # display label of columns in list
-# print(df.columns)
-# # dispaly specified column
-# print(df.columns[0])
+# sort data by columns
+location = location.sort_values('state')
+print(location)
 
 
 
