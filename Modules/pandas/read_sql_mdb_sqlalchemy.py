@@ -26,7 +26,7 @@ print(select_location3.head())
 select_location4 = pd.read_sql_query("SELECT * FROM votes;", engine)
 print(select_location4.head())
 
-select_location6 = pd.read_sql_query("SELECT location_id BETWEEN 3000 AND 3100 FROM votes;", engine)
+select_location6 = pd.read_sql_query("SELECT location_id, total_votes FROM votes WHERE location_id BETWEEN 3000 AND 3100;", engine)
 print(select_location6)
 
 
