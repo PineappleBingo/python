@@ -3,14 +3,19 @@
 {% block content %}
     <div class="content-section">
         <form method="POST">
-            {% csrf+token %}
+            {% csrf_token %}
             <fieldset class="form-group">
                 <legend class="border-bottom">Join Today</legend>
-                {{ form }}
+                {{ form.as_p }}
             </fieldset>
             <div class="form-group">
                 <button class="btn btn-outline-info" >Sign Up</button>
             </div>
         </form>
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                Already Have an Account? <a class="ml-2" href="#">Sign In</a>
+            </small>
+        </div>
     </div>
 {% endblock content %}
