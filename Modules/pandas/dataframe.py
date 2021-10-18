@@ -11,7 +11,11 @@ votes = votes.drop(range(5,votes.shape[0]))
 location = location.sort_values('state')
 print(location)
 
+location = pd.read_csv("data/CSV/location.csv")
 
+# value counts
+location1 = location['state'].value_counts()
+print(location1)
 
 # itertutples()
 # print(location.head(5))
