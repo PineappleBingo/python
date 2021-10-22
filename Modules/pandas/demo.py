@@ -24,31 +24,33 @@ supervisor = pd.read_excel("data/demo/SupervisorSig.xlsx")
 files = ['SFECollectedData7', 'SFEGateComment3', 'SFEMain2', 'SupervisorSig']
 dataList = list()
 
-for file in files:
-    try:
+try:
+    for file in files:
         with open("data/demo/" + file + ".xlsx", "r") as file:
             # Print the success message
             print(f"{file} has opened for reading")
-            
-            # data.append(pd.read_excel())
-            data_test = pd.read_excel("data/demo/SFECollectedData7.xlsx")
-            dataList.append(data_test)
-            # print(data.head())
 
-    except IOError:
-            print("File has opened already.")
+except IOError:
+    print("File has opened already.")
+
+for file in files:
+    data_in = pd.read_excel('data/demo/' + str(file) + '.xlsx')
+    dataList.append(data_in)
+
 
 print('success')
 # print(dataList)
-print(dataList[0].shape)
-# print(data[0].head())
-print(data.shape)
-print(dataList[1].shape)
-print(gate_comment.shape)
-print(dataList[2].shape)
-print(main.shape)
-print(dataList[3].shape)
-print(supervisor.shape)
+# print(dataList[0].shape)
+# print(data.shape)
+
+# print(gate_comment.shape)
+# print(type(dataList))
+
+# print(gate_comment.head())
+# print(len(dataList))
+# print(main.shape)
+# print(dataList[3].shape)
+# print(supervisor.shape)
 
 
 
