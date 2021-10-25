@@ -14,9 +14,10 @@ for file in files:
         dataList.append(data)
     except Exception as e:
         print(e)
-        shutil.move(source_path + str(file), dst_path + str(file))
+        # dest = shutil.move(source_path + str(file), dst_path + str(file))
+        # print("File moved to : ", dest)
         pass
 
 
 print(len(dataList))
-print(dataList)
+# print(dataList)
