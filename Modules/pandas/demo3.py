@@ -1,6 +1,7 @@
 import os
 import shutil
 import pandas as pd
+import json
 from sqlalchemy import create_engine
 from sqlalchemy.engine.create import engine_from_config
 
@@ -24,17 +25,39 @@ for file in files:
 read_comment = dataList[1]
 print(read_comment.head())
 
+# json.loads(stm.decode('utf-8'))
 
 # aceess each row
-for row in read_comment.itertuples(index=False, name=None):
-    print (row)
+# for row in read_comment.itertuples(index=False, name=None):
+    # row = json.loads(str(row))
+    # print (row)
     # print ("index[" + str(row.Index) + "] = " + str(row)[0:-1])
+
+# test = read_comment.apply(tuple, axis=1).tolist()
+# test1 = json.loads(str(test)[1:-1])
+# print(test1)
 
 # mdb data connection made
 # comment = pd.read_sql('select * from sfe_comment', engine)
 # print(comment)
 
+col = ['TimePeriod', 'SeqNo', 'JobNo', 'Comment', 'Count', 'OBSV_TIME', '__PowerAppsId__']
+
+print(read_comment.index)
+# print(read_comment.agg(tuple, axis=1).tolist())
+
+commentList = read_comment.agg(tuple, axis=1).tolist()
+print(commentList[0])
+
+# for index in read_comment.index:
+#     print(read_comment[['SeqNo','JobNo']][index])
+    # print ("df[" + str(index) + "] = " + str(read_comment.columns[col]))
+
 
 
 # for rw in rws:
 #     csr.execute('insert into all_' + _TBL + ' values(' + str(rw)[1:-1] + ');')
+
+
+# reference 
+# https://stackoverflow.com/questions/16476924/how-to-iterate-over-rows-in-a-dataframe-in-pandas
