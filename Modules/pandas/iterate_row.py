@@ -3,28 +3,42 @@ import json
 
 data = pd.read_excel('data/demo/SupervisorSig.xlsx')
 
-print(data.index)
-# print(read_comment.agg(tuple, axis=1).tolist())
-
+# Method 1. 
+# Jason
 commtTuple = data.agg(tuple, axis=1).tolist()
 commtList = list(commtTuple[0])
-# print(commtList)
-print("commtJson:")
 
 # tutple to list of list
 commtJson = json.dumps(commtTuple)
-print(commtJson)
+# parse jason string to list
 rws = json.loads(commtJson)
-print("---")
-print(rws)
-# print(commtJson[0:-1])
 
-# for row in commtJson:
-#     print('row', str(row[0:-1]))
+# loop through each row in list, print element in string
+for rw in rws:
+    print(str(rw)[1:-1])
 
-# for rw in rws:
-#     csr.execute('insert into \"all_' + _TBL + '\" values(' + str(rw)[1:-1] + ');')
+# Method 2
+# 
+# print(read_comment.agg(tuple, axis=1).tolist())
 
+
+# Method 3
+#
+# aceess each row
+# for row in read_comment.itertuples(index=False, name=None):
+    # row = json.loads(str(row))
+    # print (row)
+    # print ("index[" + str(row.Index) + "] = " + str(row)[0:-1])
+
+# test = read_comment.apply(tuple, axis=1).tolist()
+# test1 = json.loads(str(test)[1:-1])
+# print(test1)
+
+# Method 4
+#
+
+# Method 5
+#
 
 # # Iterating over one column - `f` is some function that processes your data
 # result = [f(x) for x in df['col']]

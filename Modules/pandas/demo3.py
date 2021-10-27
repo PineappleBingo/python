@@ -25,17 +25,12 @@ for file in files:
 read_comment = dataList[1]
 print(read_comment.head())
 
-# json.loads(stm.decode('utf-8'))
 
-# aceess each row
-# for row in read_comment.itertuples(index=False, name=None):
-    # row = json.loads(str(row))
-    # print (row)
-    # print ("index[" + str(row.Index) + "] = " + str(row)[0:-1])
 
-# test = read_comment.apply(tuple, axis=1).tolist()
-# test1 = json.loads(str(test)[1:-1])
-# print(test1)
+# query execution 
+# for rw in rws:
+#     csr.execute('insert into \"all_' + _TBL + '\" values(' + str(rw)[1:-1] + ');')
+
 
 # mdb data connection made
 # comment = pd.read_sql('select * from sfe_comment', engine)
