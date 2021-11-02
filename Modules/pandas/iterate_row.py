@@ -17,11 +17,16 @@ rws = json.loads(commtJson)
 for rw in rws:
     print(str(rw)[1:-1])
 
+print("---------------------------------------")
 # Method 2
 # 
 # print(read_comment.agg(tuple, axis=1).tolist())
 
 
+
+
+
+# print("---------------------------------------")
 # Method 3
 #
 # aceess each row
@@ -48,3 +53,7 @@ for rw in rws:
 # result = [f(row[0], ..., row[n]) for row in df[['col1', ...,'coln']].to_numpy()]
 # # Iterating over multiple columns - differing data type
 # result = [f(row[0], ..., row[n]) for row in zip(df['col1'], ..., df['coln'])]
+
+
+# reference : 
+# https://stackoverflow.com/questions/7837722/what-is-the-most-efficient-way-to-loop-through-dataframes-with-pandas
