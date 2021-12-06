@@ -1,9 +1,9 @@
 import pandas as pd
 import json
 
-data = pd.read_excel('data/demo/SupervisorSig.xlsx')
+data = pd.read_excel("data/demo/SupervisorSig.xlsx")
 
-# Method 1. 
+# Method 1.
 # Jason
 commtTuple = data.agg(tuple, axis=1).tolist()
 commtList = list(commtTuple[0])
@@ -19,11 +19,8 @@ for rw in rws:
 
 print("---------------------------------------")
 # Method 2
-# 
+#
 # print(read_comment.agg(tuple, axis=1).tolist())
-
-
-
 
 
 # print("---------------------------------------")
@@ -31,9 +28,9 @@ print("---------------------------------------")
 #
 # aceess each row
 # for row in read_comment.itertuples(index=False, name=None):
-    # row = json.loads(str(row))
-    # print (row)
-    # print ("index[" + str(row.Index) + "] = " + str(row)[0:-1])
+# row = json.loads(str(row))
+# print (row)
+# print ("index[" + str(row.Index) + "] = " + str(row)[0:-1])
 
 # test = read_comment.apply(tuple, axis=1).tolist()
 # test1 = json.loads(str(test)[1:-1])
@@ -55,5 +52,5 @@ print("---------------------------------------")
 # result = [f(row[0], ..., row[n]) for row in zip(df['col1'], ..., df['coln'])]
 
 
-# reference : 
+# reference :
 # https://stackoverflow.com/questions/7837722/what-is-the-most-efficient-way-to-loop-through-dataframes-with-pandas
