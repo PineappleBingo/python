@@ -3,7 +3,7 @@ import logging
 
 
 def CSV(file_path):
-    logger = logging.getLogger("open_csv:CSV")
+    logger = logging.getLogger("open_csv")
     try:
         with open(file_path) as csv_file:
             csv_reader = csv.DictReader(csv_file, delimiter=",")
@@ -14,10 +14,9 @@ def CSV(file_path):
 
     # If file not found
     except FileNotFoundError as e:
-        print("[Error]:", e)
+        print("[Error Mssg]:", e)
         logger.exception(e)
     # If any other exception occured, it would move file
     except Exception as e:
         print("Not Processed: ", file_path, "[Error]:", e)
         logger.exception(e)
-        # error = True

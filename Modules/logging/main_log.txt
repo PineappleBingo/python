@@ -1,0 +1,14 @@
+WARNING:root:testing log
+12/29/2021 10:00:00 PM  root:<module> testing log
+12/29/2021 10:03:07 PM  root <module>:WARNING testing log
+12/29/2021 10:04:07 PM  root:<module> [WARNING] testing log
+12/29/2021 10:04:54 PM  open_csv:CSV:CSV [ERROR] 'Time Period'
+Traceback (most recent call last):
+  File "d:\gitprojects\python\Modules\logging\open_csv.py", line 11, in CSV
+    TP = row["Time Period"]
+KeyError: 'Time Period'
+12/29/2021 10:05:52 PM  open_csv:CSV [ERROR] [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+Traceback (most recent call last):
+  File "d:\gitprojects\python\Modules\logging\open_csv.py", line 8, in CSV
+    with open(file_path) as csv_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
