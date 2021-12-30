@@ -12,3 +12,8 @@ engine = create_engine("postgresql+psycopg2://postgres:0564@localhost:5432/TEST_
 
 # PostgresSql Reference
 # postgresql+psycopg2://user:password@host:port/dbname
+
+# Oracle
+# oracle+cx_oracle://user:pass@host:port/dbname[?key=value&key=value...]
+# oracle+cx_oracle://user:pass@host:1521/?service_name=hr
+# oracle+cx_oracle://user:pass@host:1521/?sid=hr
