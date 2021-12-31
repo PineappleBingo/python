@@ -1,6 +1,0 @@
-12/29/2021 09:56:04 PM  open_csv:CSV:CSV 'Time Period'
-Traceback (most recent call last):
-  File "d:\gitprojects\python\Modules\logging\open_csv.py", line 11, in CSV
-    TP = row["Time Period"]
-KeyError: 'Time Period'
-12/29/2021 09:58:03 PM  root:<module> testing log
