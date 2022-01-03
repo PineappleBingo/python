@@ -1,10 +1,10 @@
 import smtplib
 
-gmail_user = "your_email@gmail.com"
-gmail_password = "your_password"
+gmail_user = "brownkpt60@gmail.com"
+gmail_password = "tlyuffodaorexdjf"
 
 sent_from = gmail_user
-to = ["person_a@gmail.com", "person_b@gmail.com"]
+to = ["jinhodavid.seo@nyct.com"]
 subject = "Lorem ipsum dolor sit amet"
 body = "consectetur adipiscing elit"
 
