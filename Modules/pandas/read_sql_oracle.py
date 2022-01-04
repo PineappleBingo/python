@@ -1,5 +1,6 @@
 import cx_Oracle
 import pandas as pd
+from datetime import datetime
 
 # Oracle credentials
 _USR = "admin"
@@ -23,8 +24,20 @@ try:
     df_oracle = pd.read_sql(sql, con=connect, index_col=index)
     print(df_oracle.head(5))
 
-    # Create CSV from SQL
-    df_oracle.to_csv("D:\gitprojects\python\data\oracle_to_csv\oracle_to_csv.csv")
+    # Create excel from SQL
+    # df_oracle.to_excel("D:\gitprojects\python\data\oracle_to_csv\oracle_to_excel.xlsx", engine='xlsxwriter')
+
+    writer = pd.ExcelWriter(
+        "pandas_datetime.xlsx",
+        engine="xlsxwriter",
+        datetime_format="mmm d yyyy hh:mm:ss",
+        date_format="mmmm dd yyyy",
+    )
+
+    # Convert the dataframe to an XlsxWriter Excel object.
+    df_oracle.to_excel(writer, sheet_name="Sheet1")
+
+    writer.close()
 
 except KeyboardInterrupt:
     print("CLT-C:Terminate Server")
