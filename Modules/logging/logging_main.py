@@ -12,3 +12,4 @@ super_logger.error("This is an error message")
 def another_method():
     # using logger defined above also works here
     logger.info("Inside method")
+    super_logger.error("This is an error message")
