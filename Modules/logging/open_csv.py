@@ -15,8 +15,15 @@ def CSV(file_path):
     # If file not found
     except FileNotFoundError as e:
         print("[Error Mssg]:", e)
-        logger.exception(e)
+        logging.error(e, exc_info=True)  # same as logger.exception(e)
+        logger.error("Fatal error in main loop", exc_info=True)
+        logger.warn("Cannot resolve conflicting : {}".format(e))
+        logger.error("Not Processed / {}".format(e), exc_info=True)
     # If any other exception occured, it would move file
     except Exception as e:
         print("Not Processed: ", file_path, "[Error]:", e)
-        logger.exception(e)
+
+        logging.error(e, exc_info=True)  # same as logger.exception(e)
+        logger.error("Fatal error in main loop", exc_info=True)
+        logger.warn("Cannot resolve conflicting : {}".format(e))
+        logger.error("Not Processed / {}".format(e), exc_info=True)
