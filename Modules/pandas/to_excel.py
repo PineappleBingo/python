@@ -24,7 +24,9 @@ try:
     # Read SQL from oracleDB
     df_oracle = pd.read_sql(sql, con=connect, index_col=index)
     # Convert date to string format
-    df_oracle["SURVEY_DATE"] = df_oracle["SURVEY_DATE"].dt.strftime("%d-%b-%y")
+    df_oracle["SURVEY_DATE"] = (
+        df_oracle["SURVEY_DATE"].dt.strftime("%d-%b-%y").str.upper()
+    )
     # print(df_oracle.head(5))
 
     # Create excel from SQL
