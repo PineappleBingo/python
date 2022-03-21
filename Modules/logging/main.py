@@ -1,25 +1,21 @@
-import csv
 import logging
-import open_csv
+from open_csv import CSV
 
+# Logging Configuration
 LogFile = r"D:\gitprojects\python\Modules\logging\main_log.txt"
-logging.basicConfig(filename='LogFile', level=logging.DEBUG)
+LogFormat = "%(asctime)s  %(name)s:%(funcName)s [%(levelname)s] %(message)s"
+LogFormat1 = "%(asctime)s [%(filename)s -> %(funcName)s():%(lineno)s] [%(levelname)s]:%(message)s"
+LogFormat2 = "%(asctime)s [%(filename)s:%(lineno)s - %(funcName)15s() ] %(message)s"
 
+LogDateFormat = "%m/%d/%Y %I:%M:%S %p"
 
-def CSV(file_path):
+logging.basicConfig(
+    filename=LogFile, level=logging.INFO, format=LogFormat2, datefmt=LogDateFormat
+)
 
-    try:
-        with open(file_path) as csv_file:
-            csv_reader = csv.DictReader(csv_file, delimiter=",")
-            for row in csv_reader:
-                STO_LOC1 = row[1]
+file_path = r"D:\gitprojects\python\Modules\logging\data1.csv"
+CSV(file_path)
 
-        print(STO_LOC1)
-
-    # If file not found
-    except FileNotFoundError:
-        print("File not found")
-    # If any other exception occured, it would move file
-    except Exception as e:
-        print("Not Processed: ", file_path, "\n", e)
-        # error = True
+# Reference:
+# https://docs.python.org/3/library/logging.html
+# https://docs.python.org/3/howto/logging.html
