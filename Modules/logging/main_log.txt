@@ -12,3 +12,72 @@ Traceback (most recent call last):
   File "d:\gitprojects\python\Modules\logging\open_csv.py", line 8, in CSV
     with open(file_path) as csv_file:
 FileNotFoundError: [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+01/06/2022 11:58:36 AM  root:CSV [ERROR] [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+Traceback (most recent call last):
+  File "d:\gitprojects\python\Modules\logging\open_csv.py", line 8, in CSV
+    with open(file_path) as csv_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+01/06/2022 12:05:40 PM  root:CSV [ERROR] [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+Traceback (most recent call last):
+  File "d:\gitprojects\python\Modules\logging\open_csv.py", line 8, in CSV
+    with open(file_path) as csv_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+01/06/2022 12:05:40 PM  open_csv:CSV [ERROR] Fatal error in main loop
+Traceback (most recent call last):
+  File "d:\gitprojects\python\Modules\logging\open_csv.py", line 8, in CSV
+    with open(file_path) as csv_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+01/06/2022 12:09:32 PM  root:CSV [ERROR] [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+Traceback (most recent call last):
+  File "d:\gitprojects\python\Modules\logging\open_csv.py", line 8, in CSV
+    with open(file_path) as csv_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+01/06/2022 12:09:32 PM  open_csv:CSV [ERROR] Fatal error in main loop
+Traceback (most recent call last):
+  File "d:\gitprojects\python\Modules\logging\open_csv.py", line 8, in CSV
+    with open(file_path) as csv_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+01/06/2022 12:14:16 PM  root:CSV [ERROR] [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+Traceback (most recent call last):
+  File "d:\gitprojects\python\Modules\logging\open_csv.py", line 8, in CSV
+    with open(file_path) as csv_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+01/06/2022 12:14:16 PM  open_csv:CSV [ERROR] Fatal error in main loop
+Traceback (most recent call last):
+  File "d:\gitprojects\python\Modules\logging\open_csv.py", line 8, in CSV
+    with open(file_path) as csv_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+01/06/2022 12:14:16 PM  open_csv:CSV [WARNING] Cannot resolve conflicting : [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+[open_csv.py->CSV():18]ERROR: [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+Traceback (most recent call last):
+  File "d:\gitprojects\python\Modules\logging\open_csv.py", line 8, in CSV
+    with open(file_path) as csv_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+[open_csv.py->CSV():19]ERROR: Fatal error in main loop
+Traceback (most recent call last):
+  File "d:\gitprojects\python\Modules\logging\open_csv.py", line 8, in CSV
+    with open(file_path) as csv_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+[open_csv.py->CSV():20]WARNING: Cannot resolve conflicting : [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+01/06/2022 01:10:12 PM [open_csv.py -> CSV():18] ERROR: [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+Traceback (most recent call last):
+  File "d:\gitprojects\python\Modules\logging\open_csv.py", line 8, in CSV
+    with open(file_path) as csv_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+01/06/2022 01:10:12 PM [open_csv.py -> CSV():19] ERROR: Fatal error in main loop
+Traceback (most recent call last):
+  File "d:\gitprojects\python\Modules\logging\open_csv.py", line 8, in CSV
+    with open(file_path) as csv_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+01/06/2022 01:10:12 PM [open_csv.py -> CSV():20] WARNING: Cannot resolve conflicting : [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+01/06/2022 01:12:44 PM [open_csv.py:18 -             CSV() ] [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+Traceback (most recent call last):
+  File "d:\gitprojects\python\Modules\logging\open_csv.py", line 8, in CSV
+    with open(file_path) as csv_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+01/06/2022 01:12:44 PM [open_csv.py:19 -             CSV() ] Fatal error in main loop
+Traceback (most recent call last):
+  File "d:\gitprojects\python\Modules\logging\open_csv.py", line 8, in CSV
+    with open(file_path) as csv_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
+01/06/2022 01:12:44 PM [open_csv.py:20 -             CSV() ] Cannot resolve conflicting : [Errno 2] No such file or directory: 'D:\\gitprojects\\python\\Modules\\logging\\data1.csv'
