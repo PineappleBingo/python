@@ -40,6 +40,13 @@ print("new_pfdx:", new_pfdx)
 
 print("-------------------------------------------------")
 
+# function to return key for any value
+def get_key(dict, val):
+    for key, value in dict.items():
+        if val == value:
+            return key
+    return "key doesn't exist"
+
 
 def distance(x, y):
     # distance from 0, 0 = sqrt(x**2 + y**2)
@@ -63,3 +70,12 @@ for i in range(len(locations)):
     X_dict[tuple(locations[i])].append(dist)
 
 # {(1, 2): [2.23606797749979], (-1, 3): [3.1622776601683795], (2, 3): [3.605551275463989]}
+
+# print(X_dict.items())
+minDist = locations[0][0]
+print(minDist)
+for key, val in X_dict.items():
+    print(key, val)
+    # minDist = min(minDist, val)
+
+print("Minimum Distance:", minDist)
