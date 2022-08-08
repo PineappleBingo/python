@@ -10,7 +10,7 @@ try:
     print("----- DB connected -----")
     cursor = connect.cursor()
 except cx_Oracle.Error as e:
-    print(f"Error connecting to Oracle: {e}")
+    print("[Error] connecting to Oracle:", e)
     exit()
 finally:
     print("----- DB disconnected -----")
