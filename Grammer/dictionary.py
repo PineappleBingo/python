@@ -1,4 +1,7 @@
 # classes
+from pyexpat.errors import XML_ERROR_UNCLOSED_CDATA_SECTION, XML_ERROR_XML_DECL
+
+
 cdxes = ["a", "b", "C", "adc"]
 
 # features
@@ -34,3 +37,29 @@ for i in range(len(cdxes)):
         new_pfdx[str(new_key[i])].append(pfdx[j])
 
 print("new_pfdx:", new_pfdx)
+
+print("-------------------------------------------------")
+
+
+def distance(x, y):
+    # distance from 0, 0 = sqrt(x**2 + y**2)
+    import math
+
+    return math.sqrt(x ** 2 + y ** 2)
+
+
+# pair of x, y coordinates
+locations = [[1, 2], [-1, 3], [2, 3]]
+
+# Opt1. Cast list to Tuple
+X_dict = {tuple(locations[i]): [] for i in range(len(locations))}
+
+# {(1, 2): [], (-1, 3): [], (2, 0): []}
+
+for i in range(len(locations)):
+    for j in range(len(locations[i])):
+        # print(locations[i][j])
+        dist = distance(locations[i][0], locations[i][1])
+    X_dict[tuple(locations[i])].append(dist)
+
+# {(1, 2): [2.23606797749979], (-1, 3): [3.1622776601683795], (2, 3): [3.605551275463989]}
