@@ -1,0 +1,16 @@
+{
+    "oracle":
+    {
+        "username" : "admin",
+        "password" : "SGlittle5^^^",
+        "dns": "high"
+    },
+
+    "share_point":
+    {
+        "username": "xxxx@xxx.com",
+        "password": "xxxx",
+        "site_url": "https://xxxx.sharepoint.com/sites/xxxx/"
+    }
+
+}
