@@ -36,10 +36,10 @@ try:
             user=DB_USERNAME, password=DB_PASSWORD, dsn=DB_DNS, encoding="UTF-8"
         )
         print("----- DB connected -----")
-        cursor = db_con.cursor()
+        # cursor = db_con.cursor()
 
     except cx_Oracle.Error as e:
-        print(f"Error connecting to Oracle: {e}")
+        print("[Error] connecting to Oracle:", e)
         db_con.close()
 
 
