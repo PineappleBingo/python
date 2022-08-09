@@ -57,25 +57,35 @@ def distance(x, y):
 
 # pair of x, y coordinates
 locations = [[1, 2], [-1, 3], [2, 3]]
+NumStops = 2
 
 # Opt1. Cast list to Tuple
-X_dict = {tuple(locations[i]): [] for i in range(len(locations))}
+X_dict = {tuple(locations[i]): None for i in range(len(locations))}
+# {(1, 2): None, (-1, 3): None, (2, 0): None}
 
-# {(1, 2): [], (-1, 3): [], (2, 0): []}
+# Store Minimum Distance Delivery stops in List
+X_stops = list()
 
 for i in range(len(locations)):
     for j in range(len(locations[i])):
         # print(locations[i][j])
         dist = distance(locations[i][0], locations[i][1])
-    X_dict[tuple(locations[i])].append(dist)
+    X_dict[tuple(locations[i])] = dist
 
-# {(1, 2): [2.23606797749979], (-1, 3): [3.1622776601683795], (2, 3): [3.605551275463989]}
+# {(1, 2): 2.23606797749979, (-1, 3): 3.1622776601683795, (2, 3): 3.605551275463989}
 
-# print(X_dict.items())
-minDist = locations[0][0]
-print(minDist)
-for key, val in X_dict.items():
-    print(key, val)
-    # minDist = min(minDist, val)
+print(X_dict)
+counter = 0
+while counter < NumStops:
+    # Find mininmum distance for each x, y cordinates
+    minDist = X_dict[tuple(locations[0])]
+    for key, value in X_dict.items():
+        minDist = min(minDist, X_dict[key])
 
-print("Minimum Distance:", minDist)
+    stop = get_key(X_dict, minDist)
+    X_stops.append(list(stop))
+    locations.remove(list(stop))
+    X_dict.pop(stop)
+    counter += 1
+
+print("Minimum Distance Delivery Stops:", X_stops)
