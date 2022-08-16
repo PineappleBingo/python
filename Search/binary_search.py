@@ -1,23 +1,27 @@
-def search(self, nums, target):
+def search(nums, target):
+    
+    temp = nums[::]
+    isFound = False
+    
     while len(temp) > 1:
         mid = int(len(temp) / 2)
-        print("mid:", mid)
 
+        # case when target found (Target = temp[mid-1])
         if target == temp[mid-1]:
-            print("Target = Temp[mid]")
-            print("Target:", temp[mid-1])
+            isFound = True
             break
-
-        elif  target < temp[mid]:
-            # 3 < 5
+        # case when target var is left-half of remaining list
+        elif target < temp[mid]:
             temp = temp[:mid]
-            print(temp)
-            if target == temp[mid-1]:
-                # return target
-                print("target:", target)
-                break
-            else:
-                print("position:" )
+        # case when target var is right-half of remaining list    
         else:
             temp = temp[mid:]
-            print(temp)
+
+    if isFound:
+        print("Target Found:", temp[mid-1])
+    else:
+        print("Target Not Found")
+
+
+nums = [1, 3, 5, 3, 8, 9, 10, 12]
+search(nums, 10)
