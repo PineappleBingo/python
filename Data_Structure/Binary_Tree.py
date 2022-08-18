@@ -7,9 +7,9 @@ class Node:
     def PrintTree(self):
         if self.left:
             self.left.PrintTree()
-        print(self.data)
         if self.right:
             self.right.PrintTree()
+        print(self.data)
 
     def Insert(self, data):
         if self.data:
