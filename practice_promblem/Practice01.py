@@ -40,8 +40,68 @@ class Solution(object):
         DuplicateProducts = len(dupleWeightIndex)
         print("\nThe Number of Duplicate Products:", DuplicateProducts)
 
+    def FindDuplicate2(self, name, price, weight):
+        '''
+        Time Complexity : ??
+        Space Complexity: ??
+        '''
+        Products = list(zip(name, price, weight))
+        list_Products = list()
+
+        # swap tuple to list
+        for prod in Products:
+            list_Products.append(list(prod))
+
+        print(Products)
+        print(list_Products)
+
+
+        DuplicateProducts = 0
+        DuplicateName = ""
+        DuplicatePrice = 0
+        DuplicateWeight = 0
+
+        for i in range(len(list_Products)):
+            # print(Products[i])
+            DuplicateName = Products[i][0]
+            # "ball"
+            DuplicatePrice = Products[i][1]
+            # 1
+            DuplicateWeight = Products[i][2]
+            # 1
+
+            print(DuplicateName)
+            print(DuplicatePrice)
+            print(DuplicateWeight)
+
+            print(list_Products[i])
+
+            for j in range(len(list_Products)):
+                if  DuplicateName == Products[i][0]:
+                    print("duplicate?:", Products[i][0])
+                
+
+            # if list_Products[i].count(list_Products[i][0]) > 1:
+            #     print("Duplicates Found:", list_Products[i][0] )
+
+
+            # if Products[i] == Products[i][0]:
+            #     print("duplicate?:", Products[i][0])
+            
+
+            # for j in range(len(Products[i])):
+            #     # if DuplicateName == Products[i][j]:
+            #     print("Products:", Products[i][j])
+
+            print("")
+        
+        # Products = {  }
+        return None
+
 
 Sol = Solution()
 Sol.displayInput()
 Sol.FindDuplicate1(name, price, weight)
 print("--------------------------------")
+Sol.displayInput()
+Sol.FindDuplicate2(name, price, weight)
