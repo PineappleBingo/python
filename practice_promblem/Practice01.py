@@ -11,7 +11,8 @@ class Solution(object):
     def FindDuplicate1(self, name, price, weight):
         '''
         Keep track of duplicate product index by name, price, wegiht
-
+        Time Complexity : O(3N)
+        Space Complexity: ??
         '''
         dupleNameIndex = list()
         duplePriceIndex = list()
