@@ -37,9 +37,10 @@ class Solution(object):
                 print("duplicate weight out of duplicate product name and price matched index:", duplePriceIndex[k])
 
         DuplicateProducts = len(dupleWeightIndex)
-        print("The Number of Duplicate Products:", DuplicateProducts)
+        print("\nThe Number of Duplicate Products:", DuplicateProducts)
 
 
 Sol = Solution()
 Sol.displayInput()
 Sol.FindDuplicate1(name, price, weight)
+print("--------------------------------")
