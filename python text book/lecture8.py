@@ -15,24 +15,34 @@ print("After append B : ",A)
 
 phone = '347-804-8479'
 delimeter = '-'
+new_pohon1 = phone.replace(delimeter, "")
+print(new_pohon1)
+# 3478048479
+
 new_phone = phone.split(delimeter) # split return list
 print(new_phone)
-#print(type(new_phone))
+#["347", "804", "8479"]
 
 joint = ' '
 re_union = joint.join(new_phone)
 print(re_union)
 #347 804 8479
 
+re_union1 = joint.join(new_pohon1)
+print(re_union1)
+# 3 4 7 8 0 4 8 4 7 9
+
 # An object with more than one reference has more than one name, so we say that the object
 # is aliased.
 a = 'banana'
 b = 'banana'
 print(a is b)
+# True
 
 a1 = ['b','a']
 b1 = ['b','a']
 print(a1 is b1)
+# False
 
 # the append method modifies a list, but the + operator creates a
 # new list.

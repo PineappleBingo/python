@@ -61,24 +61,31 @@ class Solution(object):
         DuplicatePrice = 0
         DuplicateWeight = 0
 
+        DuplicateName = Products[0][0]
+        # "ball"
+        DuplicatePrice = Products[0][1]
+        # 1
+        DuplicateWeight = Products[0][2]
+        # 1
+
         for i in range(len(list_Products)):
             # print(Products[i])
-            DuplicateName = Products[i][0]
-            # "ball"
-            DuplicatePrice = Products[i][1]
-            # 1
-            DuplicateWeight = Products[i][2]
-            # 1
 
             print(DuplicateName)
             print(DuplicatePrice)
             print(DuplicateWeight)
 
-            print(list_Products[i])
+            print(list_Products[i][0])
 
             for j in range(len(list_Products)):
-                if  DuplicateName == Products[i][0]:
-                    print("duplicate?:", Products[i][0])
+                
+
+            # if DuplicateName == Products[i][0]:
+                
+
+            # for j in range(len(list_Products)):
+            #     if  DuplicateName == Products[i][0]:
+            #         print("duplicate?:", Products[i][0])
                 
 
             # if list_Products[i].count(list_Products[i][0]) > 1:
