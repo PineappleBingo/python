@@ -1,3 +1,12 @@
+
+# Binary Tree Traversal
+# 1. By Level -> Breadth-first
+
+# 2. By Delpth -> Depth-first
+# 2-1 : Inorder : <left><root><right>
+# 2-2 : Preorder : <root><left><right>
+# 2-3 : Postorder : <left><right><root>
+
 class Node:
     def __init__(self, data):
         self.left = None
