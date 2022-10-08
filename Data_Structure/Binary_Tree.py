@@ -70,6 +70,29 @@ def depthFirst_recr(root):
  
     return [ root.data, *leftValues, *rightValues ]
 
+def breathFirst(root):
+    queue = [ root ]
+    result = []
+
+    if len(queue) == 0:
+        return []
+    
+    while len(queue) > 0:
+        # removing front of queue
+        # visited
+        current = queue.pop(0)
+        result.append(current.data)
+        
+        if current.left:
+            queue.append(current.left)
+        if current.right:
+            queue.append(current.right)
+    
+    return result
+
+ 
+
+
 #  Example.1
 #       a
 #      / \
@@ -93,3 +116,6 @@ c.right = f
 print(depthFirst_iter(root))
 print("-------------------")
 print(depthFirst_recr(root))
+print("-------------------")
+# ['a', 'b', 'c', 'd', 'e', 'f']
+print(breathFirst(root))
