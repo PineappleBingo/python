@@ -45,6 +45,7 @@ class Node:
 # root.PrintTree()
 
 def depthFirst_iter(root):
+    # FILO
     stack = [ root ]
     result = []
     if len(stack) == 0:
@@ -71,6 +72,7 @@ def depthFirst_recr(root):
     return [ root.data, *leftValues, *rightValues ]
 
 def breathFirst(root):
+    # FIFO
     queue = [ root ]
     result = []
 
