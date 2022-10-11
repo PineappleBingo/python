@@ -34,4 +34,4 @@ def DepthFirst_Search_Rec(root, target):
     return DepthFirst_Search_Rec(root.left, target) or DepthFirst_Search_Rec(root.right, target)
 
 print("----------------------")
-print(DepthFirst_Search_Rec(root, 'j'))
+print(DepthFirst_Search_Rec(root, 'f'))
