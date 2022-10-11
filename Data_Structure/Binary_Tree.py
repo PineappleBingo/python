@@ -213,12 +213,19 @@ def TreeMin_df_iter(root):
 # --------------------------------
 # Depth-first preorder recursive
 # --------------------------------
-def TreeMin_df_rec(root):
+def TreeMin_df_rec1(root):
 
     if root == None: return INFINITY
-    leftSmall = TreeMin_df_rec(root.left)
-    rightSmall = TreeMin_df_rec(root.right)
+    leftSmall = TreeMin_df_rec1(root.left)
+    rightSmall = TreeMin_df_rec1(root.right)
     return min(root.data, leftSmall, rightSmall)
+
+# def TreeMin_df_rec2(root):
+
+#     if root == None: return INFINITY
+#     leftSmall = TreeMin_df_rec2(root.left)
+#     rightSmall = TreeMin_df_rec2(root.right)
+#     return min(root.data, leftSmall, rightSmall)
 
 
 # Breth-first Iterative
@@ -242,7 +249,8 @@ print(TreeMin_bf(root1))
 print("-------------------")
 print(TreeMin_df_iter(root1))
 print("-------------------")
-print(TreeMin_df_rec(root1))
+print(TreeMin_df_rec1(root1))
 print("-------------------")
-
+# print(TreeMin_df_rec2(root1))
+# print("-------------------")
 
