@@ -254,3 +254,8 @@ print("-------------------")
 # print(TreeMin_df_rec2(root1))
 # print("-------------------")
 
+print(10 < INFINITY)
+print(10 > INFINITY)
+print(INFINITY == INFINITY)
+print(-INFINITY < INFINITY)
+print(-INFINITY == INFINITY)
