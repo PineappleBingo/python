@@ -1,3 +1,4 @@
+from asyncio.windows_events import NULL
 import math
 
 
@@ -11,6 +12,7 @@ import math
 # 2-3 : Postorder : <left><right><root>
 
 from json.encoder import INFINITY
+from turtle import right
 
 
 class Node:
@@ -254,8 +256,48 @@ print("-------------------")
 # print(TreeMin_df_rec2(root1))
 # print("-------------------")
 
-print(10 < INFINITY)
-print(10 > INFINITY)
-print(INFINITY == INFINITY)
-print(-INFINITY < INFINITY)
-print(-INFINITY == INFINITY)
+
+# def TreePathSum_rec(root):
+#     # leaf node 
+#     # not working....
+#     if (root.left is None) and (root.right is None): return root.data
+#     # base case when node is null
+#     if root == None: return 
+#     # -INFINITY
+#     leftValue = TreePathSum_rec(root.left)
+#     rightValue = TreePathSum_rec(root.right)
+#     return root.data + max(leftValue, rightValue)
+
+# def TreePathSum_iter(root):
+#     stack = [ root ] 
+     
+#     # print(root.left, root.right)
+#     # print((root.left is None) and (root.right is None))
+#     # print(root.data)
+#     if root is None: return -INFINITY
+
+#     while( len(stack) > 0):
+#         current = stack.pop()
+#         # leaf node
+#         # if (current.left is None) and (current.right is None): print(current.data)
+
+#         biggerChild = max(current.left, current.right)
+        
+#         if root.left: stack.append(current.left)
+#         if root.right: stack.append(current.right)
+
+#     return root.data + biggerChild
+
+#          3
+#         / \
+#        11  3
+#       / \   \
+#      4  -2   1
+# sum: 18  12  7
+
+
+print("-------------------")
+# print(TreePathSum_rec(root1))
+# output: 18
+# print(TreePathSum_iter(root1))
+print("-------------------")
