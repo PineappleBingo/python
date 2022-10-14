@@ -1,0 +1,26 @@
+{
+    "share_point":
+  {
+      "username": "your_ID@nyct.com",
+      
+      "password": "your_password",
+      
+      "site_url": "https://nymta.sharepoint.com/sites/SFEFiles2/"
+
+  },
+
+  "oracle_prod":
+  {
+      "user_pass": "STAIRCASE",
+      
+      "prod_schema": "STAIRCASE"
+  },
+
+  "oracle":
+  {
+      "user_pass": "STAIRCASE",
+      
+      "schema": "STAIRCASE"
+  }
+
+}
