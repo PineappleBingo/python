@@ -1,27 +1,38 @@
-# ----------------------------------
-# Open Json file
-# ----------------------------------
-import os
-import json
+# ---------------------------------------------------------
+# input = ["cat", "tca", "atc", "pot", "opt", "pto"]
+# output = [["cat", "tca", "atc"], ["pot", "opt", "pto"]]
 
-# filepath = os.getcwd()
-ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-config_path = '\\'.join([ROOT_DIR, "config.json"])
+# ---------------------------------------------------------
+# a = ["a", "b", "c"]
+# c = ["b", "a", "c"]
+# print(a[0] in c)
+# true
+# ---------------------------------------------------------
 
-# Read config.json file
-with open(config_path) as config_file:
-    sp_config = json.load(config_file)
-    sp_config = sp_config["share_point"]
+# loop through input list elem.
+# if c in elem[0] and elem[1] and elem[2] => store in list
+# if c not in elems, removes
 
-# print(sp_config)
-# {'username': 'your_ID@nyct.com', 'password': 'your_password', 'site_url': 'https://nymta.sharepoint.com/sites/SFEFiles2/'}
-    
-# SharePoint credentials
-SP_USERNAME = sp_config["username"]
-SP_PASSWORD = sp_config["password"]
-SHAREPOINT_URL = sp_config["site_url"]
+words = ["cat", "tca", "atc", "pot", "opt", "pto"]
+chars = []
+anags = []
 
-print(SP_USERNAME)
-print(SP_PASSWORD)
-print(SHAREPOINT_URL)
+# store chars in elems
+for i in range(len(words)):
+    chars.append(list(words[i]))
 
+print(words)
+print(chars)
+wordsLen = len(words)
+charsLen = len(chars)
+
+# i : 0-5 : 6 elm
+# j : 0-2 : 3 elm
+for i in range(charsLen):
+    for j in range(len(chars[0])):
+        # print(chars[i][j])
+        if chars[i][j] in words[i]:
+            anags.append(words[i])
+        # c, a, t
+
+print(anags)

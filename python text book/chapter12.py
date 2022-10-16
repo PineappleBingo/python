@@ -63,8 +63,8 @@ print(d)
 # For example, a telephone directory might map from last-name, first-name pairs to telephone
 # numbers. Assuming that we have defined last, first and number, we could write:
 
-directory[last, first] = number
+# directory[last, first] = number
 
-# The expression in brackets is a tuple. We could use tuple assignment to traverse this dictionary.
-for last, first in directory:
-    print(first, last, directory[last,first])
+# # The expression in brackets is a tuple. We could use tuple assignment to traverse this dictionary.
+# for last, first in directory:
+#     print(first, last, directory[last,first])
