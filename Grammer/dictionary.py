@@ -1,4 +1,5 @@
 # classes
+from email.policy import default
 from pyexpat.errors import XML_ERROR_UNCLOSED_CDATA_SECTION, XML_ERROR_XML_DECL
 
 
@@ -89,3 +90,89 @@ while counter < NumStops:
     counter += 1
 
 print("Minimum Distance Delivery Stops:", X_stops)
+
+print("-------------------------------------------------")
+
+words = ["cat", "tca", "atc", "pot", "opt", "pto"]
+
+sortedWords = words[::]
+# sort words and convert back to string
+for i in range(len(words)):
+    sortedWords[i] = ''.join(sorted(words[i]))
+
+print(sortedWords)
+# ['act', 'act', 'act', 'opt', 'opt', 'opt']
+
+# Find indices of duplicate value method ------------ 1. using defulatdict
+from collections import defaultdict
+
+new_words = defaultdict(list)
+for idx, data in enumerate(sortedWords):
+    new_words[data].append(idx)
+
+print(new_words)
+new_words = dict(new_words)
+print(new_words)
+# {'act': [0, 1, 2], 'opt': [3, 4, 5]}
+
+# -----------------------------------------------------
+print("-----------------------------------------------")
+
+# Find indices of duplicate value method ------------ 2
+new_words2 = {sortedWords[i]: [] for i in range(len(sortedWords))}
+
+# print(new_words2)
+# {'act': [], 'opt': []}
+
+sindx = 0
+for i in range(len(sortedWords)):
+    new_words2[sortedWords[i]].append(sortedWords.index(sortedWords[i], sindx))
+    sindx += 1
+
+print(new_words2)
+# {'act': [0, 1, 2], 'opt': [3, 4, 5]}
+
+# -----------------------------------------------------
+print("-----------------------------------------------")
+
+
+# conver set to list / remove uplicates
+# nd_words = list(set(words))
+# indices = []
+# for idx, word in enumerate(words):
+#     if word in nd_words:
+#         indices.append(idx)
+#         new_words[word] = indices
+
+# print(new_words)
+
+
+# indices = []
+# new_words = {}
+# def duplicates(elem):
+#     if elem in words:
+#         for idx, word in enumerate(words):
+#             # print(idx, word)
+#             if elem == word:
+#                 indices.append(idx)
+#                 new_words[word] = indices
+#                 # print("word:", word, idx)
+#     print(new_words)
+
+# for word in words:
+#     duplicates(word)
+
+
+# # new_words = { word:[] for word, idx in enumerate(words) if word.count > 1  }
+# new_words = {}
+# indices = []
+# for word, idx in enumerate(words):
+#     if words.count(word) > 1:
+#         new_words[word] = indices.append(idx)
+# print(new_words)
+
+
+# def findDuplicateIndex(iterable):
+    
+
+
