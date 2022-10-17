@@ -77,3 +77,24 @@ for x in fruits2:
         newlist4.append("orange")
 
 print("newlist4:",newlist4)
+
+
+# ----------------------------------------------------------------
+
+def even_items_lc(iterable):
+    return [v for i, v in enumerate(iterable, start=1) if not i % 2]
+
+def even_items(iterable):
+    """Return items from ``iterable`` when their index is even."""
+    values = []
+    for index, value in enumerate(iterable, start=1):
+       if not index % 2:
+           values.append(value)
+    return values
+
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+print(even_items_lc(alphabet))
+print(even_items(alphabet))
+# ['b', 'd', 'f', 'h', 'j', 'l', 'n', 'p', 'r', 't', 'v', 'x', 'z']
+
+# ----------------------------------------------------------------
