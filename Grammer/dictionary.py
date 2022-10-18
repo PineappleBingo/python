@@ -92,8 +92,11 @@ while counter < NumStops:
 print("Minimum Distance Delivery Stops:", X_stops)
 
 print("-------------------------------------------------")
+# -----------------------------------------------------
+# Find anagram
+# -----------------------------------------------------
 
-words = ["cat", "tca", "atc", "pot", "opt", "pto"]
+words = ["cat", "tca", "pot", "atc", "opt", "pto", "abc"]
 
 sortedWords = words[::]
 # sort words and convert back to string
@@ -113,7 +116,7 @@ for idx, data in enumerate(sortedWords):
 print(new_words)
 new_words = dict(new_words)
 print(new_words)
-# {'act': [0, 1, 2], 'opt': [3, 4, 5]}
+# {'act': [0, 1, 3], 'opt': [2, 4, 5], 'abc': [6]}
 
 # -----------------------------------------------------
 print("-----------------------------------------------")
@@ -130,7 +133,17 @@ for i in range(len(sortedWords)):
     sindx += 1
 
 print(new_words2)
-# {'act': [0, 1, 2], 'opt': [3, 4, 5]}
+# {'act': [0, 1, 3], 'opt': [2, 4, 5], 'abc': [6]}
+
+# ------------------- eqauivalent --------------------
+
+new_words3 = {sortedWords[i]: [] for i in range(len(sortedWords))}
+
+for i, key in enumerate(sortedWords):
+    new_words3[sortedWords[i]].append(sortedWords.index(sortedWords[i], i))
+
+print(new_words3)
+# {'act': [0, 1, 3], 'opt': [2, 4, 5], 'abc': [6]}
 
 # -----------------------------------------------------
 print("-----------------------------------------------")
