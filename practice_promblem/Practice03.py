@@ -9,15 +9,9 @@
 # true
 # ---------------------------------------------------------
 
-# loop through input list elem.
-# if c in elem[0] and elem[1] and elem[2] => store in list
-# if c not in elems, removes
-
-words = ["cat", "tca", "atc", "pot", "opt", "pto"]
-chars = []
-anags = []
-
 # ---------------------------------------- wrong approach
+# chars = []
+# anags = []
 # # store chars in elems
 # for i in range(len(words)):
 #     chars.append(list(words[i]))
@@ -36,24 +30,119 @@ anags = []
 #             anags.append(words[i])
 #         # c, a, t
 # print(anags)
-# ----------------------------------------
+# -------------------------------------------------------
 
-print(sorted(words[0]) == sorted(words[1]))
-# true
-print(sorted(words[0]) is sorted(words[1])) 
+# -------------------------------------------------------
+# Solution 1
+# -------------------------------------------------------
+from collections import defaultdict
+
+words = ["cat", "tca", "atc", "pot", "opt", "pto"]
+
+st_words = words[::]
+# sort elem and convert list back to string
+for i in range(len(st_words)):
+    st_words[i] = ''.join(sorted(st_words[i]))
+
+print(st_words)
+# ['act', 'act', 'act', 'opt', 'opt', 'opt']
+
+# find duplicat elem indices
+dp_words = defaultdict(list)
+for idx, val in enumerate(st_words):
+    dp_words[val].append(idx)
+
+# restore defaltdict to dict
+dp_wordsIdx = dict(dp_words)
+# print(dp_wordsIdx)
+# {'act': [0, 1, 2], 'opt': [3, 4, 5]}
+
+# get new key
+new_key = list(dp_words)
+# ['act', 'opt']
+# print(len(dp_wordsIdx))
+# 2
+# print(len(dp_wordsIdx[new_key[0]]))
+# 3
+# print(dp_wordsIdx[new_key[0]])
+# [0, 1, 2]
+# print(words[dp_wordsIdx[new_key[0]][0]])
+# cat
+
+result = []
+for i in range(len(dp_wordsIdx)):
+    output = []
+    lenDpIdx = len(dp_wordsIdx[new_key[i]])
+    for j in range(lenDpIdx):
+        output.append(words[dp_wordsIdx[new_key[i]][j]])
+    result.append(output)
+
+print("result:", result)
+# [['cat', 'tca', 'atc'], ['pot', 'opt', 'pto']]
+
+# -------------------------------------------------------
+
+# print(sorted(words[0]) == sorted(words[1]))
+# # true
+# print(sorted(words[0]) is sorted(words[1])) 
 # false since each elem's memory location is different
 
+
+# key = list(set(st_words))
+# idx = 0
+
+# olist = []
+# for i in range(len(key)):
+#     # if key[i] in words:
+#     olist.append([])
+# print("olist:", olist)
+
+# output = [ ]
+# print(output)
+
+# for i in range(len(words)):
+#     loc = st_words.index(st_words[i], idx)
+#     output.append(words[loc])
+#     print(words[loc])
+#     idx += 1
+
+# print("output:", output)
+
+# from collections import defaultdict
+# dp_words = defaultdict(list)
+
+# for idx, val in enumerate(st_words):
+#     dp_words[val].append(idx)
+
+# dp_wordsIdx = dict(dp_words)
+# print(dp_wordsIdx)
+# # {'act': [0, 1, 2], 'opt': [3, 4, 5]}
+
+# new_key = list(dp_words)
+# # ['act', 'opt']
+
 # print(words)
-# ['cat', 'tca', 'atc', 'pot', 'opt', 'pto']
+# print(st_words)
+# print(dp_words)
 
-sortedWords = []
-# sort each elem and store to new list
-for i in range(len(words)):
-    # sortedWords.append(sorted(words[i]))
-    words[i] = sorted(words[i])
+# # get_words = defaultdict(list)
 
-print(words)
-# [['a', 'c', 't'], ['a', 'c', 't'], ['a', 'c', 't'], ['o', 'p', 't'], ['o', 'p', 't'], ['o', 'p', 't']]
+# if 
+
+
+
+# if words[i] == dp_wordsIdx[i]:
+    
+
+# for i in range(len(words)):
+#     if dp_words[words[i]] in words:
+#         print("hi")
+
+
+# output = []
+# for 
+
+
 
 # print(sortedWords)
 # [['a', 'c', 't'], ['a', 'c', 't'], ['a', 'c', 't'], ['o', 'p', 't'], ['o', 'p', 't'], ['o', 'p', 't']]
@@ -61,32 +150,32 @@ print(words)
 # sortedWordsSet = set(sortedWords)
 # print(sortedWordsSet)
 
-seen = set()
-for j in range(len(words)):
-    words[j] = ''.join(words[j])
+# seen = set()
+# for j in range(len(words)):
+#     words[j] = ''.join(words[j])
 
-# list to string conversion
-print(words)
-# ['act', 'act', 'act', 'opt', 'opt', 'opt']
+# # list to string conversion
+# print(words)
+# # ['act', 'act', 'act', 'opt', 'opt', 'opt']
 
-index = []
-output = []
-idx = 0
-for word in words:
-    # index.append(words.index(word))
+# index = []
+# output = []
+# idx = 0
+# for word in words:
+#     # index.append(words.index(word))
     
-    if word in words:
-        output.append(idx)
-    idx+= 1
-    # if word not in seen:
-    #     seen.add(word)
-print("output:", output)
+#     if word in words:
+#         output.append(idx)
+#     idx+= 1
+#     # if word not in seen:
+#     #     seen.add(word)
+# print("output:", output)
 
-for k, word in enumerate(words):
-    if word in words:
-        index.append(words.index(words[k]))
+# for k, word in enumerate(words):
+#     if word in words:
+#         index.append(words.index(words[k]))
 
-print("index:", index)
+# print("index:", index)
 
 
 # print("index:", index)
