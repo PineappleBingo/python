@@ -11,7 +11,7 @@ EXPORT_PATH = os.path.join(ROOT_PATH, "Export")
 file_in_path = "\\".join([IMPORT_PATH, "Sample.csv"])
 file_out_path = "\\".join([EXPORT_PATH, "Output.csv"])
 
-new_fileds = ["Sample Id", "Counts"]
+new_fileds = ["Sample Id", "Counts", "Control Area"]
 new_rows = []
 
 
@@ -23,8 +23,15 @@ def IMPORT_CSV(file_in_path):
             for row in csv_file:
                 SAMPLE_ID = row["Sample ID"]
                 COUNTS = row["Counts"]
+                CONTR_AREA = str(row["Sample ID"])[1:4]
 
-                new_rows.append({"Sample Id": SAMPLE_ID, "Counts": COUNTS})
+                new_rows.append(
+                    {
+                        "Sample Id": SAMPLE_ID,
+                        "Counts": COUNTS,
+                        "Control Area": CONTR_AREA,
+                    }
+                )
 
     # If file not found
     except FileNotFoundError as e:
@@ -34,6 +41,12 @@ def IMPORT_CSV(file_in_path):
 
 
 IMPORT_CSV(file_in_path)
+
+print(new_rows)
+# [{'Sample Id': 'N3080000001', 'Counts': '10', 'Control Area': '308'},
+#  {'Sample Id': 'N3070000002', 'Counts': '20', 'Control Area': '307'},
+#  {'Sample Id': 'Q1350000003', 'Counts': '30', 'Control Area': '135'},
+#  {'Sample Id': 'Q1500000004', 'Counts': '40', 'Control Area': '150'}]
 
 with open(file_out_path, "w", encoding="UTF8", newline="") as f:
     writer = csv.DictWriter(f, fieldnames=new_fileds)
