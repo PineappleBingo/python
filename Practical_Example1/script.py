@@ -11,7 +11,7 @@ ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
 IMPORT_PATH = os.path.join(ROOT_PATH, "Import")
 EXPORT_PATH = os.path.join(ROOT_PATH, "Export")
 
-file_in_path = "\\".join([IMPORT_PATH, "Sample1.csv"])
+file_in_path = "\\".join([IMPORT_PATH, "Sample.csv"])
 file_out_path = "\\".join([EXPORT_PATH, "Output.csv"])
 
 # Logging Configuration
@@ -30,15 +30,23 @@ logging.basicConfig(
     datefmt=LogDateFormat,
 )
 
-__isFailed = False
+# Variables
+__isFailed = None
 
 new_fileds = ["Sample Id", "Counts", "Control Area"]
 new_rows = []
 
 
 def IMPORT_CSV(file_in_path):
+    """
+    Import CSV file to reproduce columns
+
+    Args: param1: File import path
+
+    Returns: Void
+    """
+
     global __isFailed
-    __isFailed = False
     try:
         with open(file_in_path) as file:
             csv_file = csv.DictReader(file, delimiter=",")
@@ -60,17 +68,22 @@ def IMPORT_CSV(file_in_path):
         __isFailed = True
         print("\n\n[Error]:", e)
         logging.exception(e)
-        # input("\n\nPress Enter to Quit...")
-    # except BaseException as e:
-    #     print("Not Processed: ", file_in_path, "[Error]:", e)
-    #     logging.exception(e)
-    #     input("\n\nPress Enter to Quit...")
+    except BaseException as e:
+        print("\n\n[Error]:", e)
+        logging.exception(e)
     else:
         print("\n\nFile Successfully Imported")
         logging.info("File Successfully Imported")
 
 
 def EXPORT_CSV(file_out_path):
+    """
+    Export modified rows to CSV file
+
+    Aarg: param1: file destination path
+
+    Returns: Void
+    """
     try:
         with open(file_out_path, "w", encoding="UTF8", newline="") as f:
             writer = csv.DictWriter(f, fieldnames=new_fileds)
@@ -81,26 +94,22 @@ def EXPORT_CSV(file_out_path):
         print("\n\nNot Processed: ", file_out_path, "[Error]:", e)
         logging.exception(e)
     else:
-        print("\n\nFile Successfully Exported!\n[File Path]: " + file_out_path)
+        print("File Successfully Exported!\n[File Path]: " + file_out_path)
         logging.info("File Successfully Exported!\n[File Path]: " + file_out_path)
 
 
 try:
     IMPORT_CSV(file_in_path)
-    print(__isFailed)
     if __isFailed:
-        # print(__isFailed)
-        # raise Exception
         input("\n\nPress Enter to Quit...")
     else:
         EXPORT_CSV(file_out_path)
+        input("\n\nPress Enter to Quit...")
 
 except Exception as e:
     print("[Error]:", e)
     input("\n\nPress Enter to Quit...")
 
-# finally:
-#     input("\n\nPress Enter to Quit...")
 
 # print(new_rows)
 # [{'Sample Id': 'N3080000001', 'Counts': '10', 'Control Area': '308'},
