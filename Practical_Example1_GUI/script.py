@@ -98,17 +98,46 @@ def EXPORT_CSV(file_out_path):
         logging.info("File Successfully Exported!\n[File Path]: " + file_out_path)
 
 
-try:
-    IMPORT_CSV(file_in_path)
-    if __isFailed:
-        input("\n\nPress Enter to Quit...")
-    else:
-        EXPORT_CSV(file_out_path)
-        input("\n\nPress Enter to Quit...")
+# try:
+#     IMPORT_CSV(file_in_path)
+#     if __isFailed:
+#         input("\n\nPress Enter to Quit...")
+#     else:
+#         EXPORT_CSV(file_out_path)
+#         input("\n\nPress Enter to Quit...")
 
-except Exception as e:
-    print("[Error]:", e)
-    input("\n\nPress Enter to Quit...")
+# except Exception as e:
+#     print("[Error]:", e)
+#     input("\n\nPress Enter to Quit...")
+
+
+from tkinter import *
+
+app = Tk()
+
+Label(app, text='Import Path').grid(row=0)
+Label(app, text='Export Path').grid(row=1)
+IFP = Entry(app, width=70)
+EFP = Entry(app, width=70)
+
+IFP.grid(row=0, column=1)
+EFP.grid(row=1, column=1)
+
+IFP_Btn = Button(app, text="Open")
+EFP_Btn = Button(app, text="Open")
+
+IFP_Btn.grid(row=0, column=2)
+EFP_Btn.grid(row=1, column=2)
+
+ourMessage ='This is our Message'
+messageVar = Message(app, text = ourMessage)
+
+messageVar.config(bg='lightgreen')
+messageVar.grid(row=2)
+
+mainloop()
+
+# https://realpython.com/python-gui-tkinter/
 
 
 # print(new_rows)
