@@ -12,7 +12,9 @@ from pathlib import Path
 sys.dont_write_bytecode = True
 
 ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
+IMPORT_PATH = None
 EXPORT_PATH = None
+
 
 new_fileds = ["Sample ID", "Location", "Day",
               "Hour", "Hourly Swipe", "Bucket", "Sample Set"]
@@ -20,10 +22,16 @@ new_rows = []
 
 
 def close():
+    """
+    Close the application
+    """
     app.quit()
 
 
 def reset():
+    """
+    Reset the application
+    """
     imp_txt.delete('1.0', tk.END)
     exp_txt.delete('1.0', tk.END)
     op_text.delete('1.0', tk.END)
@@ -34,6 +42,7 @@ def import_file():
     Import CSV file
     """
     global EXPORT_PATH
+    global IMPORT_PATH
 
     implog_tx = str(datetime.datetime.now().strftime("%m/%d/%Y %I:%M:%S %p "))
 
@@ -47,19 +56,24 @@ def import_file():
         initialdir=ROOT_PATH)
 
     # Import file in path
-    IMPORT_FILE = impf.name
+    IMPORT_PATH = impf.name
     # Import file name
     impf_name = Path(impf.name).name
-    # Set Default export file path same as import file path
-    EXPORT_PATH = Path(impf.name).parent.as_posix()
+
+    # Pass if export path already set up by user
+    if EXPORT_PATH:
+        pass
+    else:
+        # Set Default export file path same as import file location
+        EXPORT_PATH = Path(impf.name).parent.as_posix()
 
     reset()
 
-    imp_txt.insert('1.0', IMPORT_FILE)
+    imp_txt.insert('1.0', IMPORT_PATH)
     exp_txt.insert('1.0', EXPORT_PATH)
 
     try:
-        with open(IMPORT_FILE) as file:
+        with open(IMPORT_PATH) as file:
             csv_file = csv.DictReader(file, delimiter=",")
             # Read CSV rows and generates new format to export
             for row in csv_file:
@@ -117,7 +131,8 @@ def convert_file():
     """
     Export modified rows to CSV file
     """
-    if EXPORT_PATH:
+
+    if IMPORT_PATH and EXPORT_PATH:
 
         expf_ts = str(datetime.datetime.now().strftime("%m%d%Y_%I%M%S"))
         explog_ts = str(datetime.datetime.now().strftime(
@@ -143,11 +158,18 @@ def convert_file():
                            "File Successfully Converted & Exported!")
             op_text.insert(tk.END, "\n[File Path]: " + file_out_path)
             op_text.insert(
-                tk.END, "\n-----------------------------------------------------------------------")
+                tk.END, "\n---------------------------------------------------------------------------------")
 
+    elif IMPORT_PATH and EXPORT_PATH is None:
+        op_text.insert(tk.END, "\nPlease Select Export File Location")
+        print("Please Select Export File Location")
+    elif EXPORT_PATH and IMPORT_PATH is None:
+        op_text.insert(tk.END, "\nPlease Select Import File(.csv)")
+        print("Please Select Import File")
     else:
-        op_text.insert(tk.END, "\nPlease select export file location")
-        print("Please select export file location")
+        op_text.insert(
+            tk.END, "\nPlease Select Import File & Export File Location")
+        print("Please Select Import File & Export File Location")
 
 
 # App window
