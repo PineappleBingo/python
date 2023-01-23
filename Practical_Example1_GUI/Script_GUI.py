@@ -3,7 +3,6 @@ from tkinter import ttk
 import tkinter as tk
 import csv
 import datetime
-import logging
 import os
 import sys
 import traceback
@@ -11,143 +10,23 @@ from pathlib import Path
 
 sys.dont_write_bytecode = True
 
-# Dir Path
 ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
-# IMPORT_PATH = None
-# EXPORT_PATH = None
-
-# IMPORT_PATH = os.path.join(ROOT_PATH, "Import")
-# EXPORT_PATH = os.path.join(ROOT_PATH, "Export")
-
-# file_in_path = "\\".join(
-#     [IMPORT_PATH, "quarterly_sample_308_schedule_output.csv"])
-# file_out_path = "\\".join([EXPORT_PATH, "sample_308_schedule_output.csv"])
-
-# Logging Configuration
-LOG_PATH = "\\".join([ROOT_PATH, "\\"])
-LOG_FILE = (
-    LOG_PATH + str(datetime.datetime.now().strftime("%m%d%Y")) +
-    "_Q_Schedule_Importer_Logs.txt"
-)
-LogFormat = "%(asctime)s [%(filename)s:%(lineno)s - %(funcName)s() ] %(message)s"
-LogDateFormat = "%m/%d/%Y %I:%M:%S %p"
-
-logging.basicConfig(
-    filename=LOG_FILE,
-    level=logging.INFO,
-    filemode="w",
-    format=LogFormat,
-    datefmt=LogDateFormat,
-)
-
-# Variables
-__isFailed = None
+EXPORT_PATH = None
 
 new_fileds = ["Sample ID", "Location", "Day",
               "Hour", "Hourly Swipe", "Bucket", "Sample Set"]
 new_rows = []
 
-
-def IMPORT_CSV(file_in_path):
-    """
-    Import CSV file to reproduce columns
-
-    Args: param1: File import path
-
-    Returns: Void
-    """
-    global __isFailed
-
-    try:
-        with open(file_in_path) as file:
-            csv_file = csv.DictReader(file, delimiter=",")
-            # Read CSV rows and generates new format to export
-            for row in csv_file:
-                SAMPLE_ID = row["sample_id"]
-                LOCATION = row["loc"]
-                DAY = row["day_type"]
-                HOUR = row["begin_time"]
-                HOURLY_SWIPE = row["swipes"]
-                BUCKET = row["strata"]
-                SAMPLE_SET = str(row["sample_id"])[1:4]
-
-                new_rows.append(
-                    {
-                        "Sample ID": SAMPLE_ID,
-                        "Location": LOCATION,
-                        "Day": DAY,
-                        "Hour": HOUR,
-                        "Hourly Swipe": HOURLY_SWIPE,
-                        "Bucket": BUCKET,
-                        "Sample Set": SAMPLE_SET,
-                    }
-                )
-
-    except FileNotFoundError as e:
-        __isFailed = True
-        print("\n\n[Error]:", e)
-        op_text.insert('1.0', traceback.FrameSummary())
-        print(traceback.FrameSummary())
-        # logging.exception(e)
-    except BaseException as e:
-        print("\n\n[Error]:", e)
-        op_text.insert('1.0', traceback.FrameSummary())
-        print(traceback.FrameSummary())
-        # logging.exception(e)
-    else:
-        print("\n\nFile Successfully Imported")
-        op_text.insert('1.0', "File Successfully Imported")
-        # logging.info("File Successfully Imported")
-
-
-def EXPORT_CSV(file_out_path):
-    """
-    Export modified rows to CSV file
-
-    Aarg: param1: file destination path
-
-    Returns: Void
-    """
-    try:
-        with open(file_out_path, "w", encoding="UTF8", newline="") as f:
-            writer = csv.DictWriter(f, fieldnames=new_fileds)
-            writer.writeheader()
-            writer.writerows(new_rows)
-
-    except BaseException as e:
-        print("\n\nNot Processed: ", file_out_path, "[Error]:", e)
-        logging.exception(e)
-    else:
-        print("File Successfully Exported!\n[File Path]: " + file_out_path)
-        logging.info(
-            "File Successfully Exported!\n[File Path]: " + file_out_path)
-
-
-# try:
-#     IMPORT_CSV(file_in_path)
-#     if __isFailed:
-#         input("\n\nPress Enter to Quit...")
-#     else:
-#         EXPORT_CSV(file_out_path)
-#         input("\n\nPress Enter to Quit...")
-
-# except Exception as e:
-#     print("[Error]:", e)
-#     input("\n\nPress Enter to Quit...")
-
 def close():
-    # win.destroy()
     app.quit()
-
 
 def import_file():
     """
-    Import CSV file to reproduce columns
+    Import CSV file
 
-    Args: param1: File import path
-
-    Returns: Void
     """
+    global EXPORT_PATH
+
     filetypes = (
         ('CSV files', '*.csv'),
         ('All files', '*.*')
@@ -155,26 +34,21 @@ def import_file():
     # show the open file dialog
     impf = fd.askopenfile(
         filetypes=filetypes,
-        initialdir=os.getcwd())
+        initialdir=ROOT_PATH)
 
     # Import file in path
     IMPORT_FILE = impf.name
-
-    # EXPORT_PATH = impf.__dir__
-    # print("export_path0:", EXPORT_PATH)
-    EXPORT_PATH = Path(impf.name)
-
-    # EXPORT_PATH = EXPORT_PATH.parent + "\quarterly_sample_308_schedule_output.csv"
-
-    print("1:", EXPORT_PATH.parent)
-    print("2:", EXPORT_PATH.parent.as_posix())
-    print("3:", EXPORT_PATH)
-
-#     [IMPORT_PATH, "quarterly_sample_308_schedule_output.csv"])
-    # print("export_path:", EXPORT_PATH)
+    # Import file name
+    impf_name = Path(impf.name).name
+    # Set Default export file path same as import file path
+    EXPORT_PATH = Path(impf.name).parent.as_posix()
+    
+    imp_txt.delete('1.0', tk.END)
+    exp_txt.delete('1.0', tk.END)
+    op_text.delete('1.0', tk.END)
 
     imp_txt.insert('1.0', IMPORT_FILE)
-    exp_txt.insert('1.0', EXPORT_PATH.parent.as_posix())
+    exp_txt.insert('1.0', EXPORT_PATH)
 
     try:
         with open(IMPORT_FILE) as file:
@@ -202,37 +76,66 @@ def import_file():
                 )
 
     except FileNotFoundError as e:
-        # __isFailed = True
-        print("\n\n[Error]:", e)
+        print("\n[Error]:", e)
         op_text.insert('1.0', e)
-        # logging.exception(e)
     except BaseException as e:
-        print("\n\n[Error]:", e)
+        print("\n[Error]:", e)
         op_text.insert('1.0', e)
-        # logging.exception(e)
     else:
-        print("\n\nFile Successfully Imported")
+        print("\n" + impf_name + " Successfully Imported")
+        # op_text.insert('1.0', impf_name + "File Successfully Imported")
         op_text.insert('1.0', "File Successfully Imported")
-        # logging.info("File Successfully Imported")
 
 
-def export_file():
+
+def set_export_path():
+    """
+    Set export path other than default path
+    Default export path is set to import path
+    
+    """
+    global EXPORT_PATH
     # show the open file dialog
     expf = fd.askdirectory(
         title="Export Directory"
         # initialdir = os.getcwd()
     )
     # read the csv file and show its name with path
-    exp_txt.insert('1.0', expf)
+    exp_txt.delete('1.0', tk.END)
+    EXPORT_PATH = expf
+    exp_txt.insert('1.0', EXPORT_PATH)
 
 
-# def output_result():
-#     # op_result = "any exception"
-#     # initialdir = os.getcwd()
+def convert_file():
+    """
+    Export modified rows to CSV file
 
-#     # read the csv file and show its name with path
-#     op_text.insert('1.0', opr_txt)
+    """
+    if EXPORT_PATH :
+        
+        ts = str(datetime.datetime.now().strftime("%m%d%Y_%I%M%S"))
+        file_out_path = "/".join([str(EXPORT_PATH), ("sample_308_schedule_output_" + ts +".csv")])
+        
+        try:
+            with open(file_out_path, "w", encoding="UTF8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=new_fileds)
+                writer.writeheader()
+                writer.writerows(new_rows)
 
+        except BaseException as e:
+            print("\nNot Processed: ", file_out_path, "[Error]:", e)
+            op_text.insert(tk.END, "\n" + e)      
+            # logging.exception(e)
+        else:
+            print("File Successfully Converted & Exported!\n[File Path]: " + file_out_path)
+            op_text.insert(tk.END, "\nFile Successfully Converted & Exported!\n[File Path]: " + file_out_path)
+            # logging.info(
+            #     "File Successfully Exported!\n[File Path]: " + file_out_path)
+
+    else:
+        op_text.insert(tk.END, "\nPlease select export file location")
+        print("Please select export file location")
+    
 
 # App window
 app = tk.Tk()
@@ -242,13 +145,13 @@ app.geometry('658x350')
 
 # Import Path
 imp_txt = tk.Text(app, height=1, width=70, wrap=tk.NONE)
-imp_txt.grid(row=0, column=1, columnspan=3)
+imp_txt.grid(row=0, column=1, columnspan=4)
 
 tk.Label(app, text='Import Path').grid(row=0, column=0, pady=2)
 tk.Label(app, text='Export Path').grid(row=1, column=0)
 
 exp_txt = tk.Text(app, height=1, width=70, wrap=tk.NONE)
-exp_txt.grid(row=1, column=1, columnspan=3)
+exp_txt.grid(row=1, column=1, columnspan=4)
 
 # import file button
 import_button = ttk.Button(
@@ -256,32 +159,28 @@ import_button = ttk.Button(
     text='Open a File',
     command=import_file
 )
-
 # export file button
 export_button = ttk.Button(
     app,
-    text='Set Export Folder',
-    command=export_file
+    text='Set Export Path',
+    command=set_export_path
 )
 
 cnvrt_button = ttk.Button(
     app,
     text='Convert',
-    # command=convert
+    command=convert_file
 )
-
 
 exit_button = ttk.Button(app, text="Close", command=close)
 
 import_button.grid(column=0, row=2, padx=3, pady=15)
-export_button.grid(column=1, row=2, padx=3, pady=15, sticky="w")
-exit_button.grid(column=2, row=2, padx=10, pady=15, sticky="e")
-
-# print("opr_txt:", opr_txt)
-
+export_button.grid(column=1, row=2, padx=3, pady=15)
+cnvrt_button.grid(column=2, row=2, padx=3, pady=15, sticky="w")
+exit_button.grid(column=3, row=2, padx=10, pady=15, sticky="e")
 
 op_text = tk.Text(app, height=15, wrap=tk.WORD)
-op_text.grid(row=3, column=0, columnspan=3, padx=5, pady=10)
+op_text.grid(row=3, column=0, columnspan=4, padx=5, pady=10)
 
 app.mainloop()
 
