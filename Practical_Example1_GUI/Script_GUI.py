@@ -1,4 +1,5 @@
 from tkinter import filedialog as fd
+import tkinter.scrolledtext as tkscrolled
 from tkinter import ttk
 import tkinter as tk
 import csv
@@ -11,21 +12,39 @@ from pathlib import Path
 sys.dont_write_bytecode = True
 
 ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
+IMPORT_PATH = None
 EXPORT_PATH = None
+
 
 new_fileds = ["Sample ID", "Location", "Day",
               "Hour", "Hourly Swipe", "Bucket", "Sample Set"]
 new_rows = []
 
+
 def close():
+    """
+    Close the application
+    """
     app.quit()
+
+
+def reset():
+    """
+    Reset the application
+    """
+    imp_txt.delete('1.0', tk.END)
+    exp_txt.delete('1.0', tk.END)
+    op_text.delete('1.0', tk.END)
+
 
 def import_file():
     """
     Import CSV file
-
     """
     global EXPORT_PATH
+    global IMPORT_PATH
+
+    implog_tx = str(datetime.datetime.now().strftime("%m/%d/%Y %I:%M:%S %p "))
 
     filetypes = (
         ('CSV files', '*.csv'),
@@ -37,21 +56,24 @@ def import_file():
         initialdir=ROOT_PATH)
 
     # Import file in path
-    IMPORT_FILE = impf.name
+    IMPORT_PATH = impf.name
     # Import file name
     impf_name = Path(impf.name).name
-    # Set Default export file path same as import file path
-    EXPORT_PATH = Path(impf.name).parent.as_posix()
-    
-    imp_txt.delete('1.0', tk.END)
-    exp_txt.delete('1.0', tk.END)
-    op_text.delete('1.0', tk.END)
 
-    imp_txt.insert('1.0', IMPORT_FILE)
+    # Pass if export path already set up by user
+    if EXPORT_PATH:
+        pass
+    else:
+        # Set Default export file path same as import file location
+        EXPORT_PATH = Path(impf.name).parent.as_posix()
+
+    reset()
+
+    imp_txt.insert('1.0', IMPORT_PATH)
     exp_txt.insert('1.0', EXPORT_PATH)
 
     try:
-        with open(IMPORT_FILE) as file:
+        with open(IMPORT_PATH) as file:
             csv_file = csv.DictReader(file, delimiter=",")
             # Read CSV rows and generates new format to export
             for row in csv_file:
@@ -82,17 +104,16 @@ def import_file():
         print("\n[Error]:", e)
         op_text.insert('1.0', e)
     else:
-        print("\n" + impf_name + " Successfully Imported")
-        # op_text.insert('1.0', impf_name + "File Successfully Imported")
-        op_text.insert('1.0', "File Successfully Imported")
-
+        print("\n" + implog_tx + impf_name + " Successfully Imported")
+        op_text.insert('1.0', implog_tx + impf_name + " Successfully Imported")
+        # op_text.insert('1.0', "File Successfully Imported")
 
 
 def set_export_path():
     """
     Set export path other than default path
     Default export path is set to import path
-    
+
     """
     global EXPORT_PATH
     # show the open file dialog
@@ -109,13 +130,17 @@ def set_export_path():
 def convert_file():
     """
     Export modified rows to CSV file
-
     """
-    if EXPORT_PATH :
-        
-        ts = str(datetime.datetime.now().strftime("%m%d%Y_%I%M%S"))
-        file_out_path = "/".join([str(EXPORT_PATH), ("sample_308_schedule_output_" + ts +".csv")])
-        
+
+    if IMPORT_PATH and EXPORT_PATH:
+
+        expf_ts = str(datetime.datetime.now().strftime("%m%d%Y_%I%M%S"))
+        explog_ts = str(datetime.datetime.now().strftime(
+            "%m/%d/%Y %I:%M:%S %p "))
+
+        file_out_path = "/".join([str(EXPORT_PATH),
+                                 ("sample_308_schedule_output_" + expf_ts + ".csv")])
+
         try:
             with open(file_out_path, "w", encoding="UTF8", newline="") as f:
                 writer = csv.DictWriter(f, fieldnames=new_fileds)
@@ -124,63 +149,101 @@ def convert_file():
 
         except BaseException as e:
             print("\nNot Processed: ", file_out_path, "[Error]:", e)
-            op_text.insert(tk.END, "\n" + e)      
-            # logging.exception(e)
-        else:
-            print("File Successfully Converted & Exported!\n[File Path]: " + file_out_path)
-            op_text.insert(tk.END, "\nFile Successfully Converted & Exported!\n[File Path]: " + file_out_path)
-            # logging.info(
-            #     "File Successfully Exported!\n[File Path]: " + file_out_path)
+            op_text.insert(tk.END, "\n" + e)
 
+        else:
+            print(
+                explog_ts + "File Successfully Converted & Exported!\n[File Path]: " + file_out_path)
+            op_text.insert(tk.END, "\n" + explog_ts +
+                           "File Successfully Converted & Exported!")
+            op_text.insert(tk.END, "\n[File Path]: " + file_out_path)
+            op_text.insert(
+                tk.END, "\n---------------------------------------------------------------------------------")
+
+    elif IMPORT_PATH and EXPORT_PATH is None:
+        op_text.insert(tk.END, "\nPlease Select Export File Location")
+        print("Please Select Export File Location")
+    elif EXPORT_PATH and IMPORT_PATH is None:
+        op_text.insert(tk.END, "\nPlease Select Import File(.csv)")
+        print("Please Select Import File")
     else:
-        op_text.insert(tk.END, "\nPlease select export file location")
-        print("Please select export file location")
-    
+        op_text.insert(
+            tk.END, "\nPlease Select Import File & Export File Location")
+        print("Please Select Import File & Export File Location")
+
 
 # App window
 app = tk.Tk()
 app.title('SFE Schedule Template Converter')
 app.resizable(False, False)
-app.geometry('658x350')
+appWindow_w = 750
+appWindow_h = 400
+app.geometry("{}x{}".format(appWindow_w, appWindow_h))
+
+# Frame Geometry
+frame_A = tk.Frame(app, width=appWindow_w, height=100)
+frame_AI = tk.Frame(frame_A, width=appWindow_w)
+frame_A.grid(row=0, column=0)
+frame_AI.pack(side=tk.LEFT, padx=5, pady=8, expand=1)
+
+frame_B = tk.Frame(app, width=appWindow_w, height=60)
+frame_BI = tk.Frame(frame_B, width=appWindow_w)
+frame_B.grid(row=1, column=0)
+frame_BI.place(x=0, y=5, width=appWindow_w-10, height=50)
+# frame_BI.pack(side=tk.LEFT, pady=5, padx=5, expand=1, fill=tk.X)
+
+frame_C = tk.Frame(app, width=appWindow_w, height=200)
+frame_CI = tk.Frame(frame_C, width=appWindow_w)
+frame_C.grid(row=2, column=0)
+frame_CI.pack(side=tk.LEFT, padx=5, pady=5, expand=1)
+
+frame_AI.grid_columnconfigure(0, weight=1)
+frame_AI.grid_columnconfigure(1, weight=1)
 
 # Import Path
-imp_txt = tk.Text(app, height=1, width=70, wrap=tk.NONE)
-imp_txt.grid(row=0, column=1, columnspan=4)
+tk.Label(frame_AI, text='Import Path', width=10).grid(
+    row=0, column=0, sticky="w")
+imp_txt = tk.Text(frame_AI, width=80, height=1, wrap=tk.NONE)
+imp_txt.grid(row=0, column=1, sticky="e")
 
-tk.Label(app, text='Import Path').grid(row=0, column=0, pady=2)
-tk.Label(app, text='Export Path').grid(row=1, column=0)
+tk.Label(frame_AI, text='Export Path', width=10).grid(
+    row=1, column=0, sticky="w")
+exp_txt = tk.Text(frame_AI, width=80, height=1, wrap=tk.NONE)
+exp_txt.grid(row=1, column=1, sticky="e")
 
-exp_txt = tk.Text(app, height=1, width=70, wrap=tk.NONE)
-exp_txt.grid(row=1, column=1, columnspan=4)
-
-# import file button
+# Import file open button
 import_button = ttk.Button(
-    app,
+    frame_BI,
     text='Open a File',
     command=import_file
 )
-# export file button
+# Export path setup button
 export_button = ttk.Button(
-    app,
+    frame_BI,
     text='Set Export Path',
     command=set_export_path
 )
-
+# Convert execution button
 cnvrt_button = ttk.Button(
-    app,
+    frame_BI,
     text='Convert',
     command=convert_file
 )
 
-exit_button = ttk.Button(app, text="Close", command=close)
+exit_button = ttk.Button(frame_BI, text="Close", command=close)
 
-import_button.grid(column=0, row=2, padx=3, pady=15)
-export_button.grid(column=1, row=2, padx=3, pady=15)
-cnvrt_button.grid(column=2, row=2, padx=3, pady=15, sticky="w")
-exit_button.grid(column=3, row=2, padx=10, pady=15, sticky="e")
+frame_BI.grid_columnconfigure(0, weight=1)
+frame_BI.grid_columnconfigure(1, weight=1)
+frame_BI.grid_columnconfigure(2, weight=1)
+frame_BI.grid_columnconfigure(3, weight=13)
 
-op_text = tk.Text(app, height=15, wrap=tk.WORD)
-op_text.grid(row=3, column=0, columnspan=4, padx=5, pady=10)
+import_button.grid(row=0, column=0, padx=3, pady=15, ipadx=10, sticky="w")
+export_button.grid(row=0, column=1, padx=3, pady=15, ipadx=10, sticky="w")
+cnvrt_button.grid(row=0, column=2, padx=3, pady=15, ipadx=20, sticky="w")
+exit_button.grid(row=0, column=3, padx=10, pady=15, ipadx=10, sticky="e")
+
+op_text = tkscrolled.ScrolledText(frame_CI, width=90, height=15, wrap=tk.WORD)
+op_text.grid(row=0, column=0, padx=5, pady=5)
 
 app.mainloop()
 
