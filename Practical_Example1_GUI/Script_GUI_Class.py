@@ -106,7 +106,7 @@ class MainPage(tk.Frame):
         # User Interface
         name_label = tk.Label(self, text="SFE Schedule Template Converter",
                               font=('arial', 15))
-        verion_label = tk.Label(self, text="version: 1.0.2")
+        verion_label = tk.Label(self, text="version: 1.0.3")
 
         name_label.place(relx=0.5, rely=0.12, anchor=tk.CENTER)
 
@@ -122,6 +122,7 @@ class WeeeklySchedulePage(tk.Frame):
     IMPORT_PATH = None
     EXPORT_PATH = None
     CSV_PATH = None
+    OP_FNAME = None
     imp_txt = None
     exp_txt = None
     op_txt = None
@@ -276,6 +277,12 @@ class WeeeklySchedulePage(tk.Frame):
     def get_op_txt(self):
         return WeeeklySchedulePage.op_txt
 
+    def update_output_fname(self, filename):
+        WeeeklySchedulePage.OP_FNAME = Path(filename).stem
+
+    def get_output_fname(self):
+        return WeeeklySchedulePage.OP_FNAME
+
     def reset_fields(self):
         """
         Reset the application
@@ -319,7 +326,9 @@ class WeeeklySchedulePage(tk.Frame):
             self.update_csv_path(CSV_PATH)
 
             # convert excel extension to csv
-            excel_file = pd.read_excel(file_path)
+            excel_file = pd.read_excel(
+                file_path, sheet_name="AtcSched", index_col=0)
+
             excel_file.to_csv(CSV_PATH, index=None, header=True)
 
         except FileNotFoundError:
@@ -344,7 +353,7 @@ class WeeeklySchedulePage(tk.Frame):
             "%m/%d/%Y %I:%M:%S %p "))
 
         filetypes = (
-            ('Excel files', '*.xlsx'),
+            ('Excel 97-2003 Workbook', '*.xls'),
             ('All files', '*.*')
         )
         # show the open file dialog
@@ -358,6 +367,8 @@ class WeeeklySchedulePage(tk.Frame):
         # Import file name
         impf_name = Path(impf.name).name
 
+        # Set input filename to class variable
+        self.update_output_fname(impf_name)
         # Convert excel file to csv
         self.excel_to_csv(IMPORT_PATH)
         # Get updated CSV_PATH
@@ -421,7 +432,7 @@ class WeeeklySchedulePage(tk.Frame):
                         }
                     )
 
-            print(self.ws_new_rows)
+            # print(self.ws_new_rows)
 
         except FileNotFoundError:
             self.error_msg()
@@ -474,8 +485,10 @@ class WeeeklySchedulePage(tk.Frame):
             explog_ts = str(datetime.datetime.now().strftime(
                 "%m/%d/%Y %I:%M:%S %p "))
 
+            OUTPUT_FNAME = self.get_output_fname()
+
             file_out_path = "/".join([str(EXPORT_PATH),
-                                      ("Weekly_Sample_Schedule_Output_" + expf_ts + ".csv")])
+                                      (OUTPUT_FNAME + "_Weekly_Schedule_" + expf_ts + ".csv")])
 
             try:
                 with open(file_out_path, "w", encoding="UTF8", newline="") as f:
@@ -511,6 +524,7 @@ class QuarterlySchedulePage(tk.Frame):
 
     IMPORT_PATH = None
     EXPORT_PATH = None
+    OP_FNAME = None
     imp_txt = None
     exp_txt = None
     op_txt = None
@@ -672,6 +686,12 @@ class QuarterlySchedulePage(tk.Frame):
     def get_sample_no(self):
         return QuarterlySchedulePage.SAMPLE_NO
 
+    def update_output_fname(self, filename):
+        QuarterlySchedulePage.OP_FNAME = Path(filename).stem
+
+    def get_output_fname(self):
+        return QuarterlySchedulePage.OP_FNAME
+
     def reset_fields(self):
         """
         Reset Import/Export Fields and Path
@@ -733,6 +753,9 @@ class QuarterlySchedulePage(tk.Frame):
         IMPORT_PATH = impf.name
         # Import file name
         impf_name = Path(impf.name).name
+
+        # Set input filename to class variable
+        self.update_output_fname(impf_name)
         # update class variable
         self.update_imp_path(IMPORT_PATH)
 
@@ -832,8 +855,11 @@ class QuarterlySchedulePage(tk.Frame):
             explog_ts = str(datetime.datetime.now().strftime(
                 "%m/%d/%Y %I:%M:%S %p "))
 
+            # Not used
+            # OUTPUT_FNAME = self.get_output_fname()
+
             file_out_path = "/".join([str(EXPORT_PATH),
-                                      ("Quarterly_Sample_" + str(self.get_sample_no()) + "_Schedule_Output_" + expf_ts + ".csv")])
+                                      ("Quarterly_Sample_" + str(self.get_sample_no()) + "_Schedule_" + expf_ts + ".csv")])
 
             try:
                 with open(file_out_path, "w", encoding="UTF8", newline="") as f:
