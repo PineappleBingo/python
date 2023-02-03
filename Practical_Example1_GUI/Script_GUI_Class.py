@@ -12,6 +12,11 @@ from pathlib import Path
 sys.dont_write_bytecode = True
 
 
+class ExcelImportError(Exception):
+    "Error occured while WeeeklySchedulePage.excel_to_csv() Run"
+    pass
+
+
 class MainApplication(tk.Tk):
 
     appWindow_w = 650
@@ -106,7 +111,7 @@ class MainPage(tk.Frame):
         # User Interface
         name_label = tk.Label(self, text="SFE Schedule Template Converter",
                               font=('arial', 15))
-        verion_label = tk.Label(self, text="version: 1.0.3")
+        verion_label = tk.Label(self, text="version: 1.0.4")
 
         name_label.place(relx=0.5, rely=0.12, anchor=tk.CENTER)
 
@@ -320,21 +325,34 @@ class WeeeklySchedulePage(tk.Frame):
         """
         Convert Excel file to CSV & .xlsx to .csv
         """
+        isFailed = None
+
         try:
             # Convert .xlsx extion to .csv
             CSV_PATH = Path(file_path).with_suffix(".csv").as_posix()
             self.update_csv_path(CSV_PATH)
 
-            # convert excel extension to csv
-            excel_file = pd.read_excel(
-                file_path, sheet_name="AtcSched", index_col=0)
+            df = pd.read_excel(file_path, sheet_name="AtcSched")
 
-            excel_file.to_csv(CSV_PATH, index=None, header=True)
+            # Change the data type float to Int64 leave NaN
+            df["ASM_START_TIME"] = df["ASM_START_TIME"].astype("Int64")
+            df["ASM_END_TIME"] = df["ASM_END_TIME"].astype("Int64")
+            df["PES_START_TIME"] = df["PES_START_TIME"].astype("Int64")
+            df["PES_END_TIME"] = df["PES_END_TIME"].astype("Int64")
+
+            df.to_csv(CSV_PATH, index=None, header=True)
+
+            isFailed = False
+            return isFailed
 
         except FileNotFoundError:
             self.error_msg()
+            isFailed = True
+            return isFailed
         except BaseException:
             self.error_msg()
+            isFailed = True
+            return isFailed
 
     def import_ws_file(self):
         """
@@ -369,11 +387,16 @@ class WeeeklySchedulePage(tk.Frame):
 
         # Set input filename to class variable
         self.update_output_fname(impf_name)
+
         # Convert excel file to csv
-        self.excel_to_csv(IMPORT_PATH)
+        if self.excel_to_csv(IMPORT_PATH):
+            raise ExcelImportError
+        else:
+            pass
+
         # Get updated CSV_PATH
         CSV_PATH = self.get_csv_path()
-
+        
         # Pass if export path already set up by user
         if EXPORT_PATH is not None:
             pass
@@ -438,6 +461,7 @@ class WeeeklySchedulePage(tk.Frame):
             self.error_msg()
         except BaseException:
             self.error_msg()
+
         else:
             print("\n" + implog_ts + impf_name + " Successfully Imported")
             op_txt.insert(tk.END, "\n" + implog_ts + impf_name +
