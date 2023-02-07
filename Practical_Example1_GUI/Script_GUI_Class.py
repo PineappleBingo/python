@@ -39,7 +39,7 @@ class MainApplication(tk.Tk):
         # we'll create the frames themselves later but let's add the components to the dictionary.
         for F in (MainPage,
                   WeeeklySchedulePage,
-                  QuarterlySchedulePage
+                  QuarterlySamplePage
                   ):
             frame = F(container, self)
             # the windows class acts as the root window for the frames.
@@ -63,7 +63,7 @@ class MainApplication(tk.Tk):
 
     def set_ws_title(self):
         """
-        Set Weekly Schedule Title
+        Set Weekly Schedules Title
         """
         self.title("SFE Schedule Template Converter - Weekly Schedule")
 
@@ -71,7 +71,7 @@ class MainApplication(tk.Tk):
         """
         Set Quarterly Schedule Title
         """
-        self.title("SFE Schedule Template Converter - Quarterly Schedule")
+        self.title("SFE Schedule Template Converter - Quarterly Samples")
 
     def set_title(self):
         """
@@ -103,15 +103,15 @@ class MainPage(tk.Frame):
             button_frame,
             height=5,
             width=23,
-            text="Quarterly Schedule",
+            text="Quarterly Samples",
             command=lambda: [controller.show_frame(
-                QuarterlySchedulePage), controller.set_qs_title()]
+                QuarterlySamplePage), controller.set_qs_title()]
         )
 
         # User Interface
         name_label = tk.Label(self, text="SFE Schedule Template Converter",
                               font=('arial', 15))
-        verion_label = tk.Label(self, text="version: 1.0.4")
+        verion_label = tk.Label(self, text="version: 1.0.5")
 
         name_label.place(relx=0.5, rely=0.12, anchor=tk.CENTER)
 
@@ -185,7 +185,7 @@ class WeeeklySchedulePage(tk.Frame):
         # Rest Button
         reset_button = ttk.Button(
             frame_BI,
-            text="Rest",
+            text="Reset",
             command=self.reset_fields
         )
         # Import file open button
@@ -238,7 +238,7 @@ class WeeeklySchedulePage(tk.Frame):
         switch_window_button.grid(row=3, column=0)
 
     def get_root_path(self):
-        return os.path.dirname(os.path.abspath(__file__))
+        return r"\\\\transit\\nyct\\EVP_SHARE\\SDR_DATA\\Rzgrp\\P E S"
 
     def get_imp_path(self):
         return WeeeklySchedulePage.IMPORT_PATH
@@ -363,9 +363,9 @@ class WeeeklySchedulePage(tk.Frame):
         exp_txt = self.get_exp_txt()
         op_txt = self.get_op_txt()
 
-        ROOT_PATH = self.get_root_path()
         EXPORT_PATH = self.get_exp_path()
         IMPORT_PATH = self.get_imp_path()
+        ROOT_PATH = self.get_root_path()
 
         implog_ts = str(datetime.datetime.now().strftime(
             "%m/%d/%Y %I:%M:%S %p "))
@@ -377,7 +377,9 @@ class WeeeklySchedulePage(tk.Frame):
         # show the open file dialog
         impf = fd.askopenfile(
             filetypes=filetypes,
-            initialdir=ROOT_PATH)
+            initialdir=ROOT_PATH
+            # r"\\\\transit\\nyct\\EVP_SHARE\\SDR_DATA\\Rzgrp\\P E S"
+        )
 
         # Import file in path
         IMPORT_PATH = impf.name
@@ -396,13 +398,32 @@ class WeeeklySchedulePage(tk.Frame):
 
         # Get updated CSV_PATH
         CSV_PATH = self.get_csv_path()
-        
+
         # Pass if export path already set up by user
         if EXPORT_PATH is not None:
             pass
         else:
-            # Set Default export file path same as import file location
-            self.update_exp_path(Path(impf.name).parent.as_posix())
+            SandBox_SubPath = Path(IMPORT_PATH).parent.name
+            SandBox_Path = Path(IMPORT_PATH).parent.parent.joinpath(
+                str("SANDBOX").upper()).joinpath("Weekly Schedules").joinpath(SandBox_SubPath)
+
+            # # print("SandBox_Path:", SandBox_Path)
+            # # print("SandBox_Path_posix:", Path(SandBox_Path).as_posix())
+
+            # Set Default export file path to IMPORT_PATH.parent/SANSBOX/Weekly Schedule/{quarter}Q{year}
+            if SandBox_Path.exists():
+                self.update_exp_path(Path(SandBox_Path).as_posix())
+                pass
+            else:
+                # if SandBox Path is not exist, creates folders by given path
+                try:
+                    self.update_exp_path(Path(SandBox_Path).as_posix())
+                    SandBox_Path.mkdir(parents=True)
+
+                except FileNotFoundError:
+                    self.error_msg()
+                except BaseException:
+                    self.error_msg()
 
         # Reset Import/Export Path fields
         imp_txt.delete('1.0', tk.END)
@@ -474,7 +495,6 @@ class WeeeklySchedulePage(tk.Frame):
 
         """
         exp_txt = self.get_exp_txt()
-
         EXPORT_PATH = self.get_exp_path()
         ROOT_PATH = self.get_root_path()
 
@@ -544,7 +564,7 @@ class WeeeklySchedulePage(tk.Frame):
             print("Please Select Import File & Export File Location")
 
 
-class QuarterlySchedulePage(tk.Frame):
+class QuarterlySamplePage(tk.Frame):
 
     IMPORT_PATH = None
     EXPORT_PATH = None
@@ -613,7 +633,7 @@ class QuarterlySchedulePage(tk.Frame):
         # Rest Button
         reset_button = ttk.Button(
             frame_BI,
-            text="Rest",
+            text="Reset",
             command=self.reset_fields
         )
         # Import file open button
@@ -666,55 +686,55 @@ class QuarterlySchedulePage(tk.Frame):
         switch_window_button.grid(row=3, column=0)
 
     def get_root_path(self):
-        return os.path.dirname(os.path.abspath(__file__))
+        return r"\\\\transit\\nyct\\EVP_SHARE\\SDR_DATA\\Rzgrp\\P E S"
 
     def get_imp_path(self):
-        return QuarterlySchedulePage.IMPORT_PATH
+        return QuarterlySamplePage.IMPORT_PATH
 
     def get_exp_path(self):
-        return QuarterlySchedulePage.EXPORT_PATH
+        return QuarterlySamplePage.EXPORT_PATH
 
     def update_imp_path(self, new_path):
-        QuarterlySchedulePage.IMPORT_PATH = new_path
+        QuarterlySamplePage.IMPORT_PATH = new_path
 
     def update_exp_path(self, new_path):
-        QuarterlySchedulePage.EXPORT_PATH = new_path
+        QuarterlySamplePage.EXPORT_PATH = new_path
 
     def get_fileds(self):
-        return QuarterlySchedulePage.qs_fileds
+        return QuarterlySamplePage.qs_fileds
 
     def get_new_rows(self):
-        return QuarterlySchedulePage.qs_new_rows
+        return QuarterlySamplePage.qs_new_rows
 
     def update_imp_txt(self, value):
-        QuarterlySchedulePage.imp_txt = value
+        QuarterlySamplePage.imp_txt = value
 
     def update_exp_txt(self, value):
-        QuarterlySchedulePage.exp_txt = value
+        QuarterlySamplePage.exp_txt = value
 
     def update_op_txt(self, value):
-        QuarterlySchedulePage.op_txt = value
+        QuarterlySamplePage.op_txt = value
 
     def get_imp_txt(self):
-        return QuarterlySchedulePage.imp_txt
+        return QuarterlySamplePage.imp_txt
 
     def get_exp_txt(self):
-        return QuarterlySchedulePage.exp_txt
+        return QuarterlySamplePage.exp_txt
 
     def get_op_txt(self):
-        return QuarterlySchedulePage.op_txt
+        return QuarterlySamplePage.op_txt
 
     def update_sample_no(self, numb):
-        QuarterlySchedulePage.SAMPLE_NO = numb
+        QuarterlySamplePage.SAMPLE_NO = numb
 
     def get_sample_no(self):
-        return QuarterlySchedulePage.SAMPLE_NO
+        return QuarterlySamplePage.SAMPLE_NO
 
     def update_output_fname(self, filename):
-        QuarterlySchedulePage.OP_FNAME = Path(filename).stem
+        QuarterlySamplePage.OP_FNAME = Path(filename).stem
 
     def get_output_fname(self):
-        return QuarterlySchedulePage.OP_FNAME
+        return QuarterlySamplePage.OP_FNAME
 
     def reset_fields(self):
         """
@@ -785,11 +805,29 @@ class QuarterlySchedulePage(tk.Frame):
 
         # Pass if export path already set up by user
         if EXPORT_PATH is not None:
-            print("EXPORT_PATH:", EXPORT_PATH)
             pass
         else:
-            # Set Default export file path same as import file location
-            self.update_exp_path(Path(impf.name).parent.as_posix())
+            SandBox_SubPath = Path(IMPORT_PATH).parent.name
+            SandBox_Path = Path(IMPORT_PATH).parent.parent.joinpath(
+                str("SANDBOX").upper()).joinpath("Quarterly Samples").joinpath(SandBox_SubPath)
+
+            # # print("SandBox_Path:", SandBox_Path)
+            # # print("SandBox_Path_posix:", Path(SandBox_Path).as_posix())
+
+            # Set Default export file path to IMPORT_PATH.parent/SANSBOX/Quarterly Samples/{quarter}Q{year}
+            if SandBox_Path.exists():
+                self.update_exp_path(Path(SandBox_Path).as_posix())
+                pass
+            else:
+                # if SandBox Path is not exist, creates folders by given path
+                try:
+                    self.update_exp_path(Path(SandBox_Path).as_posix())
+                    SandBox_Path.mkdir(parents=True)
+
+                except FileNotFoundError:
+                    self.error_msg()
+                except BaseException:
+                    self.error_msg()
 
         # Reset Import/Export Path fields
         imp_txt.delete('1.0', tk.END)
@@ -879,11 +917,10 @@ class QuarterlySchedulePage(tk.Frame):
             explog_ts = str(datetime.datetime.now().strftime(
                 "%m/%d/%Y %I:%M:%S %p "))
 
-            # Not used
-            # OUTPUT_FNAME = self.get_output_fname()
+            OUTPUT_FNAME = self.get_output_fname()
 
             file_out_path = "/".join([str(EXPORT_PATH),
-                                      ("Quarterly_Sample_" + str(self.get_sample_no()) + "_Schedule_" + expf_ts + ".csv")])
+                                      (OUTPUT_FNAME + "_" + str(self.get_sample_no()) + "_" + expf_ts + ".csv")])
 
             try:
                 with open(file_out_path, "w", encoding="UTF8", newline="") as f:
@@ -902,7 +939,7 @@ class QuarterlySchedulePage(tk.Frame):
                               "File Successfully Converted & Exported!")
                 op_txt.insert(tk.END, "\n[File Path]: " + file_out_path)
                 op_txt.insert(
-                    tk.END, "\n---------------------------------------------------------------------------------")
+                    tk.END, "\n-------------------------------------------------------------------------")
 
         elif IMPORT_PATH and EXPORT_PATH is None:
 
