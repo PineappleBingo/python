@@ -2,19 +2,16 @@ import tkinter.scrolledtext as tkscrolled
 from tkinter import filedialog as fd
 from tkinter import ttk
 import tkinter as tk
-import csv
 import datetime
-import os
 import pandas as pd
 import sys
 import traceback
 from pathlib import Path
 sys.dont_write_bytecode = True
 
-
-class ExcelImportError(Exception):
-    "Error occured while WeeeklySchedulePage.excel_to_csv() Run"
-    pass
+# class ExcelImportError(Exception):
+#     "Error occured while WeeeklySchedulePage.excel_to_csv() Run"
+#     pass
 
 
 class MainApplication(tk.Tk):
@@ -111,7 +108,7 @@ class MainPage(tk.Frame):
         # User Interface
         name_label = tk.Label(self, text="SFE Schedule Template Converter",
                               font=('arial', 15))
-        verion_label = tk.Label(self, text="version: 1.0.5")
+        verion_label = tk.Label(self, text="version: 1.0.7")
 
         name_label.place(relx=0.5, rely=0.12, anchor=tk.CENTER)
 
@@ -126,15 +123,17 @@ class WeeeklySchedulePage(tk.Frame):
 
     IMPORT_PATH = None
     EXPORT_PATH = None
-    CSV_PATH = None
+    CONVT_DATA = None
     OP_FNAME = None
     imp_txt = None
     exp_txt = None
     op_txt = None
 
-    ws_fileds = ["SSC Date", "SSC Start", "SSC End", "Checker", "Bus", "Job Number", "Job Code", "Job Name",
-                 "Description", "Start Time", "End Time", "Depot", "Location", "Destination", "Rel Trip", "Checker Name"]
-    ws_new_rows = []
+    data_columns = ["SSC_DATE", "ASM_START_TIME", "ASM_END_TIME", "SSC_CHECKER", "BUS_PES", "PES_JOB_NO", "PES_JOB_CODE", "PES_JOB_NAME",
+                    "PES_DESCRIPTION", "PES_START_TIME", "PES_END_TIME", "PES_DEPOT", "PES_LOCATION", "PES_DESTINATION", "PES_REL_TRIP", "CHECKER_NAME"]
+
+    new_columns = ["SSC Date", "SSC Start", "SSC End", "Checker", "Bus", "Job Number", "Job Code", "Job Name",
+                   "Description", "Start Time", "End Time", "Depot", "Location", "Destination", "Rel Trip", "Checker Name"]
 
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
@@ -246,32 +245,11 @@ class WeeeklySchedulePage(tk.Frame):
     def get_exp_path(self):
         return WeeeklySchedulePage.EXPORT_PATH
 
-    def get_csv_path(self):
-        return WeeeklySchedulePage.CSV_PATH
+    def get_columns(self):
+        return WeeeklySchedulePage.data_columns
 
-    def update_imp_path(self, new_path):
-        WeeeklySchedulePage.IMPORT_PATH = new_path
-
-    def update_exp_path(self, new_path):
-        WeeeklySchedulePage.EXPORT_PATH = new_path
-
-    def update_csv_path(self, new_path):
-        WeeeklySchedulePage.CSV_PATH = new_path
-
-    def get_fileds(self):
-        return WeeeklySchedulePage.ws_fileds
-
-    def get_new_rows(self):
-        return WeeeklySchedulePage.ws_new_rows
-
-    def update_imp_txt(self, value):
-        WeeeklySchedulePage.imp_txt = value
-
-    def update_exp_txt(self, value):
-        WeeeklySchedulePage.exp_txt = value
-
-    def update_op_txt(self, value):
-        WeeeklySchedulePage.op_txt = value
+    def get_new_columns(self):
+        return WeeeklySchedulePage.new_columns
 
     def get_imp_txt(self):
         return WeeeklySchedulePage.imp_txt
@@ -282,11 +260,32 @@ class WeeeklySchedulePage(tk.Frame):
     def get_op_txt(self):
         return WeeeklySchedulePage.op_txt
 
+    def get_output_fname(self):
+        return WeeeklySchedulePage.OP_FNAME
+
+    def get_ws_ndf(self):
+        return WeeeklySchedulePage.CONVT_DATA
+
+    def update_imp_path(self, new_path):
+        WeeeklySchedulePage.IMPORT_PATH = new_path
+
+    def update_exp_path(self, new_path):
+        WeeeklySchedulePage.EXPORT_PATH = new_path
+
+    def update_imp_txt(self, value):
+        WeeeklySchedulePage.imp_txt = value
+
+    def update_exp_txt(self, value):
+        WeeeklySchedulePage.exp_txt = value
+
+    def update_op_txt(self, value):
+        WeeeklySchedulePage.op_txt = value
+
     def update_output_fname(self, filename):
         WeeeklySchedulePage.OP_FNAME = Path(filename).stem
 
-    def get_output_fname(self):
-        return WeeeklySchedulePage.OP_FNAME
+    def update_ws_ndf(self, df):
+        WeeeklySchedulePage.CONVT_DATA = df
 
     def reset_fields(self):
         """
@@ -321,39 +320,6 @@ class WeeeklySchedulePage(tk.Frame):
         op_txt.insert(tk.END, "\n" + errlog_ts +
                       " Application terminating... ")
 
-    def excel_to_csv(self, file_path):
-        """
-        Convert Excel file to CSV & .xlsx to .csv
-        """
-        isFailed = None
-
-        try:
-            # Convert .xlsx extion to .csv
-            CSV_PATH = Path(file_path).with_suffix(".csv").as_posix()
-            self.update_csv_path(CSV_PATH)
-
-            df = pd.read_excel(file_path, sheet_name="AtcSched")
-
-            # Change the data type float to Int64 leave NaN
-            df["ASM_START_TIME"] = df["ASM_START_TIME"].astype("Int64")
-            df["ASM_END_TIME"] = df["ASM_END_TIME"].astype("Int64")
-            df["PES_START_TIME"] = df["PES_START_TIME"].astype("Int64")
-            df["PES_END_TIME"] = df["PES_END_TIME"].astype("Int64")
-
-            df.to_csv(CSV_PATH, index=None, header=True)
-
-            isFailed = False
-            return isFailed
-
-        except FileNotFoundError:
-            self.error_msg()
-            isFailed = True
-            return isFailed
-        except BaseException:
-            self.error_msg()
-            isFailed = True
-            return isFailed
-
     def import_ws_file(self):
         """
         Import Weekly Schedule CSV file
@@ -383,21 +349,12 @@ class WeeeklySchedulePage(tk.Frame):
 
         # Import file in path
         IMPORT_PATH = impf.name
-        self.update_imp_path(IMPORT_PATH)
         # Import file name
         impf_name = Path(impf.name).name
-
+        # update class variable
+        self.update_imp_path(IMPORT_PATH)
         # Set input filename to class variable
         self.update_output_fname(impf_name)
-
-        # Convert excel file to csv
-        if self.excel_to_csv(IMPORT_PATH):
-            raise ExcelImportError
-        else:
-            pass
-
-        # Get updated CSV_PATH
-        CSV_PATH = self.get_csv_path()
 
         # Pass if export path already set up by user
         if EXPORT_PATH is not None:
@@ -433,50 +390,28 @@ class WeeeklySchedulePage(tk.Frame):
         exp_txt.insert('1.0', self.get_exp_path())
 
         try:
-            with open(CSV_PATH) as file:
-                csv_file = csv.DictReader(file, delimiter=",")
-                # Read CSV rows and generates new format to export
-                for row in csv_file:
-                    SSC_DATE = row["SSC_DATE"]
-                    SSC_START = row["ASM_START_TIME"]
-                    SSC_END = row["ASM_END_TIME"]
-                    CHECKER = row["SSC_CHECKER"]
-                    BUS = row["BUS_PES"]
-                    JOB_NO = row["PES_JOB_NO"]
-                    JOB_CODE = row["PES_JOB_CODE"]
-                    JOB_NAME = row["PES_JOB_NAME"]
-                    DISCRIPTION = row["PES_DESCRIPTION"]
-                    START_TIME = row["PES_START_TIME"]
-                    END_TIME = row["PES_END_TIME"]
-                    DEPOT = row["PES_DEPOT"]
-                    LOCATION = row["PES_LOCATION"]
-                    DESTINATION = row["PES_DESTINATION"]
-                    REL_TRIP = row["PES_REL_TRIP"]
-                    CHECKER_NAME = row["CHECKER_NAME"]
-                    # BUCKET = row["Tablet"]
+            DATA_COLUMNS = self.get_columns()
+            NEW_COLUMNS = self.get_new_columns()
 
-                    self.ws_new_rows.append(
-                        {
-                            "SSC Date": SSC_DATE,
-                            "SSC Start": SSC_START,
-                            "SSC End": SSC_END,
-                            "Checker": CHECKER,
-                            "Bus": BUS,
-                            "Job Number": JOB_NO,
-                            "Job Code": JOB_CODE,
-                            "Job Name": JOB_NAME,
-                            "Description": DISCRIPTION,
-                            "Start Time": START_TIME,
-                            "End Time": END_TIME,
-                            "Depot": DEPOT,
-                            "Location": LOCATION,
-                            "Destination": DESTINATION,
-                            "Rel Trip": REL_TRIP,
-                            "Checker Name": CHECKER_NAME,
-                        }
-                    )
+            # Read xls file
+            df = pd.read_excel(IMPORT_PATH, sheet_name="AtcSched")
 
-            # print(self.ws_new_rows)
+            # Change the data type float to Int64 leave NaN
+            df["ASM_START_TIME"] = df["ASM_START_TIME"].astype("Int64")
+            df["ASM_END_TIME"] = df["ASM_END_TIME"].astype("Int64")
+            df["PES_START_TIME"] = df["PES_START_TIME"].astype("Int64")
+            df["PES_END_TIME"] = df["PES_END_TIME"].astype("Int64")
+
+            # Columns to keep
+            columns_to_keep = [x for x in range(
+                df.shape[1]) if df.columns[x] in DATA_COLUMNS]
+            # Trimed Columns
+            new_df = df.iloc[:, columns_to_keep]
+
+            # Change column names to matching Template
+            new_df.columns = NEW_COLUMNS
+            # update df
+            self.update_ws_ndf(new_df)
 
         except FileNotFoundError:
             self.error_msg()
@@ -492,7 +427,6 @@ class WeeeklySchedulePage(tk.Frame):
         """
         Set export path other than default path
         Default export path is set to import path
-
         """
         exp_txt = self.get_exp_txt()
         EXPORT_PATH = self.get_exp_path()
@@ -519,9 +453,8 @@ class WeeeklySchedulePage(tk.Frame):
 
         IMPORT_PATH = self.get_imp_path()
         EXPORT_PATH = self.get_exp_path()
-
-        ws_fileds = self.get_fileds()
-        ws_new_rows = self.get_new_rows()
+        NEW_DF = self.get_ws_ndf()
+        OUTPUT_FNAME = self.get_output_fname()
 
         if IMPORT_PATH and EXPORT_PATH:
 
@@ -529,16 +462,12 @@ class WeeeklySchedulePage(tk.Frame):
             explog_ts = str(datetime.datetime.now().strftime(
                 "%m/%d/%Y %I:%M:%S %p "))
 
-            OUTPUT_FNAME = self.get_output_fname()
-
             file_out_path = "/".join([str(EXPORT_PATH),
                                       (OUTPUT_FNAME + "_Weekly_Schedule_" + expf_ts + ".csv")])
 
             try:
-                with open(file_out_path, "w", encoding="UTF8", newline="") as f:
-                    writer = csv.DictWriter(f, fieldnames=ws_fileds)
-                    writer.writeheader()
-                    writer.writerows(ws_new_rows)
+                # Gnerate CSV file
+                NEW_DF.to_csv(file_out_path, index=None, header=True)
 
             except BaseException:
                 self.error_msg()
@@ -568,15 +497,18 @@ class QuarterlySamplePage(tk.Frame):
 
     IMPORT_PATH = None
     EXPORT_PATH = None
+    CONVT_DATA = None
     OP_FNAME = None
     imp_txt = None
     exp_txt = None
     op_txt = None
     SAMPLE_NO = None
 
-    qs_fileds = ["Sample ID", "Location", "Day",
-                 "Hour", "Hourly Swipe", "Bucket", "Sample Set"]
-    qs_new_rows = []
+    data_columns = ["sample_id", "loc", "day_type",
+                    "begin_time", "swipes", "strata"]
+
+    new_columns = ["Sample ID", "Location", "Day",
+                   "Hour", "Hourly Swipe", "Bucket"]
 
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
@@ -694,26 +626,11 @@ class QuarterlySamplePage(tk.Frame):
     def get_exp_path(self):
         return QuarterlySamplePage.EXPORT_PATH
 
-    def update_imp_path(self, new_path):
-        QuarterlySamplePage.IMPORT_PATH = new_path
+    def get_columns(self):
+        return QuarterlySamplePage.data_columns
 
-    def update_exp_path(self, new_path):
-        QuarterlySamplePage.EXPORT_PATH = new_path
-
-    def get_fileds(self):
-        return QuarterlySamplePage.qs_fileds
-
-    def get_new_rows(self):
-        return QuarterlySamplePage.qs_new_rows
-
-    def update_imp_txt(self, value):
-        QuarterlySamplePage.imp_txt = value
-
-    def update_exp_txt(self, value):
-        QuarterlySamplePage.exp_txt = value
-
-    def update_op_txt(self, value):
-        QuarterlySamplePage.op_txt = value
+    def get_new_columns(self):
+        return QuarterlySamplePage.new_columns
 
     def get_imp_txt(self):
         return QuarterlySamplePage.imp_txt
@@ -724,17 +641,38 @@ class QuarterlySamplePage(tk.Frame):
     def get_op_txt(self):
         return QuarterlySamplePage.op_txt
 
-    def update_sample_no(self, numb):
-        QuarterlySamplePage.SAMPLE_NO = numb
-
     def get_sample_no(self):
         return QuarterlySamplePage.SAMPLE_NO
+
+    def get_output_fname(self):
+        return QuarterlySamplePage.OP_FNAME
+
+    def get_qs_ndf(self):
+        return QuarterlySamplePage.CONVT_DATA
+
+    def update_imp_path(self, new_path):
+        QuarterlySamplePage.IMPORT_PATH = new_path
+
+    def update_exp_path(self, new_path):
+        QuarterlySamplePage.EXPORT_PATH = new_path
+
+    def update_imp_txt(self, value):
+        QuarterlySamplePage.imp_txt = value
+
+    def update_exp_txt(self, value):
+        QuarterlySamplePage.exp_txt = value
+
+    def update_op_txt(self, value):
+        QuarterlySamplePage.op_txt = value
+
+    def update_sample_no(self, numb):
+        QuarterlySamplePage.SAMPLE_NO = numb
 
     def update_output_fname(self, filename):
         QuarterlySamplePage.OP_FNAME = Path(filename).stem
 
-    def get_output_fname(self):
-        return QuarterlySamplePage.OP_FNAME
+    def update_qs_ndf(self, df):
+        QuarterlySamplePage.CONVT_DATA = df
 
     def reset_fields(self):
         """
@@ -837,32 +775,33 @@ class QuarterlySamplePage(tk.Frame):
         exp_txt.insert('1.0', self.get_exp_path())
 
         try:
-            with open(IMPORT_PATH) as file:
-                csv_file = csv.DictReader(file, delimiter=",")
-                # Read CSV rows and generates new format to export
-                for row in csv_file:
-                    SAMPLE_ID = row["sample_id"]
-                    LOCATION = row["loc"]
-                    DAY = row["day_type"]
-                    HOUR = row["begin_time"]
-                    HOURLY_SWIPE = row["swipes"]
-                    BUCKET = row["strata"]
-                    SAMPLE_SET = str(row["sample_id"])[1:4]
+            DATA_COLUMNS = self.get_columns()
+            NEW_COLUMNS = self.get_new_columns()
 
-                    self.qs_new_rows.append(
-                        {
-                            "Sample ID": SAMPLE_ID,
-                            "Location": LOCATION,
-                            "Day": DAY,
-                            "Hour": HOUR,
-                            "Hourly Swipe": HOURLY_SWIPE,
-                            "Bucket": BUCKET,
-                            "Sample Set": SAMPLE_SET,
-                        }
-                    )
+            # Read Quarterly Sample
+            df = pd.read_csv(IMPORT_PATH)
 
-                    # Set Sample No
-                    self.update_sample_no(SAMPLE_SET)
+            columns_to_keep = [x for x in range(
+                df.shape[1]) if df.columns[x] in DATA_COLUMNS]
+
+            # Trimed Columns
+            new_df = df.iloc[:, columns_to_keep]
+            # Change column names to matching Template
+            new_df.columns = NEW_COLUMNS
+
+            # Extract Sample Set from Sample ID
+            sample_set = list()
+            sampleIDs = new_df["Sample ID"]
+            for sampleID in sampleIDs:
+                sampleID = sampleID[1:4]
+                sample_set.append(sampleID)
+
+            # Adding new column without getting SettingWithCopyWarning mssg
+            new_df_copy = new_df.copy()
+            new_df_copy.loc[:, "Sample Set"] = sample_set
+
+            self.update_sample_no(new_df_copy["Sample Set"].iloc[0])
+            self.update_qs_ndf(new_df_copy)
 
         except FileNotFoundError:
             print("error")
@@ -905,11 +844,10 @@ class QuarterlySamplePage(tk.Frame):
         """
 
         op_txt = self.get_op_txt()
-        qs_fileds = self.get_fileds()
-        qs_new_rows = self.get_new_rows()
 
         IMPORT_PATH = self.get_imp_path()
         EXPORT_PATH = self.get_exp_path()
+        CONVT_DATA = self.get_qs_ndf()
 
         if IMPORT_PATH and EXPORT_PATH:
 
@@ -923,11 +861,8 @@ class QuarterlySamplePage(tk.Frame):
                                       (OUTPUT_FNAME + "_" + str(self.get_sample_no()) + "_" + expf_ts + ".csv")])
 
             try:
-                with open(file_out_path, "w", encoding="UTF8", newline="") as f:
-                    writer = csv.DictWriter(
-                        f, fieldnames=qs_fileds)
-                    writer.writeheader()
-                    writer.writerows(qs_new_rows)
+                # Gnerate CSV file
+                CONVT_DATA.to_csv(file_out_path, index=None, header=True)
 
             except BaseException:
                 self.error_msg()
